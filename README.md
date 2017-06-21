@@ -1,11 +1,13 @@
 # memristive-brain
-The repository for Robot Dream: Memristive brain project
+Robot Dream: Memristive brain project
 
-## Intro
+## Problem
 
-The memristive brain project is dedicated to the reimplementation of bio-plausible emotional drives based behavioral strategies in a robotic system, in the other words to solve the embodiment problem.  
+The memristive brain project is dedicated to the reimplementation of bio-plausible emotional drives based behavioral strategies in a robotic system, in the other words to solve the embodiment problem for the simulated brain in HPC system. 
 
-##Breakthrough 
+During the [NeuCogAr](https://github.com/research-team/NEUCOGAR) project we have managed to develop mammalian emotional drives basement potentially for decision making over behavioral strategies. We are doing the validation of overall model of 8 basic emotional states: 
+
+# Breakthrough 
 
 **AI and robotics**: New architectures of robotic systems, based on the integration of memory and processor in a single chip, capable of memorizing the information and changing accordingly connections between elements within processor will be implemented. This system will be significantly different from the existing computers/robots. The proposed architecture of new generation of robots will be capable of self learning and will not be using traditional software approaches making software development obsolete.
 
@@ -18,13 +20,6 @@ Apart from the breakthrough in the main direction of the research, mentioned abo
  More effective utilization of transistors could allow to improve properties according to the Moor low, at least during next 10 years, without expensive and becoming continuously more complicated increasing of the integration level in the chip. Finally, memristors could be even a basic stone of new analog circuits, making calculations using the architecture, similar to that of the brain”. [William R.S., How We Found the Missing Memristor. IEEE Spectrum 2008-12-18]. Taking into consideration a grate and continuously increasing interest of scientific centers and commercial laboratories to the implementation of memristors, it is possible to predict that in 5-10 years memristors will be one of the most common elements of electronic circuits.
 
 **Material science/self organization**: it will be investigated new polymer-based materials, allowing to organize structures with distributed electrical properties for the utilization as matrices with adaptive properties.
-
-
-
-## Problem
-
-
-
 
 ## Our Idea
 
