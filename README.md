@@ -1,11 +1,14 @@
-# memristive-brain
-Robot Dream: Memristive brain project
+# Robot Dream: Memristive brain project
 
 ## Problem
 
 The memristive brain project is dedicated to the reimplementation of bio-plausible emotional drives based behavioral strategies in a robotic system, in the other words to solve the embodiment problem for the simulated brain in HPC system. 
 
-During the [NeuCogAr](https://github.com/research-team/NEUCOGAR) project we have managed to develop mammalian emotional drives basement potentially for decision making over behavioral strategies. We are doing the validation of overall model of 8 basic emotional states: 
+During the [NeuCogAr](https://github.com/research-team/NEUCOGAR) project we have managed to develop mammalian emotional drives potential basement for decision making over behavioral strategies. We are doing the validation of overall model of 8 basic emotional states: fear, joy, disgust, humiliation, anger, interest, surprise, distress based on three neuromodulators: noradrenaline, dopamine and serotonin and currently we have managed to validate two states: fear-like and disgust-like. 
+
+The problem is that the bio-plausible simulation of a mammalian brain is really slow and can not be used for real-time processing, but robotic embodiment should be operating real-time. We have started the [Robot Dream](https://github.com/research-team/robot-dream) project to solve this problem still keeping bio-plausibility in integration with real-time robotic system.
+
+A robotic system management system could be implemented using several approaches including reimplementation of mammalian brain structures in electronic schematic. To implement this we have started from the memristive solution of a neuron. Starting from the beginning of 2017 we are developing a memristive implementation of bio-plausible neuronal inhibition and neuromodulation.
 
 # Breakthrough 
 
