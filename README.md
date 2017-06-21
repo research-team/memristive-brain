@@ -10,6 +10,8 @@ The problem is that the bio-plausible simulation of a mammalian brain is really 
 
 A robotic system management system could be implemented using several approaches including reimplementation of mammalian brain structures in electronic schematic. To implement this we have started from the memristive solution of a neuron. Starting from the beginning of 2017 we are developing a memristive implementation of bio-plausible neuronal inhibition and neuromodulation.
 
+The complete documentation on memristive approach could be found [here](https://github.com/research-team/memristive-brain/blob/master/doc/memristive_approach.md).
+
 # Breakthrough 
 
 **AI and robotics**: New architectures of robotic systems, based on the integration of memory and processor in a single chip, capable of memorizing the information and changing accordingly connections between elements within processor will be implemented. This system will be significantly different from the existing computers/robots. The proposed architecture of new generation of robots will be capable of self learning and will not be using traditional software approaches making software development obsolete.
@@ -24,5 +26,4 @@ Apart from the breakthrough in the main direction of the research, mentioned abo
 
 **Material science/self organization**: it will be investigated new polymer-based materials, allowing to organize structures with distributed electrical properties for the utilization as matrices with adaptive properties.
 
-## Our Idea
 
