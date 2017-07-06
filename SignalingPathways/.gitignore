@@ -1,0 +1,9 @@
+# TexMaker
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.out
+*.pdf
+*.gz
