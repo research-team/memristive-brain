@@ -1,17 +1,3 @@
-* memristor model with limits and threshold
-* "artificial" parameters alpha, beta, and vt. beta and vt adapted to basic programming frequency 
-* just to obtain nice results!
-* You have to care for the physics and set real values! 
-.subckt memristor plus minus 
-.PARAMS: Ron=10K Roff=100K Rinit=7.0K alpha=0 beta=20e3/stime Vt=1.6 
-Bx 0 x I='((f1(V(plus)-V(minus))> 0) && (V(x) < Roff)) ? {f1(V(plus)-V(minus))}: ((((f1(V(plus)-V(minus)) < 0) && (V(x)>Ron)) ? {f1(V(plus)-V(minus))}: 0)) '
-Vx x x1 dc 0
-Cx x1 0 1 IC={Rinit} 
-Rmem plus minus r={V(x)} 
-.func f1(y)={beta*y+0.5*(alpha-beta)*(abs(y+Vt)-abs(y-Vt))} 
-.ends
-
-
 * HP Memristor SPICE Model Using Joglekar Window
 
 * Connections:
@@ -137,60 +123,6 @@ Gm TE BE value={(1-cp*V(XSV))*alpha*(1-exp(-
 .ENDS MEM_UMICH
 
 
-***********************************************
-* HP Memristor SPICE Model
-* For Transient Analysis only
-* created by Zdenek and Dalibor Biolek
-***********************************************
-* Ron, Roff - Resistance in ON / OFF States
-*
-* Rinit - Resistance at T=0
-*
-* D - Width of the thin film
-*
-* uv - Migration coefficient
-*
-* p - Parameter of the WINDOW-function for
-*     modeling nonlinear boundary conditions
-*
-* x - W/D Ratio, W is the actual width
-*     of the doped area (from 0 to D)
-*
-***********************************************
-.SUBCKT memristor_2biolek plus minus PARAMS:
-+ Ron=10k Roff=100K Rinit=11K D=10N uv=10F p=1
-
-***********************************************
-* DIFFERENTIAL EQUATION MODELING *
-***********************************************
-Gx 0 x value={I(Emem)*uv*Ron/D**2*f(V(x),p)}
-Cx x 0 1 IC={(Roff-Rinit)/(Roff-Ron)}
-Raux x 0 1000000
-
-***********************************************
-* RESISTIVE PORT OF THE MEMRISTOR *
-***********************************************
-Emem plus aux value={-I(Emem)*V(x)*(Roff-Ron)}
-Roff aux minus {Roff}
-
-***********************************************
-* FLUX COMPUTATION *
-***********************************************
-Eflux flux 0 value={SDT(V(plus,minus))}
-
-***********************************************
-* CHARGE COMPUTATION *
-***********************************************
-Echarge charge 0 value={SDT(I(Emem))}
-
-***********************************************
-* WINDOW FUNCTIONS
-* FOR NONLINEAR DRIFT MODELING *
-***********************************************
-* window function, according to Joglekar
-.func f(x,p)={1-(2*x-1)**(2*p)}
-
-.ENDS memristor_2biolek
 
 * HP Memristor SPICE Model Using Biolek Window
 

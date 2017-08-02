@@ -6,8 +6,10 @@ LINE Normal 0 48 0 33
 LINE Normal 32 0 0 0
 CIRCLE Normal 4 33 -4 0
 CIRCLE Normal 4 -32 -4 0
+SYMATTR SpiceModel MEM_JOGLEKAR
 SYMATTR Prefix X
 SYMATTR Description Parameterized Memristor
+SYMATTR ModelFile memristor_with_state.sub
 PIN 0 -48 RIGHT 8
 PINATTR PinName TE
 PINATTR SpiceOrder 1
