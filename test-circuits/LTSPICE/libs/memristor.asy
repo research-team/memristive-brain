@@ -10,8 +10,8 @@ SYMATTR Prefix X
 SYMATTR Description Parameterized Memristor
 SYMATTR ModelFile memristor.sub
 PIN 0 -48 RIGHT 8
-PINATTR PinName A
+PINATTR PinName plus
 PINATTR SpiceOrder 1
 PIN 0 48 RIGHT 8
-PINATTR PinName B
+PINATTR PinName minus
 PINATTR SpiceOrder 2
