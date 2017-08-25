@@ -1,13 +1,14 @@
-#Equipment used
+# Equipment used
 
-
+------------ | -------------
 Oscilloscope | Tektronix TDS 2024C 
 Waveform generator | АКИП 3407/1А 
 Multimeter | Pro'sKit MT-1270 
 DC Power Supply | Gw INSTEK GPS-74303 
 
-#Components used
+# Components used
 
+------------ | -------------
 Operational Amplifier | [TI LM2902](http://www.ti.com/lit/ds/symlink/lm2902.pdf)
 Diode | [1N4148](https://www.vishay.com/docs/81857/1n4148.pdf)
 Transistor | [BC547B](https://www.farnell.com/datasheets/410427.pdf)
