@@ -1,4 +1,9 @@
 .subckt memristor pl mn PARAMS: Ron=10K Roff=100K Rinit=50K alpha=0 beta=1E5 Vt=1
+*.subckt memristor pl mn PARAMS: Ron=10K Roff=100K Rinit=50K alpha=0.7e5 beta=1E5 Vt=1
+*.subckt memristor pl mn PARAMS: Ron=10K Roff=100K Rinit=50K alpha=2E5 beta=1E5 Vt=1
+*.subckt memristor pl mn PARAMS: Ron=10K Roff=100K Rinit=50K alpha=1E5 beta=0 Vt=1
+*.subckt memristor pl mn PARAMS: Ron=10K Roff=100K Rinit=50K alpha=0 beta=1e5 Vt=100
+
 Bx 0 x I='if(((f1(V(pl,mn))>0) & (V(x)<Roff)),f1(V(pl,mn)),if(((f1(V(pl,mn))<0) & (V(x)>Ron)),f1(V(pl,mn)),0))'
 Cx x 0 1 IC={Rinit}
 R0 pl mn 1E12
@@ -6,7 +11,14 @@ Rmem pl mn r={V(x)}
 .func f1(y)={beta*y+0.5*(alpha-beta)*(abs(y+Vt)-abs(y-Vt))}
 .ends
 
-.subckt memristor1 pl mn PARAMS: Ron=10K Roff=100K Rinit=50K beta=1E4 Vtp=1 Vtm=1 nu1=0.0001 nu2=0.1
+.subckt memristor1 pl mn PARAMS: Ron=10K Roff=100K Rinit=50K beta=1E5 Vtp=10 Vtm=10 nu1=0.0001 nu2=1
+*.subckt memristor1 pl mn PARAMS: Ron=10K Roff=100K Rinit=50K beta=1E-4 Vtp=10 Vtm=10 nu1=0.0001 nu2=1
+*.subckt memristor1 pl mn PARAMS: Ron=10K Roff=100K Rinit=50K beta=1E5 Vtp=55 Vtm=5 nu1=1e-4 nu2=1
+*.subckt memristor1 pl mn PARAMS: Ron=10K Roff=100K Rinit=50K beta=1E5 Vtp=5 Vtm=55 nu1=1e-4 nu2=1
+*.subckt memristor1 pl mn PARAMS: Ron=10K Roff=100K Rinit=50K beta=1E5 Vtp=10 Vtm=10 nu1=1 nu2=1e-4
+*.subckt memristor1 pl mn PARAMS: Ron=10K Roff=100K Rinit=50K beta=10 Vtp=10 Vtm=10 nu1=1e-4 nu2=1
+
+
 Gx 0 x value={f1(V(pl)-V(mn))*(f2(f1(V(pl)-V(mn)))*f3(Roff-V(x))+f2(-f1(V(pl)-V(mn)))*f3(V(x)-Ron))}
 Raux x 0 1E12
 Cx x 0 1 IC={Rinit}
