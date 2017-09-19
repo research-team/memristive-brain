@@ -13,11 +13,23 @@ The inhibitory part has different structure, where the LTP is implemented as fee
 
 ## Cortical column 
 
+### 1 layer
+
 ![Cortical column 1 layer implementation](HL_memristive_brain_1_layer.png)
 
 ![Cortical column 3D implementation](HL_memristive_brain_1_layer_3D.png)
 
+### Minimal implementation
+
 ![Cortical column minimal implementation](HL_memristive_brain_minimized_column.png)
+
+### Bio-plausible implementation
+
+![Bio cortical column](HL_memristive_brain_bio_cortical_column.png)
+
+![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column.png)
+
+![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column_3D.png)
 
 ## Cortical and sub-cortical structures
 
