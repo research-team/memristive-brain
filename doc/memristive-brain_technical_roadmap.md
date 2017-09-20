@@ -17,7 +17,11 @@ The inhibitory part has different structure, where the LTP is implemented as fee
 
 ### 1 layer
 
+The next step from neuron is a cortical column (approximately 10<sup>4</sup> neurons with 10<sup>8</sup> synapses) that could be understood as basic functional structure of neocortex. 
+
+The design starts from one layer of a cortical column.
 ![Cortical column 1 layer implementation](HL_memristive_brain_1_layer.png)
+
 
 ![Cortical column 3D implementation](HL_memristive_brain_1_layer_3D.png)
 
