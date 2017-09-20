@@ -23,9 +23,21 @@ The design starts from one layer approximately (2\*10<sup>4</sup> neurons and 2\
 
 ![Cortical column 1 layer implementation](HL_memristive_brain_1_layer.png)
 
-The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *Polyaniline memristors* that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#Neuron) via *Metal connectors* 
+The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *Polyaniline memristors* that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*.
+
+...
 
 ![Cortical column 3D implementation](HL_memristive_brain_1_layer_3D.png)
+
+#### Quantitative parameters
+
+Component | Parameter | Value
+-------------------------------
+Polyaniline memristors | Synapse | 2\*10<sup>8</sup>
+Metal connectors | connectors | 2\*10<sup>8</sup>
+Silicon neurons | Neuron | 2\*10<sup>4</sup>
+
+
 
 ### Minimal implementation
 
