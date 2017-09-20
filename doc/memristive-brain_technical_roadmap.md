@@ -19,11 +19,11 @@ The inhibitory part has different structure, where the LTP is implemented as fee
 
 The next step from neuron is a cortical column (approximately 10<sup>4</sup> neurons with 10<sup>8</sup> synapses) that could be understood as basic functional structure of neocortex. 
 
-The design starts from one layer approximately (2 10<sup>4</sup> neurons and 2\*10<sup>8</sup> synapses) of a cortical column, the block diagram is presented below:
+The design starts from one layer approximately (2\*10<sup>4</sup> neurons and 2\*10<sup>8</sup> synapses) of a cortical column, the block diagram is presented below:
 
 ![Cortical column 1 layer implementation](HL_memristive_brain_1_layer.png)
 
-The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *Polyaniline memristors* that are stochastically organized Fontana(2011) and connected with neuromodulatory neurons via *Metal connectors*  
+The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *Polyaniline memristors* that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#Neuron) via *Metal connectors* 
 
 ![Cortical column 3D implementation](HL_memristive_brain_1_layer_3D.png)
 
