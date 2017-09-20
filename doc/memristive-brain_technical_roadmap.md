@@ -13,13 +13,13 @@ There are three parts of the block diagram represented in colors: excitatory –
 
 The inhibitory part has different structure, where the LTP is implemented as feedback loop block that uses inbound pre-synaptic signals and outbound of memristive device signals. The LTD is implemented as feedback from neuron outbound signal. The LTP and the LTD implement learning function described in Hennequin et al.(2017) indicated as iSTDP graph. Modulatory blocks *Mod[1..m]* influence LTP and LTD functional blocks modulating the amplitude of learning impulses. *Integrator*, *Threshold adder* and *Generator* are the implementation of a neuronal soma and axon hillock that integrates excitatory and inhibitory inbound signals and generates the outbound signal.
 
-## Cortical minicolumn 
+## Cortical column 
 
 ### 1 layer
 
-The next step from neuron is a cortical column (approximately 10<sup>2</sup> neurons with 10<sup>6</sup> synapses) that could be understood as basic functional structure of neocortex. 
+The next step from neuron is a cortical column (approximately 10<sup>4</sup> neurons with 10<sup>8</sup> synapses) that could be understood as basic functional structure of neocortex. 
 
-The design starts from one layer approximately (0.2\*10<sup>2</sup> neurons and 0.2\*10<sup>6</sup> synapses) of a cortical column, the block diagram is presented below:
+The design starts from one layer approximately (2 10<sup>4</sup> neurons and 2\*10<sup>8</sup> synapses) of a cortical column, the block diagram is presented below:
 
 ![Cortical column 1 layer implementation](HL_memristive_brain_1_layer.png)
 
