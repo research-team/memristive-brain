@@ -42,15 +42,24 @@ Silicon neurons | Neuron | 2\*10<sup>4</sup>
 
 ### Minimalistic implementation
 
-A minimalistic feed forward cortical should have following structure where each component is the 1 layer component presented [above](1_layer):
+A minimalistic feed forward cortical should have following structure where each component is the 1 layer component presented [above](1-layer):
 
 ![Cortical column minimal implementation](HL_memristive_brain_minimized_column.png)
 
-The biological 4th layer is inbound for thalamic projections. The 4th layer structure is presented in [1 layer](1_layer) section while all the rest are missing first *Metal connectors* component.
+The biological 4th layer is inbound for thalamic projections. The 4th layer structure is presented in [1 layer](1-layer) section while all the rest are missing first *Metal connectors* component.
 
 ### Bio-plausible implementation
 
+Simplified bio cortical column projections are presented on the diagram below Feldmeyer(2012):
+
 ![Bio cortical column](HL_memristive_brain_bio_cortical_column.png)
+
+*Glu* - are the glutamate projections that are excitatory 
+*GABA* - gamma-Aminobutyric acid inhibitory projections mainly internal to cortical column layer except for 6->4 inhibitory projections. 
+
+The inbound thalamic projections are inbound to 4th layer, outbound are from 2nd and 3rd layers to other cortical columns, and from 6th to thalamus.
+
+The implementation could be organized as 3D structure, where 4th layer projects to *5A*, *3* via electrical contact to their *Polyaniline memristors* components and projects to *5B*, *2* via 3D memristive channels. 
 
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column.png)
 
@@ -66,4 +75,7 @@ The biological 4th layer is inbound for thalamic projections. The 4th layer stru
 Tsai, D., John, E., Chari, T., Yuste, R., & Shepard, K. (2015). High-channel-count, high-density microelectrode array for closed-loop investigation of neuronal networks. In Engineering in Medicine and Biology Society (EMBC), 2015 37th Annual International Conference of the IEEE (pp. 7510–7513). IEEE. Retrieved from http://ieeexplore.ieee.org/abstract/document/7320129/
 
 Fontana, M. P., & Erokhin, V. (2011). Thin Film Electrochemical Memristive Systems for Bio-Inspired Computation. Journal of Computational and Theoretical Nanoscience, 8(3). https://doi.org/10.1166/jctn.2011.1695
+
+Feldmeyer, D. (2012). Excitatory neuronal connectivity in the barrel cortex. Frontiers in Neuroanatomy, 6. https://doi.org/10.3389/fnana.2012.00024
+
 
