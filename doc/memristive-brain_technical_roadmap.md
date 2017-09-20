@@ -3,6 +3,8 @@ From neuron to brain
 
 The initial ideas could be found in [memristive_approach.md](memristive_approach.md).
 
+As neuromodulation is the basement of emotional mechanisms especially taking in account neuro-psychological model: ["cube of emotions"](https://en.wikipedia.org/wiki/L%C3%B6vheim_cube_of_emotion) and roles of dopamine (DA), serotonin (5-HT), noradrenaline (NA). To implement emotional basement and drives with bio-plausible approach we have to start with most basic functionality of neuromodulation in neuron. We have used the memristive approach as a memristive device could be understood as electronic analog ...
+
 ## Neuron
 
 Modulating, inhibitory, excitatory neuron principal schema is presented below.
