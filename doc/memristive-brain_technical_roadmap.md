@@ -32,10 +32,10 @@ The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer
 #### Quantitative parameters
 
 Component | Parameter | Value
--------------------------------
-Polyaniline memristors | Synapse | 2\*10<sup>8</sup>
-Metal connectors | connectors | 2\*10<sup>8</sup>
-Silicon neurons | Neuron | 2\*10<sup>4</sup>
+--:| --:| :--
+Polyaniline memristors | Synapse | '2\*10<sup>8</sup>'
+Metal connectors | connectors | '2\*10<sup>8</sup>'
+Silicon neurons | Neuron | '2\*10<sup>4</sup>'
 
 
 
