@@ -23,11 +23,13 @@ The design starts from one layer approximately (2\*10<sup>4</sup> neurons and 2\
 
 ![Cortical column 1 layer implementation](HL_memristive_brain_1_layer.png)
 
-The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *Polyaniline memristors* that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*.
+The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *Polyaniline memristors* that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*. *Metal connectors* and *Silicon neurons* are created via modern lithography while *Polyaniline memristors* technology should be clarified. 
 
-...
+The three dimensional structure of memristive cortical column is presented below:
 
 ![Cortical column 3D implementation](HL_memristive_brain_1_layer_3D.png)
+
+Running through projections are organized via insulated channels to the *Polyaniline memristors* layer.
 
 #### Quantitative parameters
 
@@ -38,10 +40,13 @@ Metal connectors | Connector | 2\*10<sup>8</sup>
 Silicon neurons | Neuron | 2\*10<sup>4</sup>
 
 
+### Minimalistic implementation
 
-### Minimal implementation
+A minimalistic feed forward cortical should have following structure where each component is the 1 layer component presented [above](1_layer):
 
 ![Cortical column minimal implementation](HL_memristive_brain_minimized_column.png)
+
+The biological 4th layer is inbound for thalamic projections. The 4th layer structure is presented in [1 layer](1_layer) section while all the rest are missing first *Metal connectors* component.
 
 ### Bio-plausible implementation
 
