@@ -67,7 +67,7 @@ The implementation could be organized as 3D structure, where 4th layer projects 
 
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column.png)
 
-Thalamus has approximately 200 efferent projections to 4th layer of the cortical column that contains approximately 4084 silicon neurons. The 4th layer projects to 2, 3, 5A and 5B layers. The 6th layer has positive and negative feedback loops to 4th layer. 2nd layer has more projections to 5A with less feedback, 3rd has more projections to 5B with less feedback, while 5A has stronger projections to 3rd layer and 5B to 2nd. Seems to be common pattern that 2nd and 3rd layer have stronger "crossing" projections to 5A and 5B while 5A and 5B have "direct" projections to 3rd and 2nd.
+Thalamus has approximately 200 efferent projections to 4th layer of the cortical column that contains approximately 4084 silicon neurons. The 4th layer projects to 2, 3, 5A and 5B layers. The 6th layer has positive and negative feedback loops to the 4th layer and positive to the 5A. The 2nd layer has more projections to the 5A with less feedback, the 3rd has more projections to the 5B with less feedback, while the 5A has stronger projections to the 3rd layer and the 5B to the 2nd. Seems to be common pattern that the 2nd and the 3rd layer have stronger "crossing" projections to the 5A and the 5B while the 5A and the 5B have "direct" projections to the 3rd and the 2nd.
 
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column_3D.png)
 
