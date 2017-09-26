@@ -50,7 +50,7 @@ A minimalistic feed forward cortical should have following structure where each 
 
 ![Cortical column minimal implementation](HL_memristive_brain_minimized_column.png)
 
-The biological 4th layer is inbound for thalamic projections. The 4th layer structure is presented in [1 layer](1-layer) section while all the rest are missing first *Metal connectors* component. The 4th layer component has excitatory projections mainly to *3/2* layers. *3/2* layers are has efferent projections to other layers and *5/6* layers, that in their turn have efferent projections to the thalamus.
+The biological 4th layer is inbound for thalamic projections. The 4th layer structure is presented in [1 layer](1-layer) section while all the rest are missing first *Metal connectors* component. The 4th layer component has excitatory projections mainly to *3/2* layers. *3/2* layers are have efferent projections to other layers and *5/6* layers, that in their turn have efferent projections to the thalamus. The number of neurons per each layer is presented in section [Bio-plausible implementation](https://github.com/research-team/memristive-brain/blob/master/doc/memristive-brain_technical_roadmap.md#bio-plausible-implementation)
 
 ### Bio-plausible implementation
 
