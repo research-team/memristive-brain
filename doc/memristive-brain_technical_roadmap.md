@@ -63,15 +63,17 @@ Simplified bio cortical column projections are presented on the diagram below Fe
 
 The inbound thalamic projections come to the 4th layer, outbound are from 2nd and 3rd layers to other cortical columns, and from 6th to thalamus.
 
-The implementation could be organized as 3D structure, where 4th layer projects to *5A*, *3* via electrical contact to their *Polyaniline memristors* components and projects to *5B*, *2* via 3D memristive channels. 
+The implementation could be organized as 3D structure, where 4th layer projects to *5A*, *3* via electrical contact to their *PANI memristors* components and projects to *5B*, *2* via 3D memristive channels. 
 
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column.png)
 
-
+Thalamus has approximately 200 efferent projections to 4th layer of the cortical column that contains approximately 4084 silicon neurons. The 4th layer projects to 2, 3, 5A and 5B layers. The 6th layer has positive and negative feedback loops to 4th layer. 2nd layer has more projections to 5A with less feedback, 3rd has more projections to 5B with less feedback, while 5A has stronger projections to 3rd layer and 5B to 2nd. Seems to be common pattern that 2nd and 3rd layer have stronger "crossing" projections to 5A and 5B while 5A and 5B have "direct" projections to 3rd and 2nd.
 
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column_3D.png)
 
 ## Cortical and sub-cortical structures
+
+Dopamine projections...
 
 ![Cortical and sub-cortical structures](HL_memristive_brain_block_diagram.png)
 
