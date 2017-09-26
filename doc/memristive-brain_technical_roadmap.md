@@ -27,7 +27,7 @@ The design starts from one layer approximately (2\*10<sup>4</sup> neurons and 2\
 
 ![Cortical column 1 layer implementation](HL_memristive_brain_1_layer.png)
 
-The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *Polyaniline memristors* that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*. *Metal connectors* and *Silicon neurons* are created via modern lithography while *Polyaniline memristors* technology should be clarified. Outbound projections are created via lover layer of *Metal connectors*. 
+The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *PANI memristors* (PANI stands for polyaniline) that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*. *Metal connectors* and *Silicon neurons* are created via modern lithography while *Polyaniline memristors* technology should be clarified. Outbound projections are created via lover layer of *Metal connectors*. 
 
 The three dimensional structure of memristive cortical column is presented below:
 
@@ -50,7 +50,7 @@ A minimalistic feed forward cortical should have following structure where each 
 
 ![Cortical column minimal implementation](HL_memristive_brain_minimized_column.png)
 
-The biological 4th layer is inbound for thalamic projections. The 4th layer structure is presented in [1 layer](1-layer) section while all the rest are missing first *Metal connectors* component.
+The biological 4th layer is inbound for thalamic projections. The 4th layer structure is presented in [1 layer](1-layer) section while all the rest are missing first *Metal connectors* component. The 4th layer component has excitatory projections mainly to *3/2* layers. *3/2* layers are has efferent projections to other layers and *5/6* layers, that in their turn have efferent projections to the thalamus.
 
 ### Bio-plausible implementation
 
@@ -61,11 +61,13 @@ Simplified bio cortical column projections are presented on the diagram below Fe
 *Glu* - are the glutamate projections that are excitatory 
 *GABA* - gamma-Aminobutyric acid inhibitory projections mainly internal to cortical column layer except for 6->4 inhibitory projections. 
 
-The inbound thalamic projections are inbound to 4th layer, outbound are from 2nd and 3rd layers to other cortical columns, and from 6th to thalamus.
+The inbound thalamic projections come to the 4th layer, outbound are from 2nd and 3rd layers to other cortical columns, and from 6th to thalamus.
 
 The implementation could be organized as 3D structure, where 4th layer projects to *5A*, *3* via electrical contact to their *Polyaniline memristors* components and projects to *5B*, *2* via 3D memristive channels. 
 
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column.png)
+
+
 
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column_3D.png)
 
