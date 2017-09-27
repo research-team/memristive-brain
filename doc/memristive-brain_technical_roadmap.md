@@ -27,7 +27,7 @@ The design starts from one layer approximately (2\*10<sup>4</sup> neurons and 2\
 
 ![Cortical column 1 layer implementation](HL_memristive_brain_1_layer.png)
 
-The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *Polyaniline memristors* that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*. *Metal connectors* and *Silicon neurons* are created via modern lithography while *Polyaniline memristors* technology should be clarified. Outbound projections are created via lover layer of *Metal connectors*. 
+The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *PANI memristors* (PANI stands for polyaniline) that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*. *Metal connectors* and *Silicon neurons* are created via modern lithography while *Polyaniline memristors* technology should be clarified. Outbound projections are created via lover layer of *Metal connectors*. 
 
 The three dimensional structure of memristive cortical column is presented below:
 
@@ -50,7 +50,7 @@ A minimalistic feed forward cortical should have following structure where each 
 
 ![Cortical column minimal implementation](HL_memristive_brain_minimized_column.png)
 
-The biological 4th layer is inbound for thalamic projections. The 4th layer structure is presented in [1 layer](1-layer) section while all the rest are missing first *Metal connectors* component.
+The biological 4th layer is inbound for thalamic projections. The 4th layer structure is presented in [1 layer](1-layer) section while all the rest are missing first *Metal connectors* component. The 4th layer component has excitatory projections mainly to *3/2* layers. *3/2* layers are have efferent projections to other layers and *5/6* layers, that in their turn have efferent projections to the thalamus. The number of neurons per each layer is presented in section [Bio-plausible implementation](https://github.com/research-team/memristive-brain/blob/master/doc/memristive-brain_technical_roadmap.md#bio-plausible-implementation)
 
 ### Bio-plausible implementation
 
@@ -61,15 +61,21 @@ Simplified bio cortical column projections are presented on the diagram below Fe
 *Glu* - are the glutamate projections that are excitatory 
 *GABA* - gamma-Aminobutyric acid inhibitory projections mainly internal to cortical column layer except for 6->4 inhibitory projections. 
 
-The inbound thalamic projections are inbound to 4th layer, outbound are from 2nd and 3rd layers to other cortical columns, and from 6th to thalamus.
+The inbound thalamic projections come to the 4th layer, outbound are from 2nd and 3rd layers to other cortical columns, and from 6th to thalamus.
 
-The implementation could be organized as 3D structure, where 4th layer projects to *5A*, *3* via electrical contact to their *Polyaniline memristors* components and projects to *5B*, *2* via 3D memristive channels. 
+The implementation could be organized as 3D structure, where 4th layer projects to *5A*, *3* via electrical contact to their *PANI memristors* components and projects to *5B*, *2* via 3D memristive channels. 
 
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column.png)
 
+Thalamus has approximately 200 efferent projections to 4th layer of the cortical column that contains approximately 4084 silicon neurons. The 4th layer projects to 2, 3, 5A and 5B layers. The 6th layer has positive and negative feedback loops to the 4th layer and positive to the 5A. The 2nd layer has more projections to the 5A with less feedback, the 3rd has more projections to the 5B with less feedback, while the 5A has stronger projections to the 3rd layer and the 5B to the 2nd. Seems to be common pattern that the 2nd and the 3rd layer have stronger "crossing" projections to the 5A and the 5B while the 5A and the 5B have "direct" projections to the 3rd and the 2nd. Similar to the [minimalistic implementation](https://github.com/research-team/memristive-brain/blob/master/doc/memristive-brain_technical_roadmap.md#minimalistic-implementation) the 3rd layer has efferent projections to other columns and the 6th has efferent projections to the thalamus.
+
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column_3D.png)
 
+The 3D structure of projections is demonstrated above, one-layer projections are depicted via green arrows, lilac arrows depict cross layer projections thus electrical connections. Projections from 6th and 4th layer are depicted via lilac circles. ...  
+
 ## Cortical and sub-cortical structures
+
+Dopamine projections...
 
 ![Cortical and sub-cortical structures](HL_memristive_brain_block_diagram.png)
 
