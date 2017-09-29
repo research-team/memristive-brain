@@ -1,7 +1,7 @@
 # Memristive brain project technical roadmap
 How to make a machine "feel" emotions?
 
-1[Initial idea](mousebrainpink.png)
+![Initial idea](mousebrainpink.png)
 
 ## Problem
 
