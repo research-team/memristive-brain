@@ -28,7 +28,7 @@ The design starts from one layer approximately (2\*10<sup>4</sup> neurons and 2\
 
 ![Cortical column 1 layer implementation](HL_memristive_brain_1_layer.png)
 
-The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *PANI memristors* (PANI stands for polyaniline) that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*. *Metal connectors* and *Silicon neurons* are created via modern lithography while *Polyaniline memristors* technology should be clarified. Outbound projections are created via lover layer of *Metal connectors*. The *DA* input is the dopamine modulatory input that modulates eSTDP and iSTDP functions indicated on diagram of [high-level modulatory memristive neuron](memristive-brain_technical_roadmap.md#neuron])
+The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *PANI memristors* (PANI stands for polyaniline) that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*. *Metal connectors* and *Silicon neurons* are created via modern lithography while *Polyaniline memristors* technology should be clarified. Outbound projections are created via lover layer of *Metal connectors*. The *DA* input is the dopamine modulatory input that modulates eSTDP and iSTDP functions indicated on diagram of [high-level modulatory memristive neuron](memristive-brain_technical_roadmap.md#neuron)
 
 The three dimensional structure of memristive cortical column is presented below:
 
@@ -40,9 +40,9 @@ Running through projections are organized via insulated channels to the *Polyani
 
 Component | Parameter | Value
 --:| --:| :--
-Polyaniline memristors | Synapse | 2\*10<sup>8</sup>
-Metal connectors | Connector | 2\*10<sup>8</sup>
-Silicon neurons | Neuron | 2\*10<sup>4</sup>
+Polyaniline memristors | Synapse | 2\*10<sup>9</sup>
+Metal connectors | Connector | 20\*10<sup>9</sup>
+Silicon neurons | Neuron | 2\*10<sup>5</sup>
 
 
 ### Minimalistic implementation
