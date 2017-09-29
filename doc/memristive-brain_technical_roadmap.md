@@ -12,7 +12,7 @@ Because  the neuromodulation is the biological basement of emotional mechanisms 
 
 ## Neuron
 
-We have created and implemented following schema of modulating, inhibitory, excitatory neuron.
+We have created and implemented the following schema of modulating, inhibitory, excitatory neuron.
 ![High-level modulatory and inhibitory memristive neuron](HL_mod_inh_mem_neuron.png)
 There are three parts of the block diagram represented in colors: excitatory – orange, inhibitory – blue, modulatory – green. Inputs are depicted as triangles. The excitatory learning is implemented via *ExLTP[1..n<sub>e</sub>]* and *ExLTD[1..n<sub>e</sub>]* feedback loops of excitatory memristive device (*Ex[1..n<sub>e</sub>]*), where LTP (long term potentiation) blocks implement the learning function above x axis (*eSTDP* graph) and LTD (long term depression) blocks implement learning function below x. *Generator 1* and *Generator n<sub>e</sub>* implement dendrite spikes. The *Blocking leaky integrator* implements a dendrite joint where first dendrite spike blocks second close one due to NA/K channels refractory dynamics.
 
