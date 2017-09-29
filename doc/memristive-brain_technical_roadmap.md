@@ -22,7 +22,7 @@ The inhibitory part has different structure, where the LTP is implemented as fee
 
 ### 1 layer
 
-The next step from neuron is a cortical column (approximately 10<sup>4</sup> neurons with 10<sup>8</sup> synapses) that could be understood as basic functional structure of neocortex. 
+The next step from neuron is a cortical column (approximately 10<sup>4</sup> neurons with 10<sup>8</sup> synapses) that could be understood as basic functional structure of neocortex.
 
 The design starts from one layer approximately (2\*10<sup>4</sup> neurons and 2\*10<sup>8</sup> synapses) of a cortical column, the block diagram is presented below:
 
@@ -67,6 +67,7 @@ The inbound thalamic projections come to the 4th layer, outbound are from 2nd an
 The implementation could be organized as 3D structure, where 4th layer projects to *5A*, *3* via electrical contact to their *PANI memristors* components and projects to *5B*, *2* via 3D memristive channels. 
 
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column.png)
+Meyer(2010)
 
 Thalamus has approximately 200 efferent projections to 4th layer of the cortical column that contains approximately 4084 silicon neurons. The 4th layer projects to 2, 3, 5A and 5B layers. The 6th layer has positive and negative feedback loops to the 4th layer and positive to the 5A. The 2nd layer has more projections to the 5A with less feedback, the 3rd has more projections to the 5B with less feedback, while the 5A has stronger projections to the 3rd layer and the 5B to the 2nd. Seems to be common pattern that the 2nd and the 3rd layer have stronger "crossing" projections to the 5A and the 5B while the 5A and the 5B have "direct" projections to the 3rd and the 2nd. Similar to the [minimalistic implementation](https://github.com/research-team/memristive-brain/blob/master/doc/memristive-brain_technical_roadmap.md#minimalistic-implementation) the 3rd layer has efferent projections to other columns and the 6th has efferent projections to the thalamus.
 
@@ -91,5 +92,8 @@ Tsai, D., John, E., Chari, T., Yuste, R., & Shepard, K. (2015). High-channel-cou
 Fontana, M. P., & Erokhin, V. (2011). Thin Film Electrochemical Memristive Systems for Bio-Inspired Computation. Journal of Computational and Theoretical Nanoscience, 8(3). https://doi.org/10.1166/jctn.2011.1695
 
 Feldmeyer, D. (2012). Excitatory neuronal connectivity in the barrel cortex. Frontiers in Neuroanatomy, 6. https://doi.org/10.3389/fnana.2012.00024
+
+Meyer, H. S., Wimmer, V. C., Oberlaender, M., de Kock, C. P. J., Sakmann, B., & Helmstaedter, M. (2010). Number and Laminar Distribution of Neurons in a Thalamocortical Projection Column of Rat Vibrissal Cortex. Cerebral Cortex, 20(10), 2277–2286. https://doi.org/10.1093/cercor/bhq067
+
 
 
