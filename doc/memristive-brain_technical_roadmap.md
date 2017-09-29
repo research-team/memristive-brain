@@ -1,7 +1,7 @@
 # Memristive brain project technical roadmap
-From neuron to brain
+How to make a machine "feel" emotions?
 
-The initial ideas could be found in [memristive_approach.md](memristive_approach.md).
+1[Initial idea](mousebrainpink.png)
 
 ## Problem
 
@@ -81,6 +81,9 @@ Dopamine projections...
 
 
 ## References
+
+The initial ideas could be found in [memristive_approach.md](memristive_approach.md).
+
 
 Tsai, D., John, E., Chari, T., Yuste, R., & Shepard, K. (2015). High-channel-count, high-density microelectrode array for closed-loop investigation of neuronal networks. In Engineering in Medicine and Biology Society (EMBC), 2015 37th Annual International Conference of the IEEE (pp. 7510–7513). IEEE. Retrieved from http://ieeexplore.ieee.org/abstract/document/7320129/
 
