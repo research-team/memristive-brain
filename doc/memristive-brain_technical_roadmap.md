@@ -28,7 +28,7 @@ The design starts from one layer approximately (2\*10<sup>4</sup> neurons and 2\
 
 ![Cortical column 1 layer implementation](HL_memristive_brain_1_layer.png)
 
-The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *PANI memristors* (PANI stands for polyaniline) that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*. *Metal connectors* and *Silicon neurons* are created via modern lithography while *Polyaniline memristors* technology should be clarified. Outbound projections are created via lover layer of *Metal connectors*. The *DA* input is the dopamine modulatory input that modulates eSTDP and iSTDP functions indicated on diagram of (high-level modulatory memristive neuron)[#neuron]
+The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *PANI memristors* (PANI stands for polyaniline) that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*. *Metal connectors* and *Silicon neurons* are created via modern lithography while *Polyaniline memristors* technology should be clarified. Outbound projections are created via lover layer of *Metal connectors*. The *DA* input is the dopamine modulatory input that modulates eSTDP and iSTDP functions indicated on diagram of (high-level modulatory memristive neuron)[memristive-brain_technical_roadmap.md#neuron]
 
 The three dimensional structure of memristive cortical column is presented below:
 
