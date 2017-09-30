@@ -78,10 +78,9 @@ The 3D structure of projections is demonstrated above, one-layer projections are
 
 ## Cortical and sub-cortical structures
 
-Dopamine projections...
-
 ![Cortical and sub-cortical structures](HL_memristive_brain_block_diagram.png)
 
+Cortical areas are organized according to principles discussed earlier analogous to biological cortical columns Mountcastle (1978).
 
 ## References
 
@@ -96,5 +95,6 @@ Feldmeyer, D. (2012). Excitatory neuronal connectivity in the barrel cortex. Fro
 
 Meyer, H. S., Wimmer, V. C., Oberlaender, M., de Kock, C. P. J., Sakmann, B., & Helmstaedter, M. (2010). Number and Laminar Distribution of Neurons in a Thalamocortical Projection Column of Rat Vibrissal Cortex. Cerebral Cortex, 20(10), 2277–2286. https://doi.org/10.1093/cercor/bhq067
 
+V. B. Mountcastle, “An organizing principle for cerebral function: the unit module and the distributed system,” in The Mindful Brain: Cortical Organization and the Group-Selective Theory of Higher Brain Function, G. M. Endelman and V. B. Montcastle, Eds., pp. 7–51, MIT Press, Cambridge, Mass, USA, 1978.
 
 
