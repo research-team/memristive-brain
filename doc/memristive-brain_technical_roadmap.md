@@ -1,7 +1,6 @@
 # Memristive brain project technical roadmap
 How to make a machine "feel" emotions?
 
-
 ![Initial idea](mousebrainpink.png)
 
 ## Problem
@@ -80,7 +79,8 @@ The 3D structure of projections is demonstrated above, one-layer projections are
 
 ![Cortical and sub-cortical structures](HL_memristive_brain_block_diagram.png)
 
-Cortical areas are organized according to principles discussed earlier analogous to biological cortical columns Mountcastle (1978).
+Cortical areas are organized according to principles discussed earlier analogous to biological cortical columns Mountcastle (1978). The DA, 5-HT, NA subsystems are integrated with cortex via several pathways and neuronal activity is modulated via DA, 5-HT, NA. Subcortical areas usually have similar layered structure as cortex.
+
 
 ## References
 
