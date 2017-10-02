@@ -1,4 +1,4 @@
-# Memristive brain project technical roadmap
+# Memristive brain project technical approach
 How to make a machine "feel" emotions?
 
 ![Initial idea](mousebrainpink.png)
