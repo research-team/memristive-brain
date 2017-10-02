@@ -29,6 +29,8 @@ The design starts from one layer approximately (2\*10<sup>4</sup> neurons and 2\
 
 The inbound signal is transmitted via *Metal connectors* see Tsai(2015) to layer of *PANI memristors* (PANI stands for polyaniline) that are stochastically organized Fontana(2011) and connected with neuromodulatory *Silicon neurons* described [above](#neuron) via *Metal connectors*. *Metal connectors* and *Silicon neurons* are created via modern lithography while *Polyaniline memristors* technology should be clarified. Outbound projections are created via lover layer of *Metal connectors*. The *DA* input is the dopamine modulatory input that modulates eSTDP and iSTDP functions indicated on diagram of [high-level modulatory memristive neuron](memristive-brain_technical_roadmap.md#neuron).
 
+### 3D structure
+
 The three dimensional structure of memristive cortical column is presented below:
 
 ![Cortical column 3D implementation](HL_memristive_brain_1_layer_3D.png)
@@ -73,14 +75,14 @@ Thalamus has approximately 200 efferent projections to 4th layer of the cortical
 
 ![Cortical column bio-plausible implementation](HL_memristive_brain_cortical_column_3D.png)
 
-The 3D structure of projections is demonstrated above, one-layer projections are depicted via green arrows, lilac arrows depict cross layer projections thus electrical connections. Projections from 6th and 4th layer are depicted via lilac circles. ...  
+The 3D structure of projections is demonstrated above, limited to one-layer projections are depicted via green arrows, lilac arrows depict cross layer projections thus electrical connections. Projections from 6th and 4th layer are depicted via lilac circles, that are created as indicated in section [3D structure](memristive-brain_technical_roadmap.md#3D-structure)
 
 ## Cortical and sub-cortical structures
 
 ![Cortical and sub-cortical structures](HL_memristive_brain_block_diagram.png)
 
-Cortical areas are organized according to principles discussed earlier analogous to biological cortical columns Mountcastle (1978). The DA, 5-HT, NA subsystems are integrated with cortex via several pathways and neuronal activity is modulated via DA, 5-HT, NA. Subcortical areas usually have similar layered structure as cortex.
-
+Cortical areas are organized according to principles discussed earlier analogous to biological cortical columns Mountcastle (1978). The DA, 5-HT, NA subsystems are integrated with cortex via several pathways and neuronal activity is modulated via DA, 5-HT, NA. Subcortical areas usually have similar layered structure as the cortex thus could be constructed in a similar way as described above. 
+Cortex is connected with DA pathways via thalamocortical projections that are modulated via the striatum and level of the DA produced by substantia nigra pars compacta. The DA subsystems are modulated, mainly inhibited by the 5-HT subsystems and both of them are modulated via NA subsystems. The DA subsystem has feedback loop with NA subsystem. Overall we could reimplement emotional drives via reimplementing emotional involved subsystems starting from the DA as most simple to implement technically.
 
 ## References
 
