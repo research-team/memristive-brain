@@ -84,6 +84,11 @@ The 3D structure of projections is demonstrated above, limited to one-layer proj
 Cortical areas are organized according to principles discussed earlier analogous to biological cortical columns Mountcastle (1978). The DA, 5-HT, NA subsystems are integrated with cortex via several pathways and neuronal activity is modulated via DA, 5-HT, NA. Subcortical areas usually have similar layered structure as the cortex thus could be constructed in a similar way as described above. 
 Cortex is connected with DA pathways via thalamocortical projections that are modulated via the striatum and level of the DA produced by substantia nigra pars compacta. The DA subsystems are modulated, mainly inhibited by the 5-HT subsystems and both of them are modulated via NA subsystems. The DA subsystem has feedback loop with NA subsystem. Overall we could reimplement emotional drives via reimplementing emotional involved subsystems starting from the DA as most simple to implement technically.
 
+![Dopamine diagram](dopamine.png)
+![Serotonin diagram](serotonin.png)
+![Noradrenaline diagram](noradrenaline.png)
+
+
 ## References
 
 The initial ideas could be found in [memristive_approach.md](memristive_approach.md).
