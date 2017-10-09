@@ -84,7 +84,24 @@ The 3D structure of projections is demonstrated above, limited to one-layer proj
 Cortical areas are organized according to principles discussed earlier analogous to biological cortical columns Mountcastle (1978). The DA, 5-HT, NA subsystems are integrated with cortex via several pathways and neuronal activity is modulated via DA, 5-HT, NA. Subcortical areas usually have similar layered structure as the cortex thus could be constructed in a similar way as described above. 
 Cortex is connected with DA pathways via thalamocortical projections that are modulated via the striatum and level of the DA produced by substantia nigra pars compacta. The DA subsystems are modulated, mainly inhibited by the 5-HT subsystems and both of them are modulated via NA subsystems. The DA subsystem has feedback loop with NA subsystem. Overall we could reimplement emotional drives via reimplementing emotional involved subsystems starting from the DA as most simple to implement technically.
 
+### Dopamine pathways
+
 ![Dopamine diagram](dopamine.png)
+
+Connectivity diagram showing excitatory glutamatergic pathways as red, inhibitory GABAergic pathways as blue, and modulatory dopaminergic pathways as magenta. (Abbreviations: GPe: globus pallidus external; GPi: globus pallidus internal; STN: subthalamic nucleus; SNc: substantia nigra compacta; SNr: substantia nigra reticulata)
+
+#### Direct pathway
+
+**Cortex** (stimulates) → **Striatum** (inhibits) → **"SNr-GPi" complex** (less inhibition of thalamus) → **Thalamus** (stimulates) → **Cortex** (stimulates) → **Muscles, etc.**
+
+
+#### Indirect pathway
+
+**Cortex** (stimulates) → **Striatum** (inhibits) → **GPe** (less inhibition of STN) → **STN** (stimulates) → **"SNr-GPi" complex** (inhibits) → **Thalamus** (is stimulating less) → **Cortex** (is stimulating less) → Muscles, etc.
+
+The antagonistic functions of the direct and indirect pathways are modulated by the **substantia nigra pars compacta (SNc)**, which produces **dopamine**. In the presence of dopamine, D1-receptors in the basal ganglia stimulate the GABAergic neurons, favoring the direct pathway, and thus increasing movement. The GABAergic neurons of the indirect pathway are stimulated by excitatory neurotransmitters acetylcholine and glutamate. This sets off the indirect pathway that ultimately results in inhibition of upper motor neurons, and less movement. In the presence of dopamine, D2-receptors in the basal ganglia inhibit these GABAergic neurons, which reduces the indirect pathways inhibitory effect. **Dopamine therefore increases the excitatory effect of the direct pathway (causing movement) and reduces the inhibitory effect of the indirect pathway (preventing full inhibition of movement)**. 
+
+
 ![Serotonin diagram](serotonin.png)
 ![Noradrenaline diagram](noradrenaline.png)
 
