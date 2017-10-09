@@ -92,7 +92,7 @@ Connectivity diagram showing excitatory glutamatergic pathways as red, inhibitor
 
 #### Direct pathway
 
-**Cortex** (stimulates) → **Striatum** (inhibits) → **"SNr-GPi" complex** (less inhibition of thalamus) → **Thalamus** (stimulates) → **Cortex** (stimulates) → **Muscles, etc.**
+**Motor cortex** (stimulates) → **Striatum** (inhibits) → **"GPi/SNr" complex** (less inhibition of thalamus) → **Thalamus** (stimulates) → **Motor cortex** (stimulates) → **Muscles, etc.**
 
 
 #### Indirect pathway
