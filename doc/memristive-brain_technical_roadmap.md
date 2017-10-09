@@ -139,7 +139,7 @@ Serotonin transmission affects the dopamine pathways. The Activation of serotoni
 
 ![Noradrenaline diagram](noradrenaline.png)
 
-The diagram above depicts a simplified structure of the schema of the simulation of noradrenaline pathways as discussed in following sections where we consider: (1) [the motor cortex](#motor-cortex), (2) the [bed nucleus of the stria terminal](#bed-nucleus-of-the-stria-terminal), (3) the [raphe nuclei](#raphe-nuclei), (4) the [perirhinal cortex and Nucleus paragigantocellularis lateral](#perirhinal-cortex-and-nucleus-paragigantocellularis-lateral), (5) the [lateral dorsal tegmental nucleus](#lateral-dorsal-tegmental-nucleus), (6) the [nucleus tractus solitarii](#nucleus-tractus-solitarii), and (7) the [locus coeruleus](#locus-coeruleus).
+The diagram above depicts a simplified structure of the schema of the simulation of noradrenaline pathways as discussed in following sections where we consider: (1) [the motor cortex](#1-motor-cortex), (2) the [bed nucleus of the stria terminal](#2-bed-nucleus-of-the-stria-terminal), (3) the [raphe nuclei](#3-raphe-nuclei), (4) the [perirhinal cortex and Nucleus paragigantocellularis lateral](#4-perirhinal-cortex-and-nucleus-paragigantocellularis-lateral), (5) the [lateral dorsal tegmental nucleus](#5-lateral-dorsal-tegmental-nucleus), (6) the [nucleus tractus solitarii](#6-nucleus-tractus-solitarii), and (7) the [locus coeruleus](#7-locus-coeruleus).
 
 #### 1. Motor cortex
 The motor cortex projects to noradrenaline receptors of locus coeruleus (LC in the diagram) ([Ferrucci et al., 2013]), via glutamate.
