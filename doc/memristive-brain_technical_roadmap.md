@@ -87,9 +87,21 @@ Cortex is connected with DA pathways via thalamocortical projections that are mo
 
 -----------
 
+[Ferrucci et al., 2013]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3580794/
+[Crestani et al., 2013]: https://www.ncbi.nlm.nih.gov/pubmed/23997750
+[Ordway et al., 2007]: http://www.cambridge.org/catalogue/catalogue.asp?isbn=9781107407411&ss=fro
+[Berridge & Waterhouse, 2003]: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.204.1902&rep=rep1&type=pdf
+[Aston-Jones, 2002]: https://www.google.ru/url?sa=t&rct=j&q=&esrc=s&source=web&cd=7&ved=0ahUKEwiT3LOemeTWAhWJ6RQKHaPEA2sQFghMMAY&url=https%3A%2F%2Fwww.acnp.org%2Fasset.axd%3Fid%3D13f2084e-4c46-4c48-a0e2-477f9dc2addd&usg=AOvVaw2g5YVjCzPniOlRNFEVSFMU
+
+[Müller & Jacobs, 2010]: https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4
+[Daw et al., 2002]: https://www.ncbi.nlm.nih.gov/pubmed/12371515
+
+
 ### Dopamine pathways
 
 ![Dopamine diagram](dopamine.png)
+
+The approximate principal schema of the dopaminergic nigrostriatal, mesolimbic and mesocortical pathways is presented above.
 
 Connectivity diagram showing excitatory glutamatergic pathways as red, inhibitory GABAergic pathways as blue, and modulatory dopaminergic pathways as green. (Abbreviations: GPe: globus pallidus external; GPi: globus pallidus internal; STN: subthalamic nucleus; SNc: substantia nigra compacta; SNr: substantia nigra reticulata)
 
@@ -101,28 +113,58 @@ Connectivity diagram showing excitatory glutamatergic pathways as red, inhibitor
 
 **Motor cortex** (stimulates) → **Striatum** (inhibits) → **GPe** (less inhibition of STN) → **STN** (stimulates) → **"GPi/SNr" complex** (inhibits) → **Thalamus** (is stimulating less) → **Motor cortex** (is stimulating less) → Muscles, etc.
 
-The antagonistic functions of the direct and indirect pathways are modulated by the **substantia nigra pars compacta (SNc)**, which produces **dopamine**. In the presence of dopamine, *D1*-receptors in the basal ganglia stimulate the GABAergic neurons, favoring the direct pathway, and thus increasing movement. The GABAergic neurons of the indirect pathway are stimulated by excitatory neurotransmitters acetylcholine and glutamate. This sets off the indirect pathway that ultimately results in inhibition of upper motor neurons, and less movement. In the presence of dopamine, *D2*-receptors in the basal ganglia inhibit these GABAergic neurons, which reduces the indirect pathways inhibitory effect. **Dopamine therefore increases the excitatory effect of the direct pathway (causing movement) and reduces the inhibitory effect of the indirect pathway (preventing full inhibition of movement)**. 
+The antagonistic functions of the [direct](#direct-pathway) and [indirect](#indirect-pathway) pathways are modulated by the **substantia nigra pars compacta (SNc)**, which produces **dopamine**. In the presence of dopamine, *D1*-receptors in the basal ganglia stimulate the GABAergic neurons, favoring the direct pathway, and thus increasing movement. The GABAergic neurons of the indirect pathway are stimulated by excitatory neurotransmitters acetylcholine and glutamate. This sets off the indirect pathway that ultimately results in inhibition of upper motor neurons, and less movement. In the presence of dopamine, *D2*-receptors in the basal ganglia inhibit these GABAergic neurons, which reduces the indirect pathways inhibitory effect. **Dopamine therefore increases the excitatory effect of the direct pathway (causing movement) and reduces the inhibitory effect of the indirect pathway (preventing full inhibition of movement)**. 
+
 
 -----------
+
 
 ### Serotonin pathways
 
 ![Serotonin diagram](serotonin.png)
 
-The diagram presented above depicts the overall modelled structure of the serotonin pathways. Efferent projections from the rostral group to raphe nucleus (RN), cerebral cortex, thalamus, basal forebrain (includes septum), hypothalamus, locus coeruleus, ventral tegmental area (VTA), limbic system (includes hippocampus, amygdala), basal ganglia, such as neostriatum, substanta nigra (SN) and nucleus accumbens (NAc), also to other nucleus, e.g. trigeminal nucleus, facial nucleus, laterodoral tegmental nucleus ([Müller & Jacobs, 2010](https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4)).
+The diagram presented above depicts the overall modelled structure of the serotonin pathways. Efferent projections from the rostral group to raphe nucleus (RN), cerebral cortex, thalamus, basal forebrain (includes septum), hypothalamus, locus coeruleus, ventral tegmental area (VTA), limbic system (includes hippocampus, amygdala), basal ganglia, such as neostriatum, substanta nigra (SN) and nucleus accumbens (NAc), also to other nucleus, e.g. trigeminal nucleus, facial nucleus, laterodoral tegmental nucleus ([Müller & Jacobs, 2010]).
 
-Afferent projections to the raphe nucleus are from ventral tegmental area, limbic system, basal ganglia, cerebral cortex, basal forebrain, hypothalamus, other nucleus, periaqueductal grey and reticular formation ([Müller & Jacobs, 2010](https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4)). 
+Afferent projections to the raphe nucleus are from ventral tegmental area, limbic system, basal ganglia, cerebral cortex, basal forebrain, hypothalamus, other nucleus, periaqueductal grey and reticular formation ([Müller & Jacobs, 2010]). 
 
 Neurons of the serotonin pathways project to different parts of a brain and interact with other neurotransmitter pathways. The serotonergic projection from the dorsal raphe nucleus (DR) to the locus coeruleus (LC) which plays an inhibitory role. 
 
-Serotonin transmission affects the dopamine pathways. The Activation of serotonin receptors in the prefrontal cortex (PFC) and in the nucleus accumbens stimulates the dopamine release. The activity of dopaminergic neurons of the ventral tegmental area (VTA) is under the excitatory control of 5-HT receptors located in the PFC. The effect on the dopamine system in the VTA is dependent on the type of activated serotonin receptor. The 5–HT1A, 5–HT3 receptor agonists increasing dopamine release in the VTA and PFC and the 5–HT2C receptor agonists decreasing dopamine release in the VTA and PFC. In the substantia nigra, nucleus accumbens and in the striatum serotonin antagonizes the dopamine function ([Daw et al., 2002](https://www.ncbi.nlm.nih.gov/pubmed/12371515); [Müller & Jacobs, 2010](https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4)).
+Serotonin transmission affects the dopamine pathways. The Activation of serotonin receptors in the prefrontal cortex (PFC) and in the nucleus accumbens stimulates the dopamine release. The activity of dopaminergic neurons of the ventral tegmental area (VTA) is under the excitatory control of 5-HT receptors located in the PFC. The effect on the dopamine system in the VTA is dependent on the type of activated serotonin receptor. The 5–HT1A, 5–HT3 receptor agonists increasing dopamine release in the VTA and PFC and the 5–HT2C receptor agonists decreasing dopamine release in the VTA and PFC. In the substantia nigra, nucleus accumbens and in the striatum serotonin antagonizes the dopamine function ([Daw et al., 2002]; [Müller & Jacobs, 2010]).
+
 
 -----------
+
 
 ### Noradrenaline pathways
 
 ![Noradrenaline diagram](noradrenaline.png)
 
+The diagram above depicts a simplified structure of the schema of the simulation of noradrenaline pathways as discussed in following sections where we consider: (1) [the motor cortex](#motor-cortex), (2) the [bed nucleus of the stria terminal](#bed-nucleus-of-the-stria-terminal), (3) the [raphe nuclei](#raphe-nuclei), (4) the [perirhinal cortex and Nucleus paragigantocellularis lateral](#perirhinal-cortex-and-nucleus-paragigantocellularis-lateral), (5) the [lateral dorsal tegmental nucleus](#lateral-dorsal-tegmental-nucleus), (6) the [nucleus tractus solitarii](#nucleus-tractus-solitarii), and (7) the [locus coeruleus](#locus-coeruleus).
+
+#### 1. Motor cortex
+The motor cortex projects to noradrenaline receptors of locus coeruleus (LC in the diagram) ([Ferrucci et al., 2013]), via glutamate.
+
+#### 2. Bed nucleus of the stria terminal
+Cholinergic innervation to the bed nucleus of the stria terminal (BNST) is provided by the latero-dorsal tegmental nucleus, and the BNST in its turn projects to the amygdala. Glutamatergic inputs to the BNST originate from neurons located in the prefrontal cortex ([Crestani et al., 2013]) and regulate the activity of GABA inhibition. The activity of BNST neurons is regulated by GABAergic inputs from both intrinsic sources.
+
+#### 3. Raphe nuclei
+Both α<sub>1</sub>- and α<sub>2</sub>-adrenergic receptors play a role in mediating noradrenergic regulation of serotonin release in the raphe as well as in raphe projection areas ([Ordway et al., 2007])
+
+#### 4. Perirhinal cortex and Nucleus paragigantocellularis lateral
+Prominent afferents to the LC include the nucleus paragigantocellularis (PGi) and the ventromedial aspect of the prepositus hypoglossi (PrH) in the rostroventrolateral and dorsomedial medulla, respectively. These nuclei provide strong excitatory and inhibitory influences on LC neurons ([Ordway et al., 2007]), respectively, and are also sources of several neurotransmitter inputs to the LC nucleus. The stimulation of the PGi strongly excites the LC neurons. In contrast, strong inhibition is produced by PrH stimulation ([Berridge & Waterhouse, 2003]). That inhibitory input also arises from the PGi is revealed when the strong glutamate input is antagonized pharmacologically
+
+#### 5. Lateral dorsal tegmental nucleus
+The inbound axons project to the lateral dorsal tegmental nucleus (LDT) on α<sub>1</sub>- and α<sub>2</sub>-adrenergic receptors from the LC. In its turn the LDT cholinergic neurons project to the LC where noradrenaline neurons are activated
+
+#### 6. Nucleus tractus solitarii
+There are strong ascending projections of these nucleus tractus solitarii (NTS) NE cells to forebrain areas such as the BNST (into GLUT receptor of BNST), nucleus accumbens (into GABA receptor) ([Aston-Jones, 2002]). Amygdala also plays important role in affective and cognitive processes.
+
+#### 7. Locus coeruleus
+The striatum receives a small amount of NE projections only via scattered fibres from the LC, nonetheless these striatal afferents seem to possess a high turnover rate. Stimulation DA neurons of VTA increases the activity of the LC ([Ferrucci et al., 2013]) receiving signals from the D1/D2 receptors and generating further exposure on them.
+
+The main afferents to the LC include projections from the prefrontal cortex (activates noradrenergic LC neurons via a glutamate), lateral hypothalamus, raphe nuclei, and amygdala ([Aston-Jones, 2002]). Furthermore, the LC receives NE afferents from lower medullary A1 and A2 regions. Additionally, LC receives DA afferents from VTA. The a1 - adrenergic receptor, receives signals from the LC and has an intensive influence over most DA neurons activity of the VTA. The PFC activates noradrenergic LC neurons via a glutamate. Inside the PFS there is an underlying inhibitory effect of prefrontal activation when the more potent glutamate-mediated excitation is antagonized ([Ordway et al., 2007]). Gamma-aminobutyric acid (GABA) has a tonic inhibitory effect on the LC and regulates levels of norepinephrine in the cortex.
+
+-----------
 
 ## References
 
