@@ -164,6 +164,74 @@ The striatum receives a small amount of NE projections only via scattered fibres
 
 The main afferents to the LC include projections from the prefrontal cortex (activates noradrenergic LC neurons via a glutamate), lateral hypothalamus, raphe nuclei, and amygdala ([Aston-Jones, 2002]). Furthermore, the LC receives NE afferents from lower medullary A1 and A2 regions. Additionally, LC receives DA afferents from VTA. The a1 - adrenergic receptor, receives signals from the LC and has an intensive influence over most DA neurons activity of the VTA. The PFC activates noradrenergic LC neurons via a glutamate. Inside the PFS there is an underlying inhibitory effect of prefrontal activation when the more potent glutamate-mediated excitation is antagonized ([Ordway et al., 2007]). Gamma-aminobutyric acid (GABA) has a tonic inhibitory effect on the LC and regulates levels of norepinephrine in the cortex.
 
+
+-----------
+
+## Thalamus
+
+![thalamus areas](thalamus_areas_full.png)
+
+
+<table>
+  
+  <tr align="center">
+    <td width="15">
+      Area
+    <td width="35">
+      Text
+    <td width="25">
+      Input
+    <td width="25">
+      Output
+  
+  <tr>
+    <td>
+      <b>VPL</b> (Ventral posterolateral nucleus)
+    <td>
+      The VPL receives information from the <a href="https://en.wikipedia.org/wiki/Nociception#Neospinothalamic_tract">neospinothalamic tract</a> (+Nociception) and the medial lemniscus of the posterior column-medial lemniscus pathway. It then projects this sensory information to Brodmann's Areas 3, 1 and 2 in the postcentral gyrus. Collectively, <a href="https://en.wikipedia.org/wiki/Postcentral_gyrus#Brodmann_areas_3.2C_1_and_2">Brodmann areas 3, 1 and 2</a> make up the primary somatosensory cortex of the brain (<a href="https://en.wikipedia.org/wiki/Ventral_posterolateral_nucleus">LINK</a>)
+    <td>
+      <li>The neospinothalamic tract
+      <li>the medial lemniscus of the posterior column-medial lemniscus pathway
+    <td>
+      <li>Brodmann's Areas 3, 1 and 2 in the postcentral gyrus
+  
+  <tr>
+    <td>
+      <b>VPM</b> (Ventral posteromedial nucleus)
+    <td>
+      The VPM contains synapses between second and third order neurons from the anterior (ventral) trigeminothalamic tract and posterior (dorsal) trigeminothalamic tract. These neurons convey sensory information from the face and oral cavity. Third order neurons in the trigeminothalamic systems project to the postcentral gyrus. 
+<br/>
+      The VPM also receives taste afferent information from the solitary tract and projects to the cortical gustatory area (<a href="https://en.wikipedia.org/wiki/Ventral_posteromedial_nucleus">LINK</a>)
+    <td>
+      <li>The face and oral cavity
+      <li>Taste afferent information from the solitary tract
+    <td>
+      <li>The cortical gustatory area
+             
+  <tr>
+    <td>
+    <td>
+    <td>
+    <td>
+
+  <tr>
+    <td>
+    <td>
+    <td>
+    <td>
+        
+</table>
+
+![thalamus and cortex](thalamus+cortex_rat.png)
+
+
+-----------
+
+## Striatum
+
+
+![striatum areas](striatum_areas.png)
+
 -----------
 
 ## References
