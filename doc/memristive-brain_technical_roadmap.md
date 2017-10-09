@@ -84,6 +84,9 @@ The 3D structure of projections is demonstrated above, limited to one-layer proj
 Cortical areas are organized according to principles discussed earlier analogous to biological cortical columns Mountcastle (1978). The DA, 5-HT, NA subsystems are integrated with cortex via several pathways and neuronal activity is modulated via DA, 5-HT, NA. Subcortical areas usually have similar layered structure as the cortex thus could be constructed in a similar way as described above. 
 Cortex is connected with DA pathways via thalamocortical projections that are modulated via the striatum and level of the DA produced by substantia nigra pars compacta. The DA subsystems are modulated, mainly inhibited by the 5-HT subsystems and both of them are modulated via NA subsystems. The DA subsystem has feedback loop with NA subsystem. Overall we could reimplement emotional drives via reimplementing emotional involved subsystems starting from the DA as most simple to implement technically.
 
+
+-----------
+
 ### Dopamine pathways
 
 ![Dopamine diagram](dopamine.png)
@@ -100,9 +103,21 @@ Connectivity diagram showing excitatory glutamatergic pathways as red, inhibitor
 
 The antagonistic functions of the direct and indirect pathways are modulated by the **substantia nigra pars compacta (SNc)**, which produces **dopamine**. In the presence of dopamine, *D1*-receptors in the basal ganglia stimulate the GABAergic neurons, favoring the direct pathway, and thus increasing movement. The GABAergic neurons of the indirect pathway are stimulated by excitatory neurotransmitters acetylcholine and glutamate. This sets off the indirect pathway that ultimately results in inhibition of upper motor neurons, and less movement. In the presence of dopamine, *D2*-receptors in the basal ganglia inhibit these GABAergic neurons, which reduces the indirect pathways inhibitory effect. **Dopamine therefore increases the excitatory effect of the direct pathway (causing movement) and reduces the inhibitory effect of the indirect pathway (preventing full inhibition of movement)**. 
 
+-----------
+
 ### Serotonin pathways
 
 ![Serotonin diagram](serotonin.png)
+
+The diagram presented above depicts the overall modelled structure of the serotonin pathways. Efferent projections from the rostral group to raphe nucleus (RN), cerebral cortex, thalamus, basal forebrain (includes septum), hypothalamus, locus coeruleus, ventral tegmental area (VTA), limbic system (includes hippocampus, amygdala), basal ganglia, such as neostriatum, substanta nigra (SN) and nucleus accumbens (NAc), also to other nucleus, e.g. trigeminal nucleus, facial nucleus, laterodoral tegmental nucleus ([Müller & Jacobs, 2010](https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4)).
+
+Afferent projections to the raphe nucleus are from ventral tegmental area, limbic system, basal ganglia, cerebral cortex, basal forebrain, hypothalamus, other nucleus, periaqueductal grey and reticular formation ([Müller & Jacobs, 2010](https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4)). 
+
+Neurons of the serotonin pathways project to different parts of a brain and interact with other neurotransmitter pathways. The serotonergic projection from the dorsal raphe nucleus (DR) to the locus coeruleus (LC) which plays an inhibitory role. 
+
+Serotonin transmission affects the dopamine pathways. The Activation of serotonin receptors in the prefrontal cortex (PFC) and in the nucleus accumbens stimulates the dopamine release. The activity of dopaminergic neurons of the ventral tegmental area (VTA) is under the excitatory control of 5-HT receptors located in the PFC. The effect on the dopamine system in the VTA is dependent on the type of activated serotonin receptor. The 5–HT1A, 5–HT3 receptor agonists increasing dopamine release in the VTA and PFC and the 5–HT2C receptor agonists decreasing dopamine release in the VTA and PFC. In the substantia nigra, nucleus accumbens and in the striatum serotonin antagonizes the dopamine function ([Daw et al., 2002](https://www.ncbi.nlm.nih.gov/pubmed/12371515); [Müller & Jacobs, 2010](https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4)).
+
+-----------
 
 ### Noradrenaline pathways
 
