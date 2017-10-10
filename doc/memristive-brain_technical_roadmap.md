@@ -9,6 +9,10 @@ Affects, emotions play crucial role in mammalian life including human life. Star
 
 Because  the neuromodulation is the biological basement of emotional mechanisms especially taking in account neuro-psychological model: ["cube of emotions"](https://en.wikipedia.org/wiki/L%C3%B6vheim_cube_of_emotion) and roles of dopamine (DA), serotonin (5-HT), noradrenaline (NA). To implement neurobiological mechanisms and drives within bio-plausible approach we have to start with most basic functionality of neuromodulation in neuron. We have used the memristive approach as a memristive device could be understood as electronic analog of synapse and already it was indicated that silicon and polyaniline memristors are capable of STDP or basic neuronal learning.
 
+## Road map 
+
+![Road map](memristive-brain_roadmap.png)
+
 ## Neuron
 
 We have created and implemented the following schema of modulating, inhibitory, excitatory neuron.
