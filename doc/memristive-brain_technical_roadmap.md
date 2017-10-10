@@ -45,8 +45,8 @@ Running through projections are organized via insulated channels to the *PANI me
 
 Component | Parameter | Value
 --:| --:| :--
-PANI memristors | Synapse | 2\*10<sup>9</sup>
-Metal connectors | Connector | 2\*10<sup>9</sup>
+PANI memristors | Synapse | 2\*10<sup>8</sup>
+Metal connectors | Connector | 2\*10<sup>8</sup>
 Silicon neurons | Neuron | 2\*10<sup>5</sup>
 
 
@@ -88,19 +88,6 @@ The 3D structure of projections is demonstrated above, limited to one-layer proj
 Cortical areas are organized according to principles discussed earlier analogous to biological cortical columns Mountcastle (1978). The DA, 5-HT, NA subsystems are integrated with cortex via several pathways and neuronal activity is modulated via DA, 5-HT, NA. Subcortical areas usually have similar layered structure as the cortex thus could be constructed in a similar way as described above. 
 Cortex is connected with DA pathways via thalamocortical projections that are modulated via the striatum and level of the DA produced by substantia nigra pars compacta. The DA subsystems are modulated, mainly inhibited by the 5-HT subsystems and both of them are modulated via NA subsystems. The DA subsystem has feedback loop with NA subsystem. Overall we could reimplement emotional drives via reimplementing emotional involved subsystems starting from the DA as most simple to implement technically.
 
-
------------
-
-[Ferrucci et al., 2013]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3580794/
-[Crestani et al., 2013]: https://www.ncbi.nlm.nih.gov/pubmed/23997750
-[Ordway et al., 2007]: http://www.cambridge.org/catalogue/catalogue.asp?isbn=9781107407411&ss=fro
-[Berridge & Waterhouse, 2003]: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.204.1902&rep=rep1&type=pdf
-[Aston-Jones, 2002]: https://www.google.ru/url?sa=t&rct=j&q=&esrc=s&source=web&cd=7&ved=0ahUKEwiT3LOemeTWAhWJ6RQKHaPEA2sQFghMMAY&url=https%3A%2F%2Fwww.acnp.org%2Fasset.axd%3Fid%3D13f2084e-4c46-4c48-a0e2-477f9dc2addd&usg=AOvVaw2g5YVjCzPniOlRNFEVSFMU
-
-[Müller & Jacobs, 2010]: https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4
-[Daw et al., 2002]: https://www.ncbi.nlm.nih.gov/pubmed/12371515
-
-
 ### Dopamine pathways
 
 ![Dopamine diagram](dopamine.png)
@@ -119,10 +106,6 @@ Connectivity diagram showing excitatory glutamatergic pathways as red, inhibitor
 
 The antagonistic functions of the [direct](#direct-pathway) and [indirect](#indirect-pathway) pathways are modulated by the **substantia nigra pars compacta (SNc)**, which produces **dopamine**. In the presence of dopamine, *D1*-receptors in the basal ganglia stimulate the GABAergic neurons, favoring the direct pathway, and thus increasing movement. The GABAergic neurons of the indirect pathway are stimulated by excitatory neurotransmitters acetylcholine and glutamate. This sets off the indirect pathway that ultimately results in inhibition of upper motor neurons, and less movement. In the presence of dopamine, *D2*-receptors in the basal ganglia inhibit these GABAergic neurons, which reduces the indirect pathways inhibitory effect. **Dopamine therefore increases the excitatory effect of the direct pathway (causing movement) and reduces the inhibitory effect of the indirect pathway (preventing full inhibition of movement)**. 
 
-
------------
-
-
 ### Serotonin pathways
 
 ![Serotonin diagram](serotonin.png)
@@ -134,10 +117,6 @@ Afferent projections to the raphe nucleus are from ventral tegmental area, limbi
 Neurons of the serotonin pathways project to different parts of a brain and interact with other neurotransmitter pathways. The serotonergic projection from the dorsal raphe nucleus (DR) to the locus coeruleus (LC) which plays an inhibitory role. 
 
 Serotonin transmission affects the dopamine pathways. The Activation of serotonin receptors in the prefrontal cortex (PFC) and in the nucleus accumbens stimulates the dopamine release. The activity of dopaminergic neurons of the ventral tegmental area (VTA) is under the excitatory control of 5-HT receptors located in the PFC. The effect on the dopamine system in the VTA is dependent on the type of activated serotonin receptor. The 5–HT1A, 5–HT3 receptor agonists increasing dopamine release in the VTA and PFC and the 5–HT2C receptor agonists decreasing dopamine release in the VTA and PFC. In the substantia nigra, nucleus accumbens and in the striatum serotonin antagonizes the dopamine function ([Daw et al., 2002]; [Müller & Jacobs, 2010]).
-
-
------------
-
 
 ### Noradrenaline pathways
 
@@ -168,8 +147,6 @@ The striatum receives a small amount of NE projections only via scattered fibres
 
 The main afferents to the LC include projections from the prefrontal cortex (activates noradrenergic LC neurons via a glutamate), lateral hypothalamus, raphe nuclei, and amygdala ([Aston-Jones, 2002]). Furthermore, the LC receives NE afferents from lower medullary A1 and A2 regions. Additionally, LC receives DA afferents from VTA. The a1 - adrenergic receptor, receives signals from the LC and has an intensive influence over most DA neurons activity of the VTA. The PFC activates noradrenergic LC neurons via a glutamate. Inside the PFS there is an underlying inhibitory effect of prefrontal activation when the more potent glutamate-mediated excitation is antagonized ([Ordway et al., 2007]). Gamma-aminobutyric acid (GABA) has a tonic inhibitory effect on the LC and regulates levels of norepinephrine in the cortex.
 
-
------------
 
 ## Thalamus
 
@@ -229,18 +206,25 @@ The main afferents to the LC include projections from the prefrontal cortex (act
 ![thalamus and cortex](thalamus+cortex_rat.png)
 
 
------------
-
 ## Striatum
 
 
 ![striatum areas](striatum_areas.png)
 
------------
 
 ## References
 
 The initial ideas could be found in [memristive_approach.md](memristive_approach.md).
+
+
+[Ferrucci et al., 2013]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3580794/
+[Crestani et al., 2013]: https://www.ncbi.nlm.nih.gov/pubmed/23997750
+[Ordway et al., 2007]: http://www.cambridge.org/catalogue/catalogue.asp?isbn=9781107407411&ss=fro
+[Berridge & Waterhouse, 2003]: http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.204.1902&rep=rep1&type=pdf
+[Aston-Jones, 2002]: https://www.google.ru/url?sa=t&rct=j&q=&esrc=s&source=web&cd=7&ved=0ahUKEwiT3LOemeTWAhWJ6RQKHaPEA2sQFghMMAY&url=https%3A%2F%2Fwww.acnp.org%2Fasset.axd%3Fid%3D13f2084e-4c46-4c48-a0e2-477f9dc2addd&usg=AOvVaw2g5YVjCzPniOlRNFEVSFMU
+
+[Müller & Jacobs, 2010]: https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4
+[Daw et al., 2002]: https://www.ncbi.nlm.nih.gov/pubmed/12371515
 
 
 Tsai, D., John, E., Chari, T., Yuste, R., & Shepard, K. (2015). High-channel-count, high-density microelectrode array for closed-loop investigation of neuronal networks. In Engineering in Medicine and Biology Society (EMBC), 2015 37th Annual International Conference of the IEEE (pp. 7510–7513). IEEE. Retrieved from http://ieeexplore.ieee.org/abstract/document/7320129/
