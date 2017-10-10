@@ -41,8 +41,8 @@ Running through projections are organized via insulated channels to the *PANI me
 
 Component | Parameter | Value
 --:| --:| :--
-PANI memristors | Synapse | 2\*10<sup>9</sup>
-Metal connectors | Connector | 2\*10<sup>9</sup>
+PANI memristors | Synapse | 2\*10<sup>8</sup>
+Metal connectors | Connector | 2\*10<sup>8</sup>
 Silicon neurons | Neuron | 2\*10<sup>5</sup>
 
 
