@@ -159,7 +159,7 @@ The main afferents to the LC include projections from the prefrontal cortex (act
     <td width="15">
       Area
     <td width="35">
-      Text
+      Description
     <td width="25">
       Input
     <td width="25">
@@ -169,37 +169,49 @@ The main afferents to the LC include projections from the prefrontal cortex (act
     <td>
       <b>VPL</b> (Ventral posterolateral nucleus)
     <td>
-      The VPL receives information from the <a href="https://en.wikipedia.org/wiki/Nociception#Neospinothalamic_tract">neospinothalamic tract</a> (+Nociception) and the medial lemniscus of the posterior column-medial lemniscus pathway. It then projects this sensory information to Brodmann's Areas 3, 1 and 2 in the postcentral gyrus. Collectively, <a href="https://en.wikipedia.org/wiki/Postcentral_gyrus#Brodmann_areas_3.2C_1_and_2">Brodmann areas 3, 1 and 2</a> make up the primary somatosensory cortex of the brain (<a href="https://en.wikipedia.org/wiki/Ventral_posterolateral_nucleus">LINK</a>)
+      <p>The VPL receives information from the <a href="https://en.wikipedia.org/wiki/Nociception#Neospinothalamic_tract">neospinothalamic tract</a> (+Nociception) and the medial lemniscus of the posterior column-medial lemniscus pathway. It then projects this sensory information to Brodmann's Areas 3, 1 and 2 in the postcentral gyrus. Collectively, <a href="https://en.wikipedia.org/wiki/Postcentral_gyrus#Brodmann_areas_3.2C_1_and_2">Brodmann areas 3, 1 and 2</a> make up the primary somatosensory cortex of the brain (<a href="https://en.wikipedia.org/wiki/Ventral_posterolateral_nucleus">LINK</a>)
     <td>
       <li>The neospinothalamic tract
       <li>the medial lemniscus of the posterior column-medial lemniscus pathway
     <td>
-      <li>Brodmann's Areas 3, 1 and 2 in the postcentral gyrus
+      <li>Primary somatosensory cortex
   
   <tr>
     <td>
       <b>VPM</b> (Ventral posteromedial nucleus)
     <td>
-      The VPM contains synapses between second and third order neurons from the anterior (ventral) trigeminothalamic tract and posterior (dorsal) trigeminothalamic tract. These neurons convey sensory information from the face and oral cavity. Third order neurons in the trigeminothalamic systems project to the postcentral gyrus. 
-<br/>
-      The VPM also receives taste afferent information from the solitary tract and projects to the cortical gustatory area (<a href="https://en.wikipedia.org/wiki/Ventral_posteromedial_nucleus">LINK</a>)
+      <p>The VPM contains synapses between second and third order neurons from the anterior (ventral) trigeminothalamic tract and posterior (dorsal) trigeminothalamic tract. These neurons convey sensory information from the face and oral cavity. Third order neurons in the trigeminothalamic systems project to the postcentral gyrus. 
+      <p>The VPM also receives taste afferent information from the solitary tract and projects to the cortical gustatory area (<a href="https://en.wikipedia.org/wiki/Ventral_posteromedial_nucleus">LINK</a>)
     <td>
       <li>The face and oral cavity
       <li>Taste afferent information from the solitary tract
     <td>
-      <li>The cortical gustatory area
+      <li>Primary somatosensory cortex
              
   <tr>
+    <td> VA (Ventral anterior nucleus)
     <td>
+      <p>The ventral anterior nucleus receives neuronal inputs from the basal ganglia. Its main afferent fibres are from the globus pallidus. The efferent fibres from this nucleus pass into the premotor cortex for initiation and planning of movement. 
+      <p>It helps to function in movement by providing feedback for the outputs of the basal ganglia (<a href="https://en.wikipedia.org/wiki/Ventral_anterior_nucleus">LINK</a>).
+    <td> 
+      <li>Basal ganglia (globus pallidus)
     <td>
-    <td>
-    <td>
+      <li>Premotor cortex 
 
   <tr>
+    <td>VL
     <td>
+      <p>It receives neuronal inputs from the basal nuclei which includes the substantia nigra and the globus pallidus (via the thalamic fasciculus). It also has inputs from the cerebellum (via the dentatothalamic tract).
+      <p>It sends neuronal output to the primary motor cortex and premotor cortex.
+      <p>The ventral lateral nucleus in the thalamus forms the motor functional division in the thalamic nuclei along with the ventral anterior nucleus. The ventral lateral nucleus receives motor information from the cerebellum and the globus pallidus. Output from the ventral lateral nucleus then goes to the primary motor cortex. 
+      <p>The function of the ventral lateral nucleus is to target efferents including the motor cortex, premotor cortex, and supplementary motor cortex. Therefore, its function helps the coordination and planning of movement. It also plays a role in the learning of movement (<a href="https://en.wikipedia.org/wiki/Ventral_lateral_nucleus">LINK</a>).
+    <td> 
+      <li>Substantia nigra (SN) (via the thalamic fasciculus)
+      <li>Globus pallidus (GP) (via the thalamic fasciculus)
+      <li>Cerebellum (via the dentatothalamic tract)
     <td>
-    <td>
-    <td>
+      <li>Primary motor cortex
+      <li>Premotor cortex
         
 </table>
 
