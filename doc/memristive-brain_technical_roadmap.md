@@ -206,6 +206,7 @@ Coronal view. More schematic.
 ![thalamus and cortex 2](brain_coronal_motor_somatosensory.png)
 
 ## Striatum
+
 #### Striatal inputs and outputs conform to a dorsolateral-to-ventromedial gradient
 
 
