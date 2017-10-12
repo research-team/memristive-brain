@@ -157,8 +157,7 @@ The main afferents to the LC include projections from the prefrontal cortex (act
    <tr align="center">
     <td width="10">Area<td width="65">Description<td width="15">Input<td width="10"> Output</td>  
   <tr>
-    <td>
-      <b>VPL</b> (Ventral posterolateral nucleus)
+    <td>VPL (Ventral posterolateral nucleus)
     <td>
       <p>The VPL receives information from the <a href="https://en.wikipedia.org/wiki/Nociception#Neospinothalamic_tract">neospinothalamic tract</a> (+Nociception) and the medial lemniscus of the posterior column-medial lemniscus pathway. It then projects this sensory information to Brodmann's Areas 3, 1 and 2 in the postcentral gyrus. Collectively, <a href="https://en.wikipedia.org/wiki/Postcentral_gyrus#Brodmann_areas_3.2C_1_and_2">Brodmann areas 3, 1 and 2</a> make up the primary somatosensory cortex of the brain (<a href="https://en.wikipedia.org/wiki/Ventral_posterolateral_nucleus">LINK</a>)
     <td>
@@ -166,8 +165,7 @@ The main afferents to the LC include projections from the prefrontal cortex (act
       <li>the medial lemniscus of the posterior column-medial lemniscus pathway
     <td>Primary somatosensory cortex
   <tr>
-    <td>
-      <b>VPM</b> (Ventral posteromedial nucleus)
+    <td>VPM (Ventral posteromedial nucleus)
     <td>
       <p>The VPM contains synapses between second and third order neurons from the anterior (ventral) trigeminothalamic tract and posterior (dorsal) trigeminothalamic tract. These neurons convey sensory information from the face and oral cavity. Third order neurons in the trigeminothalamic systems project to the postcentral gyrus. 
       <p>The VPM also receives taste afferent information from the solitary tract and projects to the cortical gustatory area (<a href="https://en.wikipedia.org/wiki/Ventral_posteromedial_nucleus">LINK</a>)
@@ -177,7 +175,7 @@ The main afferents to the LC include projections from the prefrontal cortex (act
     <td>Primary somatosensory cortex
              
   <tr>
-    <td> VA (Ventral anterior nucleus)
+    <td>VA (Ventral anterior nucleus)
     <td><p>The ventral anterior nucleus receives neuronal inputs from the basal ganglia. Its main afferent fibres are from the globus pallidus. The efferent fibres from this nucleus pass into the premotor cortex for initiation and planning of movement. 
       <p>It helps to function in movement by providing feedback for the outputs of the basal ganglia (<a href="https://en.wikipedia.org/wiki/Ventral_anterior_nucleus">LINK</a>).
     <td> 
@@ -197,7 +195,6 @@ The main afferents to the LC include projections from the prefrontal cortex (act
     <td>
       <li>Primary motor cortex
       <li>Premotor cortex
-        
 </table>
 
 #### Input/output projections from the table above. 
