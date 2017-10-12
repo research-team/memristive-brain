@@ -155,7 +155,7 @@ The main afferents to the LC include projections from the prefrontal cortex (act
 
 <table>
    <tr align="center">
-    <td width="10">Area<td width="55">Description<td width="25">Input<td width="15"> Output</td>  
+    <td width="10">Area<td width="65">Description<td width="15">Input<td width="10"> Output</td>  
   <tr>
     <td>
       <b>VPL</b> (Ventral posterolateral nucleus)
