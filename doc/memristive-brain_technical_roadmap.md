@@ -152,6 +152,10 @@ The main afferents to the LC include projections from the prefrontal cortex (act
 
 ![thalamus areas](thalamus_areas_full.png)
 
+Area| Description| Input| Output
+---:|:--|:--|:--
+**VPL** (Ventral posterolateral nucleus)| The VPL receives information from the <a href="https://en.wikipedia.org/wiki/Nociception#Neospinothalamic_tract">neospinothalamic tract</a> (+Nociception) and the medial lemniscus of the posterior column-medial lemniscus pathway. It then projects this sensory information to Brodmann's Areas 3, 1 and 2 in the postcentral gyrus. Collectively, <a href="https://en.wikipedia.org/wiki/Postcentral_gyrus#Brodmann_areas_3.2C_1_and_2">Brodmann areas 3, 1 and 2</a> make up the primary somatosensory cortex of the brain (<a href="https://en.wikipedia.org/wiki/Ventral_posterolateral_nucleus">LINK</a>)| The neospinothalamic tract, the medial lemniscus of the posterior column-medial lemniscus pathway | Primary somatosensory cortex
+
 
 <table>
   
