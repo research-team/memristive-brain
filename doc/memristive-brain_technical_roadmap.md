@@ -199,7 +199,7 @@ The main afferents to the LC include projections from the prefrontal cortex (act
       <li>Premotor cortex 
 
   <tr>
-    <td>VL
+    <td>VL (Ventral lateral nucleus)
     <td>
       <p>It receives neuronal inputs from the basal nuclei which includes the substantia nigra and the globus pallidus (via the thalamic fasciculus). It also has inputs from the cerebellum (via the dentatothalamic tract).
       <p>It sends neuronal output to the primary motor cortex and premotor cortex.
@@ -224,6 +224,7 @@ Coronal view. More schematic.
 ![thalamus and cortex 2](brain_coronal_motor_somatosensory.png)
 
 ## Striatum
+#### Striatal inputs and outputs conform to a dorsolateral-to-ventromedial gradient
 
 
 ![striatum areas](striatum_areas.png)
