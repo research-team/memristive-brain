@@ -152,23 +152,10 @@ The main afferents to the LC include projections from the prefrontal cortex (act
 
 ![thalamus areas](thalamus_areas_full.png)
 
-Area| Description| Input| Output
----:|:--|:--|:--
-**VPL** (Ventral posterolateral nucleus)| The VPL receives information from the <a href="https://en.wikipedia.org/wiki/Nociception#Neospinothalamic_tract">neospinothalamic tract</a> (+Nociception) and the medial lemniscus of the posterior column-medial lemniscus pathway. It then projects this sensory information to Brodmann's Areas 3, 1 and 2 in the postcentral gyrus. Collectively, <a href="https://en.wikipedia.org/wiki/Postcentral_gyrus#Brodmann_areas_3.2C_1_and_2">Brodmann areas 3, 1 and 2</a> make up the primary somatosensory cortex of the brain (<a href="https://en.wikipedia.org/wiki/Ventral_posterolateral_nucleus">LINK</a>)| The neospinothalamic tract, the medial lemniscus of the posterior column-medial lemniscus pathway | Primary somatosensory cortex
-
 
 <table>
-  
-  <tr align="center">
-    <td width="15">
-      Area
-    <td width="35">
-      Description
-    <td width="25">
-      Input
-    <td width="25">
-      Output
-  
+   <tr align="center">
+    <td width="10">Area<td width="55">Description<td width="25">Input<td width="15"> Output</td>  
   <tr>
     <td>
       <b>VPL</b> (Ventral posterolateral nucleus)
@@ -177,9 +164,7 @@ Area| Description| Input| Output
     <td>
       <li>The neospinothalamic tract
       <li>the medial lemniscus of the posterior column-medial lemniscus pathway
-    <td>
-      <li>Primary somatosensory cortex
-  
+    <td>Primary somatosensory cortex
   <tr>
     <td>
       <b>VPM</b> (Ventral posteromedial nucleus)
@@ -189,23 +174,19 @@ Area| Description| Input| Output
     <td>
       <li>The face and oral cavity
       <li>Taste afferent information from the solitary tract
-    <td>
-      <li>Primary somatosensory cortex
+    <td>Primary somatosensory cortex
              
   <tr>
     <td> VA (Ventral anterior nucleus)
-    <td>
-      <p>The ventral anterior nucleus receives neuronal inputs from the basal ganglia. Its main afferent fibres are from the globus pallidus. The efferent fibres from this nucleus pass into the premotor cortex for initiation and planning of movement. 
+    <td><p>The ventral anterior nucleus receives neuronal inputs from the basal ganglia. Its main afferent fibres are from the globus pallidus. The efferent fibres from this nucleus pass into the premotor cortex for initiation and planning of movement. 
       <p>It helps to function in movement by providing feedback for the outputs of the basal ganglia (<a href="https://en.wikipedia.org/wiki/Ventral_anterior_nucleus">LINK</a>).
     <td> 
       <li>Basal ganglia (globus pallidus)
-    <td>
-      <li>Premotor cortex 
+    <td>Premotor cortex 
 
   <tr>
     <td>VL (Ventral lateral nucleus)
-    <td>
-      <p>It receives neuronal inputs from the basal nuclei which includes the substantia nigra and the globus pallidus (via the thalamic fasciculus). It also has inputs from the cerebellum (via the dentatothalamic tract).
+    <td><p>It receives neuronal inputs from the basal nuclei which includes the substantia nigra and the globus pallidus (via the thalamic fasciculus). It also has inputs from the cerebellum (via the dentatothalamic tract).
       <p>It sends neuronal output to the primary motor cortex and premotor cortex.
       <p>The ventral lateral nucleus in the thalamus forms the motor functional division in the thalamic nuclei along with the ventral anterior nucleus. The ventral lateral nucleus receives motor information from the cerebellum and the globus pallidus. Output from the ventral lateral nucleus then goes to the primary motor cortex. 
       <p>The function of the ventral lateral nucleus is to target efferents including the motor cortex, premotor cortex, and supplementary motor cortex. Therefore, its function helps the coordination and planning of movement. It also plays a role in the learning of movement (<a href="https://en.wikipedia.org/wiki/Ventral_lateral_nucleus">LINK</a>).
