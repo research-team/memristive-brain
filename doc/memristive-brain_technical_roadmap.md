@@ -239,6 +239,20 @@ The initial ideas could be found in [memristive_approach.md](memristive_approach
 [Daw et al., 2002]: https://www.ncbi.nlm.nih.gov/pubmed/12371515
 
 
+Müller, C. P., & Jacobs, B. L. (Eds.). (2010). Handbook of the behavioral neurobiology of serotonin (1st ed.. Number 21 in Handbook of Behavioral Neuroscience (1st ed.). Amsterdam: Elsevier/Academic Press. https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4
+
+Daw, N. D., Kakade, S., & Dayan, P. (2002). Opponent interactions between serotonin and dopamine. Neural Networks, 15(4), 603–616. https://www.ncbi.nlm.nih.gov/pubmed/12371515
+
+Ferrucci, M., Giorgi, F. S., Bartalucci, A., Busceti, C. L., & Fornai, F. (2013). The effects of locus coeruleus and norepinephrine in methamphetamine toxicity. Current Neuropharmacol, 1(11), 80–94. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3580794/
+
+Crestani, C. C., Alves, F. H., Gomes, F. V., Resstel, L. B., Correa, F. M., & Herman, J. P. (2013). Mechanisms in the bed nucleus of the stria terminalis involved in control of autonomic and neuroendocrine functions: A review. Current Neuropharmacol, 2(11), 141–159. https://www.ncbi.nlm.nih.gov/pubmed/23997750
+
+Ordway, Gregory A., Schwartz, Michael A., & Frazer, A. (2007). Brain norepinephrine: Neurobiology and therapeutics. New York: United States of America by Cambridge University Press. http://www.cambridge.org/catalogue/catalogue.asp?isbn=9781107407411&ss=fro
+
+Berridge, Craig W., & Waterhouse, B. D. (2003). The locus coeruleusnoradrenergic system: Modulation of behavioral state and state-dependent cognitive processes. Brain Research Reviews (42), 33–84. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.204.1902&rep=rep1&type=pdf
+
+Aston-Jones, G. (2002). Norepinephrine. Pennsylvania: University of Pennsylvania School of Medicine. https://www.google.ru/url?sa=t&rct=j&q=&esrc=s&source=web&cd=7&ved=0ahUKEwiT3LOemeTWAhWJ6RQKHaPEA2sQFghMMAY&url=https%3A%2F%2Fwww.acnp.org%2Fasset.axd%3Fid%3D13f2084e-4c46-4c48-a0e2-477f9dc2addd&usg=AOvVaw2g5YVjCzPniOlRNFEVSFMU
+
 Tsai, D., John, E., Chari, T., Yuste, R., & Shepard, K. (2015). High-channel-count, high-density microelectrode array for closed-loop investigation of neuronal networks. In Engineering in Medicine and Biology Society (EMBC), 2015 37th Annual International Conference of the IEEE (pp. 7510–7513). IEEE. Retrieved from http://ieeexplore.ieee.org/abstract/document/7320129/
 
 Fontana, M. P., & Erokhin, V. (2011). Thin Film Electrochemical Memristive Systems for Bio-Inspired Computation. Journal of Computational and Theoretical Nanoscience, 8(3). https://doi.org/10.1166/jctn.2011.1695
