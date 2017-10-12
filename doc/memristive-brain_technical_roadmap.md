@@ -228,12 +228,43 @@ Coronal view. More schematic.
 
 ![striatum areas](striatum_areas.png)
 
+Cortical and thalamic inputs to the striatum distribute in dorsomedial-to-ventrolateral zones. The topographical arrangement of striatal afferents originating in the frontal cortex (upper left), midline and intralaminar thalamic nuclei (upper right), basal amygdaloid complex (lower left) and hippocampal formation (lower right) are illustrated. All these excitatory striatal afferent projections are strictly topographically organized. Thus, longitudinal striatal zones with a slightly oblique dorsomedial-to-ventrolateral orientation receive converging inputs from specific cortical areas that are, in turn, mostly interconnected through corticocortical fibers. 
+
+Frontal cortical areas and their corresponding striatal projection zones are shown in the same colors. 
+
+The dorsolateral striatum receives somatotopically organized sensorimotor information (green), the most ventromedial part of the striatum collects viscerolimbic cortical afferents (red and pink), and striatal areas between these extremes receive information from higher associational cortical areas (blue and purple). Note that the topographical organization in the corticostriatal projections is the leading organizational principle, but thalamic and amygdaloid afferents nicely match this functional–anatomical organization. 
+
+In the figure above, the individual midline and intralaminar nuclei (upper right) are identified with different colors that match those used for the frontal cortical areas and the striatal zones to which they project. Thus, the midline paraventricular nucleus (red and pink), belonging to a group of viscerolimbic midline thalamic nuclei, projects to the ventromedial striatum. At the other extreme, the posterior and lateral intralaminar thalamic nuclei (green and blue) are **associated with primary motor functions** and project to the dorsolateral aspects of the striatum. 
+
+More ventrally and medially located intralaminar thalamic nuclei (purple and yellow), probably **subserving polymodal sensory** and cognitive functions, project onto longitudinally oriented striatal zones intermediate between the two extremes, matching the corticostriatal zones. 
+
+Similarly, the amygdalostriatal projections exhibit a mediolateral organization (color coding at bottom left). Caudal basal amygdaloid nuclei (red and pink), associated with viscerolimbic functions, project most medially, whereas nuclei of the rostral basal amygdaloid complex (yellow) send their fibers more laterally in the striatum. Thus, amygdaloid fibers reach in a topographical way virtually the entire striatum, the most dorsolateral sensorimotor part being only very sparsely innervated. Frontal cortical, amygdaloid and midline and intralaminar projections to the striatum are arranged such that multiple interconnected networks exist between specific frontal cortical areas and distinct amygdaloid and thalamic nuclei that converge onto the same striatal region. 
+
+Finally, the hippocampal formation (in particular the subiculum and the CA1 region) projects to the most ventral parts of the striatum, specifically to the medial, ventral and rostral shell, as well as to the immediately adjacent parts of the core. As indicated in the lower right corner, neurons of the dorsal (yellow and pink) and ventral (pink and red) hippocampus project laterally and medially, respectively. 
+
+Abbreviations: 
+
+* ac, anterior commissure; 
+* ACd, dorsal anterior cingulate cortex; 
+* AId, dorsal agranular insular cortex; 
+* AIv, ventral agranular insular cortex; 
+* CeM, central medial thalamic nucleus; 
+* CL, central lateral thalamic nucleus; 
+* IL, infralimbic cortex; 
+* IMD, intermediodorsal thalamic nucleus; 
+* MD, mediodorsal thalamic nucleus; 
+* PC, paracentral thalamic nucleus; 
+* PFC, prefrontal cortex; 
+* PLd, dorsal prelimbic cortex; 
+* PLv, ventral prelimbic cortex; 
+* PV, paraventricular thalamic nucleus; 
+* SMC, sensorimotor cortex. 
 
 ## References
 
 The initial ideas could be found in [memristive_approach.md](memristive_approach.md).
 
-
+[Pieter Voorn et al., 2004]: http://www.cell.com/trends/neurosciences/fulltext/S0166-2236(04)00190-0
 [Ferrucci et al., 2013]: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3580794/
 [Crestani et al., 2013]: https://www.ncbi.nlm.nih.gov/pubmed/23997750
 [Ordway et al., 2007]: http://www.cambridge.org/catalogue/catalogue.asp?isbn=9781107407411&ss=fro
@@ -243,6 +274,7 @@ The initial ideas could be found in [memristive_approach.md](memristive_approach
 [Müller & Jacobs, 2010]: https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4
 [Daw et al., 2002]: https://www.ncbi.nlm.nih.gov/pubmed/12371515
 
+Pieter Voorn, Louk J.M.J Vanderschuren, Henk J GroenewegenEmail the author Henk J Groenewegen, Trevor W Robbins, Cyriel M.A Pennartz. (2004). Putting a spin on the dorsal–ventral divide of the striatum. Volume 27, Issue 8, p468–474. http://www.cell.com/trends/neurosciences/fulltext/S0166-2236(04)00190-0
 
 Müller, C. P., & Jacobs, B. L. (Eds.). (2010). Handbook of the behavioral neurobiology of serotonin (1st ed.. Number 21 in Handbook of Behavioral Neuroscience (1st ed.). Amsterdam: Elsevier/Academic Press. https://www.elsevier.com/books/handbook-of-the-behavioral-neurobiology-of-serotonin/muller/978-0-12-374634-4
 
