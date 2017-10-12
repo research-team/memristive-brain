@@ -215,8 +215,13 @@ The main afferents to the LC include projections from the prefrontal cortex (act
         
 </table>
 
+#### Input/output projections from the table above. 
+
+Saggital view
 ![thalamus and cortex](thalamus+cortex_rat.png)
 
+Coronal view. More schematic.
+![thalamus and cortex 2](brain_coronal_motor_somatosensory.png)
 
 ## Striatum
 
