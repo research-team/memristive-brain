@@ -29,6 +29,8 @@ The inhibitory part has different structure, where the LTP is implemented as fee
 
 ![Nucleus implementation schematic](HL_memristive_brain_nucleus.png)
 
+A neuronal nucleus is assembled using stochastically connected memristive fibrillar structure (Fontana 2011) that are depicted as *PANI memristors* layer. Connections to the *PANI memristors* layer is created via metal connectors from the top and bottom, lower layer provides bidirectional connection to neurons implemented as silicon schematic *Silicon neurons* the neuronal output is created via lowest *Metal connectors* layer that provides output to external memristive devices. intranuclear feedback loops are fabricated via connections of *Silicon neurons* to the *PANI memristors* layer through metal connectors.
+
 ### 1 layer
 
 The next step from neuron is a cortical column (approximately 10<sup>4</sup> neurons with 10<sup>8</sup> synapses) that could be understood as basic functional structure of neocortex.
