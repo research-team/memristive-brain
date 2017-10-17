@@ -250,6 +250,10 @@ Abbreviations:
 * PV, paraventricular thalamic nucleus; 
 * SMC, sensorimotor cortex. 
 
+#### NAcc nuclei 
+
+![NAcc nuclei schematic](NAcc.png)
+
 ## References
 
 The initial ideas could be found in [memristive_approach.md](memristive_approach.md).
