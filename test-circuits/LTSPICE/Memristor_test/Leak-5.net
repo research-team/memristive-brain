@@ -1,0 +1,40 @@
+* C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\Memristor_test\Leak-5.asc
+R15 N011 Vin 10K
+XU5 N009 N002 +5 -5 N006 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+D4 0 N002 D
+D5 P001 N009 D
+R21 N006 N009 0.1Meg
+R22 0 N009 500K
+R19 P001 0 100K
+R20 N006 N002 150K
+C6 N002 0 40n
+C5 P001 N008 0.001µ
+XU4 N011 N003 +5 -5 N010 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+C4 0 N011 1µ
+R17 N010 N003 10K
+R18 N010 N011 1Meg
+R16 N003 0 1Meg
+V1 +5 0 5
+V2 0 -5 5
+V3 Vin 0 PWL file=test1.txt
+XU2 N010 N005 +5 -5 N008 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R4 N005 +5 58K
+R6 -5 N005 100K
+XU1 N007 N001 +5 -5 N004 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+D1 0 N001 D
+D2 P002 N007 D
+R1 N004 N007 0.1Meg
+R2 0 N007 500K
+R3 P002 0 100K
+R5 N004 N001 150K
+C1 N001 0 20n
+C2 P002 N006 0.001µ
+D6 N004 P003 D
+R7 Vout P003 12K
+R8 0 Vout 25K
+.model D D
+.lib C:\Users\yurra\Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 0.5 0 1000u
+.lib UniversalOpamps2.sub
+.backanno
+.end
