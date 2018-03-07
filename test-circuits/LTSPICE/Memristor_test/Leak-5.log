@@ -1,7 +1,7 @@
-Circuit: * C:\Program Files\LTC\Projects\Inhibitor\Leak-5.asc
+Circuit: * C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\Memristor_test\Leak-5.asc
 
-Limiting rise time of source v3 to 0.0005
-Limiting fall time of source v3 to 0.0005
+V3: Removing PWL point (0.15,0)
+V3: Removing PWL point (0.3,0)
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -23,20 +23,20 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Thu Jan 18 23:06:56 2018
-Total elapsed time: 1.685 seconds.
+Date: Tue Mar 06 21:15:03 2018
+Total elapsed time: 0.228 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 70434
-traniter = 69965
-tranpoints = 21237
-accept = 15582
-rejected = 5655
+totiter = 12543
+traniter = 12074
+tranpoints = 3875
+accept = 3054
+rejected = 821
 matrix size = 25
 fillins = 16
 solver = Normal
-Matrix Compiler1: 2.10 KB object code size  2.0/0.7/[0.5]
-Matrix Compiler2:     217 opcodes  0.8/[0.8]/1.4
+Matrix Compiler1: 2.10 KB object code size  1.2/0.5/[0.2]
+Matrix Compiler2: 2.93 KB object code size  0.6/0.8/[0.6]
 
