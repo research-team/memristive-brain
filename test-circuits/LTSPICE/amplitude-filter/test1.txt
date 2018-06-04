@@ -1,0 +1,29 @@
+0ms -3V
+5ms -3V
++1ns 3V
+10ms 3V
++1ns -3V
+15ms -3V
++1ns 3V
+20ms 3V
++1ns -3V
+
+50ms -2V
+55ms -2V
++1ns 2V
+60ms 1.75V
++1ns -2V
+65ms -2V
++1ns 1.5V
+70ms 1.25V
++1ns -2V
+75ms -2V
++1ns 1.25V
+80ms 1V
++1ns -2V
+
+100ms 0V
+105ms 0V
++1ns 1.5V
+130ms -1.5V
+150ms 1.5V
