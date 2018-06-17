@@ -1,0 +1,65 @@
+* TS12A4517
+*****************************************************************************
+* (C) Copyright 2012 Texas Instruments Incorporated. All rights reserved.                                            
+*****************************************************************************
+** This model is designed as an aid for customers of Texas Instruments.
+** TI and its licensors and suppliers make no warranties, either expressed
+** or implied, with respect to this model, including the warranties of 
+** merchantability or fitness for a particular purpose.  The model is
+** provided solely on an "as is" basis.  The entire risk as to its quality
+** and performance is with the customer.
+*****************************************************************************
+*
+** Released by: WEBENCH(R) Design Center, Texas Instruments Inc.
+* Part: TS12A4517
+* Date: 10/04/2016
+* Model Type: All In One
+* Simulator: Pspice
+* Simulator Version: Pspice 16.2.0.p001
+* EVM Order Number: N/A 
+* EVM Users Guide: N/A
+* Datasheet: SCDS236B - December 2006 - Revised April 2009
+*
+* Model Version: 1.0
+*
+*****************************************************************************
+*
+* Updates:
+*
+* Version 1.0 : Release to Web
+*
+*****************************************************************************
+******************************************************************************
+*
+* 
+*$
+.SUBCKT TS12A4517 IN NC COM VCC VEE PARAMS: VCC=5
+E_E2         VMID 0 VCC N00366 0.5
+R_R3		 VCC VEE 165k
+C_C3         VMID NC  5.5pF
+E_E3         N00366 0 VEE 0 1
+C_C6         COM NC  0.2p 
+X_S1    N2 0 NC COM DEV_SCH_S1_TS12A4517 PARAMS: VSUPP={VCC}
+C_C2         VMID COM  5.5pF 
+C_C4         0 N2  4.5nF 
+E_E1         N1 0 IN 0 1
+I_I1         IN VMID DC 10e-9Adc  
+R_R2         N1 N2  10
+X_S2    N2 0 COM N18848 DEV_SCH_S2_TS12A4517 PARAMS: VSUPP={VCC}
+C_C5         0 N18848  5p
+C_C1         VMID IN  1.5pF
+.ENDS
+*$
+.subckt DEV_SCH_S1_TS12A4517 1 2 3 4  PARAMS: VSUPP=5
+S_S1         3 4 1 2 _S1
+RS_S1         1 2 1G
+.MODEL         _S1 VSWITCH Roff=12 Ron=2.5e9 Voff={VSUPP-3} Von={VSUPP-2}
+.ends
+*$
+.subckt DEV_SCH_S2_TS12A4517 1 2 3 4  PARAMS:VSUPP=5
+S_S2         3 4 1 2 _S2
+RS_S2         1 2 1G
+.MODEL         _S2 VSWITCH Roff=1 Ron=1e6 Voff={VSUPP-3.0} Von={VSUPP-2.0}
+.ends
+*$
+

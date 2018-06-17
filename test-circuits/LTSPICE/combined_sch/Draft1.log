@@ -1,0 +1,4 @@
+Circuit: * C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\combined_sch\Draft1.asc
+
+Fatal Error: Unknown subcircuit called in:
+   xu6 0 phebb n005 +5 -5 ts12a4517
