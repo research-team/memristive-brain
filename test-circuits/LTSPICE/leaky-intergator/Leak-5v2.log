@@ -1,0 +1,40 @@
+Circuit: * C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\leaky-intergator\Leak-5v2.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+Gmin = 1.89714e-008
+Gmin = 2.03704e-009
+Gmin = 2.18725e-010
+Gmin = 2.34854e-011
+Gmin = 2.52173e-012
+Gmin = 2.70769e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Fri Jun 29 21:20:06 2018
+Total elapsed time: 0.285 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 9120
+traniter = 8713
+tranpoints = 4285
+accept = 3916
+rejected = 369
+matrix size = 26
+fillins = 16
+solver = Normal
+Matrix Compiler1: 2.10 KB object code size  1.8/0.7/[0.2]
+Matrix Compiler2: off  [0.8]/0.9/1.3
+
