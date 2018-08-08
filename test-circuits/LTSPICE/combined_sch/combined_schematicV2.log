@@ -1,0 +1,55 @@
+Circuit: * C:\Users\yura\Documents\memristive-brain\test-circuits\LTSPICE\combined_sch\combined_schematicV2.asc
+
+Limiting rise time of source v5 to 1e-008
+Limiting fall time of source v5 to 1e-008
+WARNING: Node N001 is floating and connected to current source G:U16:MEM.  It's .op solution is defined solely by a .ic statement.
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 0.995033
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 0.999816
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 0.0177557%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+vernier = 0.25
+Source stepping failed
+
+Pseudo Transient succeeded in finding the operating point at 788.426 ms.
+
+Date: Wed Aug 08 20:50:09 2018
+Total elapsed time: 11.767 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 47017
+traniter = 31291
+tranpoints = 12218
+accept = 9804
+rejected = 2606
+matrix size = 269
+fillins = 1538
+solver = Normal
+Thread vector: 58.2/34.9[8] 17.5/8.9[8] 5.0/3.7[5] 3.1/2.4[5]  2592/500
+Matrix Compiler1: 140.27 KB object code size  51.0/28.8/[25.4]
+Matrix Compiler2: 56.85 KB object code size  9.0/9.2/[5.5]
+
