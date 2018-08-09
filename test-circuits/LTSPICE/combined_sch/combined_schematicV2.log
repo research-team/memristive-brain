@@ -1,4 +1,4 @@
-Circuit: * C:\Users\yura\Documents\memristive-brain\test-circuits\LTSPICE\combined_sch\combined_schematicV2.asc
+Circuit: * C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\combined_sch\combined_schematicV2.asc
 
 Limiting rise time of source v5 to 1e-008
 Limiting fall time of source v5 to 1e-008
@@ -33,23 +33,25 @@ Source Step = 3.0303%
 vernier = 0.25
 Source stepping failed
 
-Pseudo Transient succeeded in finding the operating point at 788.426 ms.
+Pseudo Transient succeeded in finding the operating point at 359.167 ms.
+Heightened Def Con from 0.789413 to 0.789413
+Heightened Def Con from 0.991478 to 0.991478
 
-Date: Wed Aug 08 20:50:09 2018
-Total elapsed time: 11.767 seconds.
+Date: Thu Aug 09 16:32:50 2018
+Total elapsed time: 35.476 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 47017
-traniter = 31291
-tranpoints = 12218
-accept = 9804
-rejected = 2606
-matrix size = 269
-fillins = 1538
+totiter = 203412
+traniter = 190597
+tranpoints = 65012
+accept = 49910
+rejected = 15232
+matrix size = 270
+fillins = 1492
 solver = Normal
-Thread vector: 58.2/34.9[8] 17.5/8.9[8] 5.0/3.7[5] 3.1/2.4[5]  2592/500
-Matrix Compiler1: 140.27 KB object code size  51.0/28.8/[25.4]
-Matrix Compiler2: 56.85 KB object code size  9.0/9.2/[5.5]
+Thread vector: 69.2/47.2[4] 21.6/12.2[4] 9.2/6.5[4] 4.8/3.4[3]  2592/500
+Matrix Compiler1: 124.96 KB object code size  76.8/31.3/[20.1]
+Matrix Compiler2: 56.75 KB object code size  14.0/11.7/[5.4]
 
