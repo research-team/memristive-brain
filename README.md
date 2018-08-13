@@ -26,3 +26,12 @@ Apart from the breakthrough in the main direction of the research, mentioned abo
 
 **Material science/self organization**: it will be investigated new polymer-based materials, allowing to organize structures with distributed electrical properties for the utilization as matrices with adaptive properties.
 
+#Folder structures
+
++ **demo-stand** - contains info about current measuremet schematic. Now not used.
++ **doc** - contains all required documentation
++ **ltspice_libs** - contains all additional components, used in LTSPICE schematics
++ **memristors** - contains information about memristors, used in project
++ **test-circuits** - contains all electrical schematics, connected with this project
+
+[This video](https://youtu.be/JvsyhsOdTj8) contains all info, related to current circuits.
