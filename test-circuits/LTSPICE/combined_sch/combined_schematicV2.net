@@ -99,7 +99,7 @@ R61 barrier N056 0.1Meg
 R62 0 N056 500K
 R63 N055 0 100K
 R64 barrier N047 150K
-C9 N047 0 10n
+C9 N047 0 12n
 C10 N055 N054 0.01µ
 XU19 N058 N050 +5 -5 N057 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
 C11 0 N058 0.68µ
@@ -228,7 +228,7 @@ XU41 N084 LearnOut1 +5 -5 ctrl level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m
 R136 ctrl N084 1Meg
 R137 0 N084 10K
 R138 Tpre1 N067 100K
-R139 N059 0 100K
+R139 N059 Tpre1 100K
 R140 N059 0 100K
 R141 N048 0 100K
 R142 N060 barrier 100K
