@@ -26,7 +26,7 @@ Apart from the breakthrough in the main direction of the research, mentioned abo
 
 **Material science/self organization**: it will be investigated new polymer-based materials, allowing to organize structures with distributed electrical properties for the utilization as matrices with adaptive properties.
 
-# Folder structures
+# Folder structure
 
 + **demo-stand** - contains info about current measuremet schematic. Now not used.
 + **doc** - contains all required documentation
