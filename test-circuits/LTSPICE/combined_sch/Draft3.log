@@ -1,0 +1,24 @@
+Circuit: * C:\users\yurburger\My Documents\personal\memristive-brain\test-circuits\LTSPICE\combined_sch\Draft3.asc
+
+WARNING: Node NC_01 is floating and connected to current source G:U4:X.  It's .op solution is defined solely by a .ic statement.
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sun Aug 26 22:38:46 2018
+Total elapsed time: 3.583 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 85804
+traniter = 85799
+tranpoints = 36703
+accept = 28426
+rejected = 8277
+matrix size = 435
+fillins = 310
+solver = Normal
+Thread vector: 30.6/14.3[4] 6.8/4.2[4] 3.8/3.0[4] 1.8/1.8[2]  2592/500
+Matrix Compiler1: 26.91 KB object code size  9.2/4.3/[1.7]
+Matrix Compiler2: 37.17 KB object code size  4.4/5.5/[1.8]
+

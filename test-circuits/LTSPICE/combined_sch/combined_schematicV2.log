@@ -1,0 +1,71 @@
+Circuit: * C:\users\yurburger\My Documents\personal\memristive-brain\test-circuits\LTSPICE\combined_sch\combined_schematicV2.asc
+
+Limiting rise time of source v5 to 1e-008
+Limiting fall time of source v5 to 1e-008
+WARNING: Node N001 is floating and connected to current source G:U16:MEM.  It's .op solution is defined solely by a .ic statement.
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+Gmin = 0.995033
+vernier = 0.03125
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+Gmin = 0.999816
+vernier = 0.00195313
+vernier = 0.000976563
+vernier = 0.000488281
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 0.0177557%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+vernier = 0.25
+Source stepping failed
+
+Pseudo Transient succeeded in finding the operating point at 405.059 ms.
+Heightened Def Con from 0.00155486 to 0.00155486
+Heightened Def Con from 0.102051 to 0.102051
+Heightened Def Con from 0.122149 to 0.122149
+Heightened Def Con from 0.162349 to 0.162349
+Heightened Def Con from 0.604525 to 0.604525
+Heightened Def Con from 0.644737 to 0.644737
+Heightened Def Con from 0.705045 to 0.705045
+Heightened Def Con from 0.906185 to 0.906185
+Heightened Def Con from 1.10697 to 1.10697
+Heightened Def Con from 1.18745 to 1.18745
+Heightened Def Con from 1.20754 to 1.20754
+Heightened Def Con from 1.28795 to 1.28795
+Heightened Def Con from 1.34825 to 1.34825
+Heightened Def Con from 1.42864 to 1.42864
+Heightened Def Con from 1.66986 to 1.66986
+Heightened Def Con from 1.75025 to 1.75025
+
+Date: Sat Aug 18 15:00:24 2018
+Total elapsed time: 15.035 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 168846
+traniter = 155963
+tranpoints = 54198
+accept = 42830
+rejected = 11514
+matrix size = 270
+fillins = 1333
+solver = Normal
+Thread vector: 36.3/17.7[4] 11.9/5.6[4] 3.8/2.4[4] 1.8/2.2[1]  2592/500
+Matrix Compiler1: 109.53 KB object code size  24.3/12.0/[8.7]
+Matrix Compiler2: 53.21 KB object code size  7.3/7.4/[2.6]
+
