@@ -1,0 +1,8 @@
+* C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\combined_sch\Draft4.asc
+XU1 N001 N002 NC_01 MEM_KNOWM Ron=50k Roff=150k Voff=1 Von=1 TAU=150
+R1 N002 0 150K
+V1 N001 0 10
+.tran 600
+.lib memristor_with_state.sub
+.backanno
+.end

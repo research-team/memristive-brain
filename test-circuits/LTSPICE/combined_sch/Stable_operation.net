@@ -1,4 +1,4 @@
-* C:\Users\yurra\Downloads\Telegram Desktop\Last-3e_COMMON_geners.asc
+* C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\combined_sch\Stable_operation.asc
 XU3 N024 N022 +5 -5 N019 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
 R14 N019 N022 300K
 R12 N024 0 10K
@@ -30,13 +30,13 @@ R19 P003 0 100K
 R20 N050 N037 20K
 C6 N037 0 220n
 C5 P003 N016 0.02µ
-XU6 N051 N046 +5 -5 N035 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R28 N035 N046 300K
+XU6 N051 N046 +5 -5 N034 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R28 N034 N046 300K
 R26 N051 0 10K
 R24 N051 N050 100K
 R25 N051 N014 100K
 R27 0 N046 10K
-D6 N035 P004 D
+D6 N034 P004 D
 R23 N051 -5 100K
 R33 Inhibitor N018 50K
 R31 N018 P002 15K
@@ -49,9 +49,9 @@ R17 N016 N038 10K
 R18 N016 N053 1Meg
 R16 N038 0 1Meg
 XU8 0 N018 +5 -5 Inhibitor level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R30 N029 N036 10K
-XU7 0 N036 +5 -5 N029 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R29 N036 P004 10K
+R30 N029 N035 10K
+XU7 0 N035 +5 -5 N029 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R29 N035 P004 10K
 C7 Inhibitor N018 0.05µ
 XU9 N015 N011 +5 -5 N007 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
 R45 N007 N011 150K
@@ -121,11 +121,11 @@ V6 Tpre1 0 PULSE(0 3 0 0 0 2m 10.7m) Rser=0.0001
 V7 Tpre2 0 PULSE(0 3 0 0 0 2m 10.6m) Rser=0.0001
 V8 Tpre3 0 PULSE(0 3 0 0 0 2m 10.5m) Rser=0.0001
 R34 N049 N048 10k
-XU20 N034 N027 +5 -5 Tpost level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R65 N027 -5 500K
-R66 Tpost N027 300K
-R74 N034 N031 500K
-R75 0 N034 300K
+XU20 N036 N027 +5 -5 Tpost level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R65 N027 -5 100K
+R66 Tpost N027 30K
+R74 N036 N031 100K
+R75 0 N036 30K
 .model D D
 .lib C:\Users\yurra\Documents\LTspiceXVII\lib\cmp\standard.dio
 .model NPN NPN
