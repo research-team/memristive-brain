@@ -1,8 +1,14 @@
 * C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\combined_sch\Draft4.asc
-XU1 N001 N002 NC_01 MEM_KNOWM Ron=50k Roff=150k Voff=1 Von=1 TAU=150
-R1 N002 0 150K
-V1 N001 0 10
-.tran 600
-.lib memristor_with_state.sub
+V1 N004 0 SINE(-5 0.001 30k 0) AC 0.1
+R1 N001 N004 100
+R2 0 N001 100
+R3 N003 N001 100K
+C1 N003 0 10µ
+R4 N002 0 10Meg
+Q1 N001 N003 N002 0 BC327-25
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\yurra\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 0.01
 .backanno
 .end
