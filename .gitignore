@@ -36,3 +36,4 @@ test-circuits/LTSPICE/*.log
 test-boards/devsV1/*.s#*
 *.lck
 test-boards/devsV1/*.b#*
+test-boards/devsV1/*.l#*
