@@ -680,41 +680,36 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TO126AV" urn="urn:adsk.eagle:footprint:29369/1" library_version="2">
+<package name="TO220AV" urn="urn:adsk.eagle:footprint:29375/1" library_version="3">
 <description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
-grid 2.3 mm</description>
-<wire x1="-3.937" y1="-0.127" x2="-3.937" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-3.937" y1="-1.27" x2="-3.683" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="3.683" y1="-2.794" x2="3.937" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="3.937" y1="-1.27" x2="3.937" y2="-0.127" width="0.1524" layer="21"/>
-<wire x1="-3.683" y1="-2.794" x2="-2.794" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="-2.794" y1="-2.794" x2="-1.778" y2="-2.794" width="0.1524" layer="51"/>
-<wire x1="-1.778" y1="-2.794" x2="-0.508" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="-2.794" x2="0.508" y2="-2.794" width="0.1524" layer="51"/>
-<wire x1="0.508" y1="-2.794" x2="1.778" y2="-2.794" width="0.1524" layer="21"/>
-<wire x1="1.778" y1="-2.794" x2="2.794" y2="-2.794" width="0.1524" layer="51"/>
-<wire x1="2.794" y1="-2.794" x2="3.683" y2="-2.794" width="0.1524" layer="21"/>
-<circle x="-3.175" y="-2.159" radius="0.4064" width="0.1524" layer="51"/>
-<pad name="E" x="-2.286" y="-1.27" drill="1.016" shape="long" rot="R90"/>
-<pad name="C" x="0" y="-1.27" drill="1.016" shape="long" rot="R90"/>
-<pad name="B" x="2.286" y="-1.27" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.9624" y="-4.5466" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.9878" y="-6.3246" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-3.937" y1="-0.381" x2="-3.175" y2="0" layer="21"/>
-<rectangle x1="-1.397" y1="-0.381" x2="-0.889" y2="0" layer="21"/>
-<rectangle x1="0.889" y1="-0.381" x2="1.397" y2="0" layer="21"/>
-<rectangle x1="3.175" y1="-0.381" x2="3.937" y2="0" layer="21"/>
-<rectangle x1="-3.175" y1="-0.381" x2="-1.397" y2="0" layer="51"/>
-<rectangle x1="-0.889" y1="-0.381" x2="0.889" y2="0" layer="51"/>
-<rectangle x1="1.397" y1="-0.381" x2="3.175" y2="0" layer="51"/>
+grid 2.54 mm</description>
+<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.1524" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.1524" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.1524" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.1524" layer="21"/>
+<circle x="-4.4958" y="-3.7084" radius="0.254" width="0.1524" layer="21"/>
+<pad name="B" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="C" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="E" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<text x="-5.08" y="-6.0452" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
+<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
+<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
+<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
+<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
+<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
+<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
+<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 </package>
 </packages>
 <packages3d>
-<package3d name="TO126AV" urn="urn:adsk.eagle:package:29483/1" type="box" library_version="2">
+<package3d name="TO220AV" urn="urn:adsk.eagle:package:29487/2" type="model" library_version="3">
 <description>Molded Package
-grid 2.3 mm</description>
+grid 2.54 mm</description>
 <packageinstances>
-<packageinstance name="TO126AV"/>
+<packageinstance name="TO220AV"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -739,7 +734,7 @@ grid 2.3 mm</description>
 <pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
-<symbol name="PNP" urn="urn:adsk.eagle:symbol:29374/1" library_version="2">
+<symbol name="PNP" urn="urn:adsk.eagle:symbol:29374/1" library_version="3">
 <wire x1="2.54" y1="-2.54" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="0" x2="1.016" y2="1.016" width="0.1524" layer="94"/>
 <wire x1="2.413" y1="1.651" x2="1.016" y2="1.016" width="0.1524" layer="94"/>
@@ -762,20 +757,20 @@ grid 2.3 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BD139" urn="urn:adsk.eagle:component:29534/1" prefix="Q" library_version="2">
+<deviceset name="MJE3055" urn="urn:adsk.eagle:component:29558/2" prefix="Q" library_version="3">
 <description>&lt;b&gt;NPN TRANSISTOR&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO126AV">
+<device name="" package="TO220AV">
 <connects>
 <connect gate="1" pin="B" pad="B"/>
 <connect gate="1" pin="C" pad="C"/>
 <connect gate="1" pin="E" pad="E"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:29483/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:29487/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -783,20 +778,20 @@ grid 2.3 mm</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BD140" urn="urn:adsk.eagle:component:29536/1" prefix="Q" library_version="2">
+<deviceset name="MJE2955" urn="urn:adsk.eagle:component:29557/2" prefix="Q" library_version="3">
 <description>&lt;b&gt;PNP TRANSISTOR&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO126AV">
+<device name="" package="TO220AV">
 <connects>
 <connect gate="1" pin="B" pad="B"/>
 <connect gate="1" pin="C" pad="C"/>
 <connect gate="1" pin="E" pad="E"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:29483/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:29487/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -17296,8 +17291,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </classes>
 <parts>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="100K"/>
-<part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="BD139" device="" package3d_urn="urn:adsk.eagle:package:29483/1"/>
-<part name="Q2" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="BD140" device="" package3d_urn="urn:adsk.eagle:package:29483/1"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="2.2 uF"/>
 <part name="P-2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-12V" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -17327,6 +17320,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="JP3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="JP4" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
 <part name="JP5" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X3" device="" package3d_urn="urn:adsk.eagle:package:22458/2"/>
+<part name="Q3" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="MJE3055" device="" package3d_urn="urn:adsk.eagle:package:29487/2"/>
+<part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="MJE2955" device="" package3d_urn="urn:adsk.eagle:package:29487/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -17336,14 +17331,6 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="R1" gate="G$1" x="50.8" y="86.36" smashed="yes">
 <attribute name="NAME" x="46.99" y="87.8586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="46.99" y="83.058" size="1.778" layer="96"/>
-</instance>
-<instance part="Q1" gate="1" x="60.96" y="91.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="58.42" y="96.52" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="60.96" y="96.52" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="Q2" gate="1" x="60.96" y="53.34" smashed="yes" rot="MR90">
-<attribute name="NAME" x="63.5" y="58.42" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="60.96" y="58.42" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="C1" gate="G$1" x="60.96" y="81.28" smashed="yes">
 <attribute name="NAME" x="62.103" y="81.7626" size="1.778" layer="95"/>
@@ -17446,6 +17433,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="JP5" gate="A" x="177.8" y="68.58" smashed="yes">
 <attribute name="NAME" x="171.45" y="74.295" size="1.778" layer="95"/>
 <attribute name="VALUE" x="171.45" y="60.96" size="1.778" layer="96"/>
+</instance>
+<instance part="Q3" gate="1" x="60.96" y="91.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.42" y="96.52" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="60.96" y="96.52" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="Q1" gate="1" x="60.96" y="53.34" smashed="yes" rot="MR90">
+<attribute name="NAME" x="63.5" y="58.42" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="60.96" y="58.42" size="1.778" layer="96" rot="MR90"/>
 </instance>
 </instances>
 <busses>
@@ -17577,10 +17572,10 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <wire x1="45.72" y1="86.36" x2="43.18" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="86.36" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="1" pin="C"/>
 <wire x1="43.18" y1="93.98" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="93.98" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
 <junction x="43.18" y="93.98"/>
+<pinref part="Q3" gate="1" pin="C"/>
 </segment>
 </net>
 <net name="-12V" class="0">
@@ -17596,43 +17591,43 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="45.72" y1="48.26" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="48.26" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="55.88" x2="43.18" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="1" pin="C"/>
 <pinref part="P-3" gate="1" pin="-12V"/>
 <wire x1="43.18" y1="45.72" x2="43.18" y2="48.26" width="0.1524" layer="91"/>
 <junction x="43.18" y="48.26"/>
+<pinref part="Q1" gate="1" pin="C"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="60.96" y1="88.9" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="1" pin="B"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="86.36" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="86.36" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
 <junction x="60.96" y="86.36"/>
+<pinref part="Q3" gate="1" pin="B"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="Q1" gate="1" pin="E"/>
 <pinref part="IC2" gate="A1" pin="VI"/>
 <wire x1="66.04" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="93.98" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="88.9" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
 <junction x="76.2" y="93.98"/>
+<pinref part="Q3" gate="1" pin="E"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="Q2" gate="1" pin="B"/>
 <pinref part="C4" gate="G$1" pin="-"/>
 <wire x1="60.96" y1="45.72" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="60.96" y1="48.26" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
 <junction x="60.96" y="48.26"/>
+<pinref part="Q1" gate="1" pin="B"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -17642,8 +17637,8 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="76.2" y1="55.88" x2="83.82" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="50.8" x2="76.2" y2="55.88" width="0.1524" layer="91"/>
 <junction x="76.2" y="55.88"/>
-<pinref part="Q2" gate="1" pin="E"/>
 <pinref part="IC3" gate="A1" pin="VI"/>
+<pinref part="Q1" gate="1" pin="E"/>
 </segment>
 </net>
 </nets>
