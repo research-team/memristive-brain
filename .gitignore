@@ -34,3 +34,4 @@
 #LTSPICE logs
 test-circuits/LTSPICE/*.log
 test-boards/devsV1/feedback.s#*
+test-boards/devsV1/eagle.epf
