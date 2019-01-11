@@ -6,3 +6,6 @@
 1. Bio-compatible temporal parameters
 1. Heavily parallel 
 1. More operations per kilo (good for copter)
+1. Memory + processor ?
+1. SLAM tasks on self-learning on pattern matching of image recognition
+1. 
