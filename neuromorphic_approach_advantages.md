@@ -5,4 +5,4 @@
 1. Energy efficient 
 1. Bio-compatible temporal parameters
 1. Heavily parallel 
-1. More operations per kilo
+1. More operations per kilo (good for copter)
