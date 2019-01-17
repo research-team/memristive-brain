@@ -38,3 +38,4 @@ test-boards/devsV1/*.s#*
 *.lck
 test-boards/devsV1/*.b#*
 test-boards/devsV1/*.l#*
+memristors/Organic memristors measurements/keithly-memr/mem_test/.idea/workspace.xml
