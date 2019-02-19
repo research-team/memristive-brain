@@ -1,5 +1,8 @@
 # Spiking technology notation 
 
+To extend previously started article:
+https://www.overleaf.com/19697776yqzdttfnhwmq
+
 Spiking memristive neurons have functions:
 
 1. Threshold
