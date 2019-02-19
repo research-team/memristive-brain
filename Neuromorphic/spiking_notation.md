@@ -18,6 +18,15 @@ Spiking memristive neurons have functions:
 + - disjunction
 ! - inhibition (negation) 
 > - implication 
+```
+
+## Examples 
+
+```
+A +| B > C = if A and B at the same time then C
+
+
+
 
 ```
 
