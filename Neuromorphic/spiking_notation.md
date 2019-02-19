@@ -34,6 +34,8 @@ A:0.5\1 * B:0.5 > C:0.1 = if A with probability 0.5 is 1ms earlier B with probab
 
 A:0.5\10 * B:0.5 > C:0.0 = if A with probability 0.5 is 10ms earlier B with probability 0.5 then C has probability 0.0 (because of leakage)
 
+A\1 * B\0.1 * C > D = if A 1 ms earlier than B and B 0.1 ms earlier than C then D
+
 A| * !B > C:0 = if A and B at the same time and B is inhibiting A then probability of C is 0.0
 
 ```
