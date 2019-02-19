@@ -16,7 +16,7 @@ Spiking memristive neurons have functions:
 
 * - conjunction
 + - disjunction
-! - negation 
+! - inhibition (negation) 
 > - implication 
 
 ```
