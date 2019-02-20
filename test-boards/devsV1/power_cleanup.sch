@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17285,7 +17285,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="Power" width="0.3" drill="0.5">
+<class number="0" name="Power" width="0.5" drill="0.5">
 <clearance class="0" value="0.5"/>
 </class>
 </classes>
