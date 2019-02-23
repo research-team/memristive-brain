@@ -43,4 +43,9 @@ A| * !B > C:0 = if A and B at the same time and B is inhibiting A then probabili
 
 ```
 
-	
+## Weights 
+
+
+
+## Learning
+
