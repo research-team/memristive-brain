@@ -45,7 +45,14 @@ A| * !B > C:0 = if A and B at the same time and B is inhibiting A then probabili
 
 ## Weights 
 
+Weight is the maximum value of a synapse(input channel) to influence the probability of a neuron to fire an outbound spike.
 
+If there is inbound spike of the neuron A to the neuron B and the synapse AB has the weight of W:
+
+```
+P(AB|A) = 
+
+```
 
 ## Learning
 
