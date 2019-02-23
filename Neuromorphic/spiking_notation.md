@@ -50,7 +50,8 @@ Weight is the maximum value of a synapse(input channel) to influence the probabi
 If there is inbound spike of the neuron A to the neuron B and the synapse AB has the weight of W:
 
 ```
-P(AB|A) = 
+Bayes:
+P(AB|A) = P(A|AB)P(AB)/P(A)
 
 ```
 
