@@ -59,7 +59,8 @@ P(AD|A) = P(A|AD)P(AD)/P(A)
 P(AD) = P(max(g(AD)))
 Distribution of P(AD): Gaussian or Poisson
 g = conductance of the synapse AD
-
+Conductance could be understood as influence of the synapse over neuron to fire the outbound spike
+P(D) = П P(iD) where i stands for inbound neuron in corresponding synapse
 ```
 
 ## Learning 
