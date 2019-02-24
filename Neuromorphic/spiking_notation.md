@@ -58,15 +58,21 @@ P(AD|A) = P(A|AD)P(AD)/P(A)
 
 P(AD) = P(max(g(AD)))
 Distribution of P(AD): Gaussian or Poisson
-g = conductance of the synapse AD
-Conductance could be understood as influence of the synapse over neuron to fire the outbound spike
-P(D) = П P(iD) where i stands for inbound neuron in corresponding synapse
+g = conductance of the synapse AD or the width of probability channel.
+Conductance could be understood as influence of the synapse over neuron to fire the outbound spike.
+P(D) = П P(iD) where i stands for inbound neuron in corresponding synapse in a leakage timeframe.
 ```
 
 ## Learning 
 
 ```
+The update of g_i according to STDP (Δt).
+The higher is g of a synapse the higher is the influence of this synapse over the probability of the neuron to fire outbound spike, the lover is g the less is the influence over the neuron's probability to fire the outbound spike.
 
-
+g = Σ Δw 
+Δw = 1/Δt (Hebbian learning function)
+Δw = |1/Δt| (Sombrero learning)
+Δw = -1/Δt (anti-Hebbian learning)
+Δw = -|1/Δt| (anti-Sombrero learning)
 
 ```
