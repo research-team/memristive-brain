@@ -28,6 +28,9 @@ Spiking memristive neurons have functions:
 ## Examples 
 
 
+![3 neurons schematic](3_neurons_schematic.png)
+
+
 ```
 A| * B > C = if A and B at the same time then C
 
@@ -51,9 +54,18 @@ If there is inbound spike of the neuron A to the neuron B and the synapse AB has
 
 ```
 Bayes:
-P(AB|A) = P(A|AB)P(AB)/P(A)
+P(AD|A) = P(A|AD)P(AD)/P(A)
+
+P(AD) = P(max(g(AD)))
+Distribution of P(AD): Gaussian or Poisson
+g = conductance of the synapse AD
 
 ```
 
-## Learning
+## Learning 
 
+```
+
+
+
+```
