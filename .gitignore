@@ -37,3 +37,4 @@ test-boards/devsV1/*.s#*
 *.lck
 test-boards/devsV1/*.b#*
 test-boards/devsV1/*.l#*
+test-boards/devsV1/eagle.epf
