@@ -32,6 +32,7 @@
 *.raw
 
 #LTSPICE logs
+
 *.log
 *eagle.epf
 *.lck
