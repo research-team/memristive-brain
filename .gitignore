@@ -32,10 +32,9 @@
 *.raw
 
 #LTSPICE logs
-test-circuits/LTSPICE/*.log
-test-boards/devsV1/eagle.epf
-test-boards/devsV1/*.s#*
+*.log
+*eagle.epf
 *.lck
-test-boards/devsV1/*.b#*
-test-boards/devsV1/*.l#*
-memristors/Organic memristors measurements/keithly-memr/mem_test/.idea/workspace.xml
+*workspace.xml
+*.b#*
+*.s#*

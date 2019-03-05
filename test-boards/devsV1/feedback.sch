@@ -11525,11 +11525,11 @@ Source: AVX .. aphvc.pdf</description>
 </variantdefs>
 <classes>
 <class number="0" name="Power" width="0.3" drill="0.4">
-<clearance class="0" value="0.6"/>
+<clearance class="0" value="0.7"/>
 </class>
 <class number="1" name="Signal" width="0.3" drill="0.4">
-<clearance class="0" value="0.6"/>
-<clearance class="1" value="0.6"/>
+<clearance class="0" value="0.7"/>
+<clearance class="1" value="0.7"/>
 </class>
 </classes>
 <parts>
