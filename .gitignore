@@ -40,3 +40,6 @@
 *.b#*
 *.s#*
 *.l#*
+test-boards/Measurement device/Texas Instruments_By_element14_Batch_1.lbr
+test-boards/Measurement device/Analog Devices_By_element14_Batch_1.lbr
+test-boards/Measurement device/ADI-Phase-2.lbr

@@ -1,0 +1,1 @@
+# Download [AD eaglecad devices lib1](http://www.element14.com/community/servlet/JiveServlet/download/38-101421)  [AD eaglecad devices lib2](http://www.element14.com/community/servlet/JiveServlet/download/38-104498) and [TI eaglecad devices lib](http://www.element14.com/community/servlet/JiveServlet/download/38-101426) before working on schematic
