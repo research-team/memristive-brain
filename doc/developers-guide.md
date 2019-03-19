@@ -34,13 +34,13 @@ eesV5V = voltage of the EES 5V [0..10, ST, T] ST = subthreshold, threshold;
 
 Each module must include logging
 
-'''
+```
 
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
 Recommended logging levels: info and debug.
-'''
+```
 
 ## Document your code
 
@@ -49,7 +49,7 @@ Ex: ees_slice (create slices according to EES), bio_deviation (calculate deviati
 
 2. Each function and each parameter including return parameters must be documented
 
-'''
+```
 def slice_ees(data_array, slicing_index = 'Stim', data_index = 'RMG ', epsilon = .001) :
 	"""
 	Returns sliced array of voltages from raw data of myograms from matlab file
@@ -69,10 +69,10 @@ def slice_ees(data_array, slicing_index = 'Stim', data_index = 'RMG ', epsilon =
 	list[array]
     	the list of slices (array of voltages)
 	"""
-'''
+```
 
 3. All the path to files must be relative not absolute.
-'''
+```
 mat_data = sio.loadmat('../bio-data/SCI_Rat-1_11-22-2016_RMG_40Hz_one_step.mat')
 
-'''
+```
