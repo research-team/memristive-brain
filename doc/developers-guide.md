@@ -38,9 +38,9 @@ Each module must include logging
 
 import logging
 logging.basicConfig(level=logging.DEBUG)
+```
 
 Recommended logging levels: info and debug.
-```
 
 ## Document your code
 
@@ -76,3 +76,22 @@ def slice_ees(data_array, slicing_index = 'Stim', data_index = 'RMG ', epsilon =
 mat_data = sio.loadmat('../bio-data/SCI_Rat-1_11-22-2016_RMG_40Hz_one_step.mat')
 
 ```
+
+## Commit code to git every day
+
+Day starts with:
+
+```
+git pull 
+```
+
+Day ends with:
+```
+git status
+git commit -am 'My new functions does:'
+git push
+```
+
+## Use feature branches
+
+If you make significant updates to the code that could interfere with the work of other team members please use feature branches: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
