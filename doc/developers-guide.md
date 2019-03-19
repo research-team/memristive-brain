@@ -5,6 +5,7 @@
 Don't try to complete the component before testing. 
 Each function must be tested.
 Adding small increment test it before staring new function.
+
 Same approach should be applied to works with schematic: test each soldered op-amp before soldering other components.
 
 ## Meaningful names for variables functions and files
@@ -44,7 +45,7 @@ Recommended logging levels: info and debug.
 
 ## Document your code
 
-1. Functions should be named in meaningful manner to identify what this functions is doing:
+1. Functions must be named in meaningful manner to identify what this functions is doing:
 Ex: ees_slice (create slices according to EES), bio_deviation (calculate deviation according to biological data)
 
 2. Each function and each parameter including return parameters must be documented
