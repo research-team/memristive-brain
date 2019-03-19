@@ -2,7 +2,10 @@
 
 ## Use small increments
 
-Don't try to complete the component before testing. Each function should be tested 
+Don't try to complete the component before testing. 
+Each function must be tested.
+Adding small increment test it before staring new function.
+Same approach should be applied to works with schematic: test each soldered op-amp before soldering other components.
 
 ## Meaningful names for variables functions and files
 
@@ -28,3 +31,47 @@ eesV5V = voltage of the EES 5V [0..10, ST, T] ST = subthreshold, threshold;
 ```
 
 ## Use logging
+
+Each module must include logging
+
+'''
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
+Recommended logging levels: info and debug.
+'''
+
+## Document your code
+
+1. Functions should be named in meaningful manner to identify what this functions is doing:
+Ex: ees_slice (create slices according to EES), bio_deviation (calculate deviation according to biological data)
+
+2. Each function and each parameter including return parameters must be documented
+
+'''
+def slice_ees(data_array, slicing_index = 'Stim', data_index = 'RMG ', epsilon = .001) :
+	"""
+	Returns sliced array of voltages from raw data of myograms from matlab file
+	Parameters
+	----------
+	data_array: dict
+    	the dict of the raw voltages of myograms and EESes
+	slicing_index: str
+    	the string that indicates the stimulation dictionary (EESes)
+	data_index: str
+    	the sting that indicates the data dictionary (voltages)
+	epsilon: float
+    	the float to identify the maximums of EESes
+
+	Returns
+	-------
+	list[array]
+    	the list of slices (array of voltages)
+	"""
+'''
+
+3. All the path to files must be relative not absolute.
+'''
+mat_data = sio.loadmat('../bio-data/SCI_Rat-1_11-22-2016_RMG_40Hz_one_step.mat')
+
+'''
