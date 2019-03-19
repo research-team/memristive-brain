@@ -8,7 +8,7 @@ Adding small increment test it before staring new function.
 
 Same approach should be applied to works with schematic: test each soldered op-amp before soldering other components.
 
-## Meaningful names for variables functions and files
+## Meaningful names for variables functions, files inputs and outputs of schematic
 
 ### Naming convention
 
@@ -44,6 +44,8 @@ logging.basicConfig(level=logging.DEBUG)
 Recommended logging levels: info and debug.
 
 ## Document your code
+
+0. Schematic components should be documented in LTSpice: add short description of each op-amp input and output.
 
 1. Functions must be named in meaningful manner to identify what this functions is doing:
 Ex: ees_slice (create slices according to EES), bio_deviation (calculate deviation according to biological data)
