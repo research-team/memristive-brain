@@ -2,8 +2,7 @@
 
 ## Use small increments
 
-If you
-
+Don't try to complete the component before testing. Each function should be tested 
 
 ## Meaningful names for variables functions and files
 
