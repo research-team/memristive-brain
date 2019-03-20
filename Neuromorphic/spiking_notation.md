@@ -65,10 +65,10 @@ P(D) = П P(iD) where i stands for inbound neuron in corresponding synapse in a 
 
 ## Learning 
 
-```
 The update of g_i according to STDP (Δt).
 The higher is g of a synapse the higher is the influence of this synapse over the probability of the neuron to fire outbound spike, the lover is g the less is the influence over the neuron's probability to fire the outbound spike.
 
+```
 g = Σ Δw 
 Δw = 1/Δt (Hebbian learning function)
 Δw = |1/Δt| (Sombrero learning)
@@ -76,3 +76,5 @@ g = Σ Δw
 Δw = -|1/Δt| (anti-Sombrero learning)
 
 ```
+g is the width of the possible values of the influence over the membrane potential to reach threshold and as the result to fire an outbound spike.
+Thus g influences the μ mean value of the normal Gaussian distribution. 
