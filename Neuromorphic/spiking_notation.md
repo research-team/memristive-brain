@@ -77,7 +77,7 @@ g = Σ Δw
 
 ```
 g is the width of the possible values of the influence over the membrane potential to reach threshold and as the result to fire an outbound spike.
-Thus g influences the μ mean value of the normal Gaussian distribution. Taking in account the probability density of the normal distribution:
+Thus g influences the μ mean value of the normal Gaussian distribution. Taking in account the [probability density of the normal distribution](https://en.wikipedia.org/wiki/Normal_distribution)  :
 
 ```
 μ = g/2
