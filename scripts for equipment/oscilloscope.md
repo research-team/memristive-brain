@@ -7,4 +7,5 @@
 ## More serious business
 * Windows and MacOS users install [NI-VISA](https://www.ni.com/ru-ru/support/downloads/drivers/download.ni-visa.html)
 * Script requires admin rights(at least on Windows)
-* Linux users should probably use [PyVISA-py](https://pyvisa-py.readthedocs.io/en/latest/) but it is untested
+* Linux users should use [PyVISA-py](https://pyvisa-py.readthedocs.io/en/latest/)
+* Linux users also need [PySerial](https://github.com/pyserial/pyserial) and/or [PyUSB](https://github.com/walac/pyusb) to work with corresponding interface
