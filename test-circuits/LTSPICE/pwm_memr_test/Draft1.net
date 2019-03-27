@@ -1,0 +1,17 @@
+* C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\pwm_memr_test\Draft1.asc
+C2 N005 N004 2.2µ
+R1 N001 N005 10K
+R2 N001 N002 10K
+Q1 N002 N005 0 0 NPN
+C3 N003 N002 0.1µ
+D1 0 N003 RF05VA1S
+V1 N001 0 5
+V2 N004 0 PWL file=test_signal1.txt
+.model D D
+.lib C:\Users\yurra\Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\yurra\Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 1
+.backanno
+.end
