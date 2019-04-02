@@ -59,7 +59,7 @@ if __name__ == '__main__':
         temp = numpy.reshape(d, (-1, 3))
         data = numpy.append(data, temp, axis=0)
         print("DONE step {}!!!!".format(s))
-    print("DONE step!!!!")
+    print("DONE !!!!")
     numpy.savetxt("res.csv", data, delimiter=",")
     # print(data)
     # size = int(keithly.query("TRACe:ACTual?"))
