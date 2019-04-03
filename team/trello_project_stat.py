@@ -6,6 +6,8 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
+json_file = "../../MSCP_2019-04-02.json"
+
 TODO = "ToDo"
 DOING = "InProgress"
 DONE = "Done"
@@ -35,7 +37,7 @@ def select_actual(name):
     return m.group(0)[1:-1]
 
 
-with open("../../MSCP_2019-04-02.json", "r") as read_file:
+with open(json_file, "r") as read_file:
     data = json.load(read_file)
     card_id_member = data['cards'][0]['idMembers'][0]
     card_id_list = data['cards'][0]['idList']
