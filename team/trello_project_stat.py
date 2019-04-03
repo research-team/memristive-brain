@@ -6,7 +6,7 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-json_file = "../../MSCP_2019-04-02.json"
+json_file = "../../MSCP_2019-04-03.json"
 
 TODO = "ToDo"
 DOING = "InProgress"
