@@ -1,4 +1,6 @@
 import re
+import csv
+import sys
 import json
 import logging
 
@@ -9,7 +11,7 @@ DOING = "InProgress"
 DONE = "Done"
 
 def select_member(members, id):
-    return [i['fullName'] for i in members if i['id'] == id]
+    return [i['fullName'] for i in members if i['id'] == id][0]
 
 
 def select_estimate(name):
@@ -20,7 +22,7 @@ def select_estimate(name):
     """
     m = re.search(r'[(][0-9*][)]', name)
     if m is None: return 0
-    return m.group(0)
+    return m.group(0)[1:-1]
 
 def select_actual(name):
     """
@@ -30,7 +32,7 @@ def select_actual(name):
     """
     m = re.search(r'[\[][0-9*][\]]', name)
     if m is None: return 0
-    return m.group(0)
+    return m.group(0)[1:-1]
 
 
 with open("../../MSCP_2019-04-02.json", "r") as read_file:
@@ -54,9 +56,27 @@ doing_list = [i for i in cards if i['idList'] == doing_id[0] and i['closed']== F
 done_list = [i for i in cards if i['idList'] == done_id[0] and i['closed']== False]
 
 #create cvs lists
-todo_cvs = [(select_estimate(i['name']), select_member(members, i['idMembers'][0])) for i in todo_list]
-doing_cvs = [(select_estimate(i['name']), select_member(members, i['idMembers'][0])) for i in doing_list]
-done_cvs = [(select_estimate(i['name']), select_actual(i['name']), select_member(members, i['idMembers'][0])) for i in done_list]
+todo_csv = [(select_estimate(i['name']), select_member(members, i['idMembers'][0])) for i in todo_list]
+doing_csv = [(select_estimate(i['name']), select_member(members, i['idMembers'][0])) for i in doing_list]
+done_csv = [(select_estimate(i['name']), select_actual(i['name']), select_member(members, i['idMembers'][0])) for i in done_list]
+
+#logging.info("End of the script")
+
+#output
+##Todo
+print(TODO)
+writer = csv.writer(sys.stdout)
+writer.writerows(todo_csv)
+print('\n')
+##Doing
+print(DOING)
+writer = csv.writer(sys.stdout)
+writer.writerows(doing_csv)
+print('\n')
+##Done
+print(DONE)
+writer = csv.writer(sys.stdout)
+writer.writerows(done_csv)
+print('\n')
 
 
-logging.info("End of the script")
