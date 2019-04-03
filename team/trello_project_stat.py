@@ -1,5 +1,7 @@
+import re
 import json
 import logging
+
 logging.basicConfig(level=logging.DEBUG)
 
 TODO = "ToDo"
@@ -8,6 +10,28 @@ DONE = "Done"
 
 def select_member(members, id):
     return [i['fullName'] for i in members if i['id'] == id]
+
+
+def select_estimate(name):
+    """
+    Returns first match of the estimates of the name of the specified task
+    :param name: the string name of the task
+    :return: estimates if found
+    """
+    m = re.search(r'[(][0-9*][)]', name)
+    if m is None: return 0
+    return m.group(0)
+
+def select_actual(name):
+    """
+    Returns first match of the actual time spent from the name of specified task
+    :param name: the sting name of the task with estimates and actual time spent
+    :return: the actual time spent if found
+    """
+    m = re.search(r'[\[][0-9*][\]]', name)
+    if m is None: return 0
+    return m.group(0)
+
 
 with open("../../MSCP_2019-04-02.json", "r") as read_file:
     data = json.load(read_file)
@@ -30,10 +54,9 @@ doing_list = [i for i in cards if i['idList'] == doing_id[0] and i['closed']== F
 done_list = [i for i in cards if i['idList'] == done_id[0] and i['closed']== False]
 
 #create cvs lists
-todo_cvs = [(i['name'], select_member(members, i['idMembers'][0])) for i in todo_list]
-doing_cvs = [(i['name'], select_member(members, i['idMembers'][0])) for i in doing_list]
-done_cvs = [(i['name'], select_member(members, i['idMembers'][0])) for i in done_list]
-
+todo_cvs = [(select_estimate(i['name']), select_member(members, i['idMembers'][0])) for i in todo_list]
+doing_cvs = [(select_estimate(i['name']), select_member(members, i['idMembers'][0])) for i in doing_list]
+done_cvs = [(select_estimate(i['name']), select_actual(i['name']), select_member(members, i['idMembers'][0])) for i in done_list]
 
 
 logging.info("End of the script")
