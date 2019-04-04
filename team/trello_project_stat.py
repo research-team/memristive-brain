@@ -6,7 +6,7 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-json_file = "../../MSCP_2019-04-03.json"
+json_file = "../../PC_2019-04-03.json"
 
 TODO = "ToDo"
 DOING = "InProgress"
@@ -22,7 +22,7 @@ def select_estimate(name):
     :param name: the string name of the task
     :return: estimates if found
     """
-    m = re.search(r'[(][0-9*][)]', name)
+    m = re.search(r'[(][0-9]+[)]', name)
     if m is None: return 0
     return m.group(0)[1:-1]
 
@@ -66,6 +66,8 @@ done_csv = [(select_estimate(i['name']), select_actual(i['name']), select_member
 
 #output
 ##Todo
+print(json_file)
+print("\n")
 print(TODO)
 writer = csv.writer(sys.stdout)
 writer.writerows(todo_csv)
