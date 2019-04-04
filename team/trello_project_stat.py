@@ -6,7 +6,7 @@ import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-json_file = "../../PC_2019-04-03.json"
+#json_file = "../../GF_2019-04-03.json"
 
 TODO = "ToDo"
 DOING = "InProgress"
@@ -37,6 +37,9 @@ def select_actual(name):
     return m.group(0)[1:-1]
 
 
+logging.info(sys.argv[1])
+json_file = sys.argv[1]
+
 with open(json_file, "r") as read_file:
     data = json.load(read_file)
     card_id_member = data['cards'][0]['idMembers'][0]
@@ -62,8 +65,6 @@ todo_csv = [(select_estimate(i['name']), select_member(members, i['idMembers'][0
 doing_csv = [(select_estimate(i['name']), select_member(members, i['idMembers'][0])) for i in doing_list]
 done_csv = [(select_estimate(i['name']), select_actual(i['name']), select_member(members, i['idMembers'][0])) for i in done_list]
 
-#logging.info("End of the script")
-
 #output
 ##Todo
 print(json_file)
@@ -84,3 +85,4 @@ writer.writerows(done_csv)
 print('\n')
 
 
+logging.info("End of the script")
