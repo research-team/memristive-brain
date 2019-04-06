@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-04-05" view-index="0" gantt-divider-location="422" resource-divider-location="300" version="2.8.7" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-04-04" view-index="0" gantt-divider-location="422" resource-divider-location="300" version="2.8.10" locale="en">
     <description/>
     <view zooming-state="default:3" id="gantt-chart">
-        <field id="tpd3" name="Name" width="192" order="0"/>
+        <field id="tpd3" name="Name" width="191" order="0"/>
         <field id="tpd4" name="Begin date" width="89" order="1"/>
-        <field id="tpd5" name="End date" width="75" order="2"/>
+        <field id="tpd5" name="End date" width="74" order="2"/>
         <field id="tpd6" name="Duration" width="62" order="3"/>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="210" order="0"/>
-        <field id="1" name="Default role" width="86" order="1"/>
+        <field id="0" name="Name" width="209" order="0"/>
+        <field id="1" name="Default role" width="85" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -34,14 +34,14 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="5-HT simulation" meeting="false" start="2019-04-05" duration="6" complete="0" expand="true">
+        <task id="0" name="5-HT simulation" meeting="false" start="2019-04-05" duration="6" complete="100" expand="true">
             <depend id="6" type="2" difference="0" hardness="Strong"/>
             <depend id="11" type="2" difference="0" hardness="Strong"/>
             <depend id="16" type="2" difference="0" hardness="Strong"/>
-            <task id="1" name="5-HT + Nav1.8 sim" color="#8cb6ce" meeting="false" start="2019-04-05" duration="2" complete="0" thirdDate="2019-04-05" thirdDate-constraint="0" expand="true">
+            <task id="1" name="5-HT + Nav1.8 sim" color="#8cb6ce" meeting="false" start="2019-04-05" duration="2" complete="100" thirdDate="2019-04-05" thirdDate-constraint="0" expand="true">
                 <depend id="5" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="5" name="5-HT ATP" meeting="false" start="2019-04-09" duration="4" complete="0" expand="true"/>
+            <task id="5" name="5-HT ATP" color="#8cb6ce" meeting="false" start="2019-04-09" duration="4" complete="100" thirdDate="2019-04-09" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="16" name="Long simulations" meeting="false" start="2019-04-15" duration="5" complete="0" expand="true">
             <depend id="11" type="2" difference="0" hardness="Strong"/>
