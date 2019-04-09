@@ -22,7 +22,7 @@ def select_estimate(name):
     :param name: the string name of the task
     :return: estimates if found
     """
-    m = re.search(r'[(][0-9]+[)]', name)
+    m = re.search(r'[(][0-9\.]+[)]', name)
     if m is None: return 0
     return m.group(0)[1:-1]
 
@@ -32,7 +32,7 @@ def select_actual(name):
     :param name: the sting name of the task with estimates and actual time spent
     :return: the actual time spent if found
     """
-    m = re.search(r'[\[][0-9*][\]]', name)
+    m = re.search(r'[\[][0-9\.]+[\]]', name)
     if m is None: return 0
     return m.group(0)[1:-1]
 
