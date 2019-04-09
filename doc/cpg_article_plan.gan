@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-03-25" view-index="0" gantt-divider-location="429" resource-divider-location="300" version="2.8.10" locale="en_GB">
+    <description/>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="180" order="0"/>
+        <field id="tpd4" name="Begin date" width="77" order="1"/>
+        <field id="tpd5" name="End date" width="77" order="2"/>
+        <field id="tpd6" name="Duration" width="28" order="3"/>
+        <field id="tpd13" name="Resources" width="63" order="4"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="ru">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="" month="1" date="1" type="HOLIDAY"><![CDATA[Новый Год]]></date>
+        <date year="" month="1" date="7" type="HOLIDAY"><![CDATA[Рождество Христово]]></date>
+        <date year="" month="2" date="23" type="HOLIDAY"><![CDATA[День Защитника Отечества]]></date>
+        <date year="" month="3" date="8" type="HOLIDAY"><![CDATA[Международный женский день]]></date>
+        <date year="" month="5" date="1" type="HOLIDAY"><![CDATA[Праздник Весны и Труда]]></date>
+        <date year="" month="5" date="9" type="HOLIDAY"><![CDATA[День Победы]]></date>
+        <date year="" month="6" date="12" type="HOLIDAY"><![CDATA[День России]]></date>
+        <date year="" month="11" date="4" type="HOLIDAY"><![CDATA[День народного единства]]></date>
+        <date year="2015" month="1" date="2" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2015" month="1" date="3" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2015" month="1" date="4" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2015" month="1" date="5" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2015" month="1" date="6" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2015" month="1" date="8" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2015" month="1" date="9" type="HOLIDAY"><![CDATA[Перенесённый выходной (3 января)]]></date>
+        <date year="2015" month="5" date="4" type="HOLIDAY"><![CDATA[Перенесённый выходной (4 января)]]></date>
+        <date year="2016" month="1" date="2" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2016" month="1" date="3" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2016" month="1" date="4" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2016" month="1" date="5" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2016" month="1" date="6" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2016" month="1" date="8" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2016" month="2" date="20" type="WORKING_DAY"><![CDATA[Выходной перенесен на 2016-02-22]]></date>
+        <date year="2016" month="2" date="22" type="HOLIDAY"><![CDATA[Перенесённый выходной (20 февраля)]]></date>
+        <date year="2016" month="3" date="7" type="HOLIDAY"><![CDATA[Перенесённый выходной (3 января)]]></date>
+        <date year="2016" month="5" date="2" type="HOLIDAY"><![CDATA[Перенесённый выходной (1 мая)]]></date>
+        <date year="2016" month="5" date="3" type="HOLIDAY"><![CDATA[Перенесённый выходной (2 января)]]></date>
+        <date year="2016" month="6" date="13" type="HOLIDAY"><![CDATA[Перенесённый выходной (12 июня)]]></date>
+        <date year="2017" month="1" date="2" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2017" month="1" date="3" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2017" month="1" date="4" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2017" month="1" date="5" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2017" month="1" date="6" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2017" month="1" date="8" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2017" month="2" date="24" type="HOLIDAY"><![CDATA[Перенесённый выходной (1 января)]]></date>
+        <date year="2017" month="5" date="8" type="HOLIDAY"><![CDATA[Перенесённый выходной (7 января)]]></date>
+        <date year="2017" month="11" date="6" type="HOLIDAY"><![CDATA[Перенесённый выходной (4 ноября)]]></date>
+        <date year="2018" month="1" date="2" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2018" month="1" date="3" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2018" month="1" date="4" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2018" month="1" date="5" type="HOLIDAY"><![CDATA[Новогодние каникулы]]></date>
+        <date year="2018" month="3" date="9" type="HOLIDAY"><![CDATA[Перенесённый выходной (с 6 января)]]></date>
+        <date year="2018" month="4" date="28" type="WORKING_DAY"><![CDATA[Рабочий день взамен 30 апреля]]></date>
+        <date year="2018" month="4" date="30" type="HOLIDAY"><![CDATA[Перенесённый выходной (с 28 апреля)]]></date>
+        <date year="2018" month="5" date="2" type="HOLIDAY"><![CDATA[Перенесённый выходной (с 7 января)]]></date>
+        <date year="2018" month="6" date="9" type="WORKING_DAY"><![CDATA[Рабочий день взамен 11 июня]]></date>
+        <date year="2018" month="6" date="11" type="HOLIDAY"><![CDATA[Перенесённый выходной (с 9 июня)]]></date>
+        <date year="2018" month="12" date="29" type="WORKING_DAY"><![CDATA[Рабочий день взамен 31 декабря]]></date>
+        <date year="2018" month="12" date="31" type="HOLIDAY"><![CDATA[Перенесённый выходной (с 29 декабря)]]></date>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="18" name="NEURON" color="#000000" meeting="false" start="2019-04-08" duration="18" complete="58" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+            <task id="0" name="EES" meeting="false" start="2019-04-08" duration="6" complete="100" expand="true">
+                <task id="1" name="30 Hz" color="#8cb6ce" meeting="false" start="2019-04-08" duration="2" complete="100" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="2" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="2" name="40 Hz" color="#8cb6ce" meeting="false" start="2019-04-10" duration="2" complete="100" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="3" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="3" name="50 Hz" color="#8cb6ce" meeting="false" start="2019-04-12" duration="2" complete="100" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="7" name="Speeds" color="#000000" meeting="false" start="2019-04-08" duration="5" complete="100" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+                <task id="8" name="6 cm/s" color="#8cb6ce" meeting="false" start="2019-04-08" duration="1" complete="100" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="9" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="9" name="15 cm/s" color="#8cb6ce" meeting="false" start="2019-04-09" duration="2" complete="100" thirdDate="2019-04-09" thirdDate-constraint="0" expand="true">
+                    <depend id="10" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="10" name="21 cm/s" color="#8cb6ce" meeting="false" start="2019-04-11" duration="2" complete="100" thirdDate="2019-04-11" thirdDate-constraint="0" expand="true"/>
+            </task>
+            <task id="4" name="Several steps" color="#8cb6ce" meeting="false" start="2019-04-15" duration="2" complete="100" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" name="4pedal" color="#8cb6ce" meeting="false" start="2019-04-17" duration="1" complete="100" thirdDate="2019-04-17" thirdDate-constraint="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" name="STDP" meeting="false" start="2019-04-18" duration="10" complete="0" expand="true"/>
+        </task>
+        <task id="15" name="GPU" color="#000000" meeting="false" start="2019-04-08" duration="22" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+            <depend id="37" type="2" difference="0" hardness="Strong"/>
+            <task id="16" name="EES" color="#8cb6ce" meeting="false" start="2019-04-08" duration="6" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+                <task id="29" name="30 Hz" meeting="false" start="2019-04-08" duration="2" complete="0" expand="true">
+                    <depend id="30" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="30" name="40 Hz" meeting="false" start="2019-04-10" duration="2" complete="0" expand="true">
+                    <depend id="31" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="31" name="50 Hz" meeting="false" start="2019-04-12" duration="2" complete="0" expand="true"/>
+            </task>
+            <task id="19" name="5-HT" meeting="false" start="2019-04-16" duration="1" complete="0" expand="true"/>
+            <task id="20" name="Speed" meeting="false" start="2019-04-08" duration="15" complete="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+                <task id="32" name="6 cm/s" color="#8cb6ce" meeting="false" start="2019-04-08" duration="5" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                    <depend id="35" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="35" name="15 cm/s" meeting="false" start="2019-04-15" duration="5" complete="0" expand="true">
+                    <depend id="36" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="36" name="21 cm/s" meeting="false" start="2019-04-22" duration="5" complete="0" expand="true"/>
+            </task>
+            <task id="22" name="4pedal" meeting="false" start="2019-04-29" duration="1" complete="0" expand="true">
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="40" name="Several steps" meeting="false" start="2019-04-30" duration="1" complete="0" expand="true">
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="23" name="STDP" meeting="false" start="2019-05-02" duration="5" complete="0" expand="true"/>
+        </task>
+        <task id="37" name="NEST" color="#000000" meeting="false" start="2019-05-15" duration="13" complete="0" thirdDate="2019-05-15" thirdDate-constraint="1" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+            <depend id="115" type="2" difference="0" hardness="Strong"/>
+            <task id="38" name="EES" meeting="false" start="2019-05-10" duration="10" complete="0" expand="true">
+                <depend id="42" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="42" name="Speeds" color="#8cb6ce" meeting="false" start="2019-05-24" duration="3" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true">
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="39" name="Steps" color="#8cb6ce" meeting="false" start="2019-05-29" duration="3" complete="0" thirdDate="2019-05-29" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="115" name="Simulation complete" color="#8cb6ce" meeting="true" start="2019-06-03" duration="0" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
+        <task id="6" name="Valdiation" color="#000000" meeting="false" start="2019-06-03" duration="8" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+            <task id="24" name="Dispersion" color="#8cb6ce" meeting="false" start="2019-06-03" duration="3" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="26" name="Latency" meeting="false" start="2019-06-06" duration="2" complete="0" expand="true"/>
+            <task id="27" name="Amplitude" meeting="false" start="2019-06-06" duration="2" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="28" name="Regression" color="#8cb6ce" meeting="false" start="2019-06-10" duration="3" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="14" name="Rewrite article" color="#000000" meeting="false" start="2019-06-14" duration="16" complete="0" thirdDate="2019-05-30" thirdDate-constraint="0" expand="true">
+            <depend id="82" type="2" difference="0" hardness="Strong"/>
+            <task id="12" name="Restructure article" meeting="false" start="2019-06-14" duration="3" complete="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" name="Rewrite model sections" meeting="false" start="2019-06-19" duration="5" complete="0" expand="true">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" name="Rewrite results sectios" meeting="false" start="2019-06-26" duration="5" complete="0" expand="true">
+                <depend id="116" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="116" name="Rearrange pictures" color="#8cb6ce" meeting="false" start="2019-07-03" duration="3" complete="0" thirdDate="2019-06-14" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="82" name="Article done" color="#8cb6ce" meeting="true" start="2019-07-08" duration="0" complete="0" thirdDate="2019-06-04" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="5" name="Alina Sulemanova" function="2" contacts="" phone=""/>
+        <resource id="6" name="Alexey Leukhin" function="2" contacts="" phone=""/>
+        <resource id="7" name="Anna Golenkovsakya" function="1" contacts="" phone=""/>
+        <resource id="8" name="Max Talanov" function="3" contacts="" phone=""/>
+        <resource id="9" name="Igor Lavrov" function="3" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="18" resource-id="5" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="15" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="37" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="7" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="9" function="Default:0" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+    <roles>
+        <role id="1" name="junior researcher"/>
+        <role id="2" name="senior researcher"/>
+        <role id="3" name="leading researcher"/>
+        <role id="4" name="head of the lab"/>
+        <role id="5" name=""/>
+    </roles>
+</project>
