@@ -120,7 +120,7 @@ if __name__ == '__main__':
 
     rm = visa.ResourceManager()
     l.debug(rm.list_resources("?*"))
-    gen = rm.open_resource("USB0::0x4348::0x5537::NI-VISA-40002::RAW")
+    gen = rm.open_resource("USB0::0x4348::0x5537::NI-VISA-40001::RAW")
     gen.timeout = 5000
     osc = rm.open_resource("USB0::0x0699::0x03A6::C041256::INSTR")
     osc.timeout = 5000

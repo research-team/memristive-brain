@@ -189,6 +189,9 @@ if __name__ == '__main__':
         exp_start_time = dt.now()
         start_gen(l, gen)
 
+        result = []
+        result_times = []
+
         set_trigger(l, osc, level=-0.1)
         gen_low_voltage(l, gen, 1, ex_fall_vlow, "mV")
         gen_high_voltage(l, gen, 1, ex_fall_vhigh, "mV")
