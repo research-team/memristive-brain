@@ -132,8 +132,10 @@ if __name__ == '__main__':
     l.debug(osc.write("DATa:ENCdg RIBinary"))
     l.debug(osc.write("DATa:WIDth 2"))
 
-    experiment_vhigh = 250
-    experiment_vlow = 100
+    ex_grow_vhigh = 800
+    ex_grow_vlow = 300
+    ex_fall_vhigh = 0
+    ex_fall_vlow = -200
 
     set_gen_square(l, gen, vhigh=0, vhigh_unit="mV", vlow=0, vlow_unit="mV", period=10, period_unit="ms")
     gen_high_voltage(l, gen, 1, 0)
@@ -141,7 +143,7 @@ if __name__ == '__main__':
 
     vpd = 0.75
     rez_coef = 25 // vpd  # 50
-    set_osc_ch(l, osc, vpd=vpd, zero_level=-1)
+    set_osc_ch(l, osc, vpd=vpd, zero_level=0)
 
     set_osc_hor(l, osc, t=0.005)
     # 5ms per div
@@ -151,7 +153,7 @@ if __name__ == '__main__':
     input("PLUG MEMR")
     # EXPERIMENT
 
-    exp_time = td(minutes=5, seconds=0)
+    exp_time = td(minutes=2, seconds=0)
     reset_time = td(minutes=1, seconds=0)  # time to reset memr
 
     gen_low_voltage(l, gen, 1, -200, "mV")
@@ -161,15 +163,16 @@ if __name__ == '__main__':
     while dt.now() - reset_start_time < reset_time:
         pass
     stop_gen(l, gen)
+    gen_duty_cycle(l, gen, dutycycle=50)
 
-    for i in range(10, 90, 10):
-        l.debug("PWM LEVEL {}".format(i))
+    for i in range(5):
+        l.debug("exp cnt{}".format(i))
         result = []
         result_times = []
         # PWM
-        gen_high_voltage(l, gen, 1, experiment_vhigh, "mV")
-        gen_low_voltage(l, gen, 1, experiment_vlow, "mV")
-        gen_duty_cycle(l, gen, dutycycle=i)
+        set_trigger(l, osc, level=0.55)
+        gen_high_voltage(l, gen, 1, ex_grow_vhigh, "mV")
+        gen_low_voltage(l, gen, 1, ex_grow_vlow, "mV")
 
         exp_start_time = dt.now()
         start_gen(l, gen)
@@ -178,21 +181,32 @@ if __name__ == '__main__':
             result_times.append(dt.now().strftime("%d#%m#%Y#%H#%M#%S#%f"))
         stop_gen(l, gen)
 
-        # RESET
-        gen_low_voltage(l, gen, 1, -200, "mV")
-        gen_high_voltage(l, gen, 1, -200, "mV")
-
-        reset_start_time = dt.now()
-        start_gen(l, gen)
         l.debug("WRITING TO FILE")
-        with open("test_{}_{}.txt".format(i, start_time), "w") as f:
+        with open("test_grow_{}_{}.txt".format(i, start_time), "w") as f:
             l.debug(f.write(result.__str__()))
             f.write("\n")
             l.debug(f.write(result_times.__str__()))
-        while dt.now() - reset_start_time < reset_time:
-            pass
+        exp_start_time = dt.now()
+        start_gen(l, gen)
+
+        set_trigger(l, osc, level=-0.1)
+        gen_low_voltage(l, gen, 1, ex_fall_vlow, "mV")
+        gen_high_voltage(l, gen, 1, ex_fall_vhigh, "mV")
+
+
+        exp_start_time = dt.now()
+        start_gen(l, gen)
+        while dt.now() - exp_start_time < exp_time:
+            result.append(osc_get_data(l, osc))
+            result_times.append(dt.now().strftime("%d#%m#%Y#%H#%M#%S#%f"))
         stop_gen(l, gen)
-        l.debug("PWM {} RESET DONE".format(i))
+
+        l.debug("WRITING TO FILE")
+        with open("test_fall_{}_{}.txt".format(i, start_time), "w") as f:
+            l.debug(f.write(result.__str__()))
+            f.write("\n")
+            l.debug(f.write(result_times.__str__()))
+
 
     gen_high_voltage(l, gen, 1, 0, "mV")
     gen_low_voltage(l, gen, 1, 0, "mV")
