@@ -1,6 +1,7 @@
 from datetime import datetime as dt
 from datetime import timedelta as td
 import time
+import os
 
 import visa
 import logging
@@ -101,6 +102,7 @@ if __name__ == '__main__':
 
     start_time = dt.now().strftime("%d#%m#%Y#%H#%M#%S")
 
+
     # create logger with 'spam_application'
     l = logging.getLogger('memr_test_stand')
     l.setLevel(logging.DEBUG)
@@ -120,7 +122,7 @@ if __name__ == '__main__':
 
     rm = visa.ResourceManager()
     l.debug(rm.list_resources("?*"))
-    gen = rm.open_resource("USB0::0x4348::0x5537::NI-VISA-40001::RAW")
+    gen = rm.open_resource("USB0::0x4348::0x5537::NI-VISA-40002::RAW")
     gen.timeout = 5000
     osc = rm.open_resource("USB0::0x0699::0x03A6::C041256::INSTR")
     osc.timeout = 5000
@@ -132,8 +134,8 @@ if __name__ == '__main__':
     l.debug(osc.write("DATa:ENCdg RIBinary"))
     l.debug(osc.write("DATa:WIDth 2"))
 
-    experiment_vhigh = 250
-    experiment_vlow = 100
+    experiment_vhigh = 800
+    experiment_vlow = 0
 
     set_gen_square(l, gen, vhigh=0, vhigh_unit="mV", vlow=0, vlow_unit="mV", period=10, period_unit="ms")
     gen_high_voltage(l, gen, 1, 0)
@@ -146,10 +148,11 @@ if __name__ == '__main__':
     set_osc_hor(l, osc, t=0.005)
     # 5ms per div
     # whole screen 50ms/2500pts=>1/50 ms/pts->20us/pts
-    set_trigger(l, osc, level=0.20)
+    set_trigger(l, osc, level=0.4)
 
     input("PLUG MEMR")
     # EXPERIMENT
+    os.mkdir(start_time)
 
     exp_time = td(minutes=5, seconds=0)
     reset_time = td(minutes=1, seconds=0)  # time to reset memr
@@ -185,7 +188,7 @@ if __name__ == '__main__':
         reset_start_time = dt.now()
         start_gen(l, gen)
         l.debug("WRITING TO FILE")
-        with open("test_{}_{}.txt".format(i, start_time), "w") as f:
+        with open("{}/test_{}_{}.txt".format(start_time, i, start_time), "w") as f:
             l.debug(f.write(result.__str__()))
             f.write("\n")
             l.debug(f.write(result_times.__str__()))
