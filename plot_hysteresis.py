@@ -18,4 +18,5 @@ plt.plot(up[0], up[1], color ='green', label='up')
 plt.plot(up2[0], up2[1], color ='grey', label='up')
 plt.plot(down[0], down[1], color='blue', label='down')
 plt.legend()
+
 plt.show()
