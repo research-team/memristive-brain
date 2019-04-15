@@ -97,11 +97,10 @@ def osc_get_data(log, dev):
     # data = data[13:-1:]
     return data
 
-
 if __name__ == '__main__':
 
     start_time = dt.now().strftime("%d#%m#%Y#%H#%M#%S")
-
+    
 
     # create logger with 'spam_application'
     l = logging.getLogger('memr_test_stand')
@@ -119,10 +118,11 @@ if __name__ == '__main__':
     # add the handlers to the logger
     l.addHandler(ch)
     l.addHandler(fh)
-
+    l.info("experiment started at {}".format(start_time))
+    
     rm = visa.ResourceManager()
     l.debug(rm.list_resources("?*"))
-    gen = rm.open_resource("USB0::0x4348::0x5537::NI-VISA-40002::RAW")
+    gen = rm.open_resource("USB0::0x4348::0x5537::NI-VISA-40001::RAW")
     gen.timeout = 5000
     osc = rm.open_resource("USB0::0x0699::0x03A6::C041256::INSTR")
     osc.timeout = 5000
@@ -134,8 +134,10 @@ if __name__ == '__main__':
     l.debug(osc.write("DATa:ENCdg RIBinary"))
     l.debug(osc.write("DATa:WIDth 2"))
 
-    experiment_vhigh = 800
-    experiment_vlow = 0
+    experiment_vhigh = 150
+    experiment_vlow = -200
+    reset_high = 800
+    reset_low = 800
 
     set_gen_square(l, gen, vhigh=0, vhigh_unit="mV", vlow=0, vlow_unit="mV", period=10, period_unit="ms")
     gen_high_voltage(l, gen, 1, 0)
@@ -143,35 +145,37 @@ if __name__ == '__main__':
 
     vpd = 0.75
     rez_coef = 25 // vpd  # 50
-    set_osc_ch(l, osc, vpd=vpd, zero_level=-1)
+    set_osc_ch(l, osc, vpd=vpd, zero_level=0)
 
     set_osc_hor(l, osc, t=0.005)
     # 5ms per div
     # whole screen 50ms/2500pts=>1/50 ms/pts->20us/pts
-    set_trigger(l, osc, level=0.4)
+    set_trigger(l, osc, level=-0.7)
 
     input("PLUG MEMR")
     # EXPERIMENT
     os.mkdir(start_time)
 
     exp_time = td(minutes=5, seconds=0)
-    reset_time = td(minutes=1, seconds=0)  # time to reset memr
+    reset_time = td(minutes=2, seconds=0)  # time to reset memr
 
-    gen_low_voltage(l, gen, 1, -200, "mV")
-    gen_high_voltage(l, gen, 1, -200, "mV")
+    gen_high_voltage(l, gen, 1, reset_high, "mV")
+    gen_low_voltage(l, gen, 1, reset_low, "mV")
+    
     reset_start_time = dt.now()
     start_gen(l, gen)
     while dt.now() - reset_start_time < reset_time:
         pass
     stop_gen(l, gen)
 
-    for i in range(10, 90, 10):
+    for i in range(90, 10, -10):
         l.debug("PWM LEVEL {}".format(i))
         result = []
         result_times = []
         # PWM
-        gen_high_voltage(l, gen, 1, experiment_vhigh, "mV")
         gen_low_voltage(l, gen, 1, experiment_vlow, "mV")
+        gen_high_voltage(l, gen, 1, experiment_vhigh, "mV")
+        
         gen_duty_cycle(l, gen, dutycycle=i)
 
         exp_start_time = dt.now()
@@ -182,10 +186,12 @@ if __name__ == '__main__':
         stop_gen(l, gen)
 
         # RESET
-        gen_low_voltage(l, gen, 1, -200, "mV")
-        gen_high_voltage(l, gen, 1, -200, "mV")
+        gen_high_voltage(l, gen, 1, reset_high, "mV")
+        gen_low_voltage(l, gen, 1, reset_low, "mV")
+        
 
         reset_start_time = dt.now()
+        l.debug("RESET START")
         start_gen(l, gen)
         l.debug("WRITING TO FILE")
         with open("{}/test_{}_{}.txt".format(start_time, i, start_time), "w") as f:
