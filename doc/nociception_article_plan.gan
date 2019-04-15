@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Nociception article" company="" webLink="http://" view-date="2019-04-01" view-index="0" gantt-divider-location="474" resource-divider-location="300" version="2.8.7" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Nociception article" company="" webLink="http://" view-date="2019-04-01" view-index="0" gantt-divider-location="474" resource-divider-location="300" version="2.8.10" locale="en_GB">
     <description/>
     <view zooming-state="default:5" id="gantt-chart">
         <field id="tpd3" name="Name" width="218" order="0"/>
@@ -93,7 +93,7 @@
             </task>
             <task id="5" name="5-HT ATP" color="#8cb6ce" meeting="false" start="2019-04-09" duration="4" complete="100" thirdDate="2019-04-09" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="16" name="Long simulations" color="#8cb6ce" meeting="false" start="2019-04-15" duration="5" complete="0" thirdDate="2019-04-15" thirdDate-constraint="0" expand="true">
+        <task id="16" name="Long simulations" color="#8cb6ce" meeting="false" start="2019-04-15" duration="5" complete="15" thirdDate="2019-04-15" thirdDate-constraint="0" expand="true">
             <depend id="11" type="2" difference="0" hardness="Strong"/>
             <depend id="32" type="2" difference="0" hardness="Strong"/>
         </task>
