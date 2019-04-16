@@ -182,7 +182,7 @@ if __name__ == '__main__':
         stop_gen(l, gen)
 
         l.debug("WRITING TO FILE")
-        with open("test_grow_{}_{}.txt".format(i, start_time), "w") as f:
+        with open("plotter/{}/test_grow_{}_{}.txt".format(start_time, i, start_time), "w") as f:
             l.debug(f.write(result.__str__()))
             f.write("\n")
             l.debug(f.write(result_times.__str__()))
@@ -196,7 +196,6 @@ if __name__ == '__main__':
         gen_low_voltage(l, gen, 1, ex_fall_vlow, "mV")
         gen_high_voltage(l, gen, 1, ex_fall_vhigh, "mV")
 
-
         exp_start_time = dt.now()
         start_gen(l, gen)
         while dt.now() - exp_start_time < exp_time:
@@ -205,11 +204,10 @@ if __name__ == '__main__':
         stop_gen(l, gen)
 
         l.debug("WRITING TO FILE")
-        with open("test_fall_{}_{}.txt".format(i, start_time), "w") as f:
+        with open("plotter/{}/test_fall_{}_{}.txt".format(start_time, i, start_time), "w") as f:
             l.debug(f.write(result.__str__()))
             f.write("\n")
             l.debug(f.write(result_times.__str__()))
-
 
     gen_high_voltage(l, gen, 1, 0, "mV")
     gen_low_voltage(l, gen, 1, 0, "mV")

@@ -194,7 +194,7 @@ if __name__ == '__main__':
         l.debug("RESET START")
         start_gen(l, gen)
         l.debug("WRITING TO FILE")
-        with open("{}/test_{}_{}.txt".format(start_time, i, start_time), "w") as f:
+        with open("plotter/{}/test_{}_{}.txt".format(start_time, i, start_time), "w") as f:
             l.debug(f.write(result.__str__()))
             f.write("\n")
             l.debug(f.write(result_times.__str__()))
