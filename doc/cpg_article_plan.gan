@@ -241,7 +241,7 @@
             </task>
             <task id="23" name="STDP" meeting="false" start="2019-05-02" duration="5" complete="0" expand="true"/>
         </task>
-        <task id="37" name="NEST" color="#000000" meeting="false" start="2019-05-15" duration="13" complete="0" thirdDate="2019-05-15" thirdDate-constraint="1" expand="true">
+        <task id="37" name="NEST" color="#000000" meeting="false" start="2019-05-15" duration="18" complete="0" thirdDate="2019-05-15" thirdDate-constraint="1" expand="true">
             <depend id="6" type="2" difference="0" hardness="Strong"/>
             <depend id="115" type="2" difference="0" hardness="Strong"/>
             <task id="38" name="EES" meeting="false" start="2019-05-10" duration="10" complete="0" expand="true">
@@ -250,17 +250,20 @@
             <task id="42" name="Speeds" color="#8cb6ce" meeting="false" start="2019-05-24" duration="3" complete="0" thirdDate="2019-05-24" thirdDate-constraint="0" expand="true">
                 <depend id="39" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="39" name="Steps" color="#8cb6ce" meeting="false" start="2019-05-29" duration="3" complete="0" thirdDate="2019-05-29" thirdDate-constraint="0" expand="true"/>
+            <task id="39" name="Steps" color="#8cb6ce" meeting="false" start="2019-05-29" duration="3" complete="0" thirdDate="2019-05-29" thirdDate-constraint="0" expand="true">
+                <depend id="119" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="119" name="STDP" color="#8cb6ce" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="115" name="Simulation complete" color="#8cb6ce" meeting="true" start="2019-06-03" duration="0" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
         <task id="6" name="Valdiation" color="#000000" meeting="false" start="2019-06-03" duration="13" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true">
             <depend id="14" type="2" difference="0" hardness="Strong"/>
-            <task id="24" name="Dispersion" color="#8cb6ce" meeting="false" start="2019-06-03" duration="3" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
+            <task id="24" name="Dispersion" color="#8cb6ce" meeting="false" start="2019-06-10" duration="3" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
                 <depend id="26" type="2" difference="0" hardness="Strong"/>
                 <depend id="27" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="26" name="Latency" meeting="false" start="2019-06-06" duration="2" complete="0" expand="true"/>
-            <task id="27" name="Amplitude" meeting="false" start="2019-06-06" duration="2" complete="0" expand="true">
+            <task id="26" name="Latency" meeting="false" start="2019-06-14" duration="2" complete="0" expand="true"/>
+            <task id="27" name="Amplitude" meeting="false" start="2019-06-14" duration="2" complete="0" expand="true">
                 <depend id="28" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="28" name="Regression" color="#8cb6ce" meeting="false" start="2019-06-10" duration="3" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
@@ -295,6 +298,7 @@
         <allocation task-id="15" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="37" resource-id="6" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="6" resource-id="7" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="7" function="1" responsible="false" load="100.0"/>
         <allocation task-id="14" resource-id="8" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="14" resource-id="9" function="Default:0" responsible="false" load="100.0"/>
     </allocations>
