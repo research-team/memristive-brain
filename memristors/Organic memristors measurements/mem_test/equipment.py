@@ -78,6 +78,8 @@ class Oscilloscope:
 
     def close(self):
         self.__device.close()
+        self.__logger.debug("OSCILLOSCOPE CLOSED")
+
 
 class SignalShape(Enum):
     SQUARE = "SQU"
@@ -200,4 +202,9 @@ class Generator:
         return result
 
     def close(self):
+        self.__logger.debug("GENERATOR STOP")
+        self.stop_source(1)
+        self.stop_source(2)
         self.__device.close()
+        self.__logger.debug("GENERATOR CLOSED")
+
