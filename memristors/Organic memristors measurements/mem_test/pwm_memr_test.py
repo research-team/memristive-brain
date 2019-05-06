@@ -37,18 +37,77 @@ if __name__ == '__main__':
 
     try:
 
+        osc.channel_setup(3, 1, 0)
+        osc.set_data_source(3)
+        osc.horisontal_time_setup(0.0025)
+
         gen.set_square_signal(dutycycle=30, vhigh=3, vhigh_unit="V", vlow=0, vlow_unit="v", period=10, period_unit="ms")
         gen.set_square_signal(source=2, dutycycle=30, vhigh=3, vhigh_unit="V", vlow=0, vlow_unit="v", period=10,
                               period_unit="ms")
 
         gen.custom_write("PHAS:SYNC")
 
+        input("PLUG MEMR")
+        # EXPERIMENT
+        os.mkdir("plotter/test/{}".format(start_time))
 
+        exp_time = td(minutes=5, seconds=0)
+        reset_time = td(minutes=2, seconds=0)  # time to reset memr
 
-        exp_start_time = dt.now()
+        reset_high = 0
+        reset_low = 0
+        gen.set_signal_high_voltage(1, reset_high, "mV")
+        gen.set_signal_low_voltage(1, reset_low, "mV")
+
+        reset_start_time = dt.now()
+        gen.start_source(1)
+        gen.start_source(2)
+
+        while (dt.now() - reset_start_time) < reset_time:
+            pass
+        gen.stop_source(1)
+        gen.stop_source(2)
 
         gen.start_source(1)
         gen.start_source(2)
+
+        for i in range(0, 180, 10):
+            logger.debug("PHASE SHIFT {}".format(i))
+            result = []
+            result_times = []
+
+            # set phase
+            gen.custom_write("PHAS {}".format(i))
+            gen.set_signal_high_voltage(1, 3, "V")
+            gen.set_signal_low_voltage(1, 0, "mV")
+
+            exp_start_time = dt.now()
+            gen.start_source(1)
+            gen.start_source(2)
+            while dt.now() - exp_start_time < exp_time:
+                result.append(osc.get_data())
+                result_times.append(dt.now().strftime("%d#%m#%Y#%H#%M#%S#%f"))
+            gen.stop_source(1)
+            gen.stop_source(2)
+
+            # RESET
+            gen.set_signal_low_voltage(1, reset_high, "mV")
+            gen.set_signal_high_voltage(1, reset_low, "mV")
+
+            reset_start_time = dt.now()
+            logger.debug("RESET START")
+            gen.start_source(1)
+            gen.start_source(2)
+            logger.debug("WRITING TO FILE")
+            with open("plotter/test/{}/test_{}_{}.txt".format(start_time, i, start_time), "w") as f:
+                logger.debug(f.write(result.__str__()))
+                f.write("\n")
+                logger.debug(f.write(result_times.__str__()))
+            while dt.now() - reset_start_time < reset_time:
+                pass
+            gen.stop_source(1)
+            gen.stop_source(2)
+            logger.debug("PWM {} RESET DONE".format(i))
 
         gen.close()
         osc.close()

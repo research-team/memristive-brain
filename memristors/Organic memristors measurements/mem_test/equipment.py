@@ -54,7 +54,12 @@ class Oscilloscope:
         time.sleep(self.__delay)
         self.__logger.debug("TRIGGER SETUP COMPLETE")
 
-    def osc_get_data(self):
+    def set_data_source(self, channel=1):
+        self.__logger.debug("SET DATA SOURCE TO CHANNEL{}".format(channel))
+        self.__logger.debug("SET OSC TRIGGER SOURCE TO CH{} - {}".format(channel, self.__device.write(
+            'DAT:SOU CH{}'.format(channel))))
+
+    def get_data(self):
         """RETURS DATA IN STRING FORMAT"""
         self.__logger.debug("READ OSC DATA - {}".format(self.__device.write('ACQ:STATE ON')))  # record one snapshot
         time.sleep(self.__delay)
@@ -207,4 +212,3 @@ class Generator:
         self.stop_source(2)
         self.__device.close()
         self.__logger.debug("GENERATOR CLOSED")
-
