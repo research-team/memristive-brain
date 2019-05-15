@@ -1,0 +1,51 @@
+* C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\leaky-intergator\Leak-new.asc
+R1 membr in1 10K
+XU3 N009 N002 +5 -5 N006 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+D1 0 N002 D
+D2 P001 N009 D
+R9 N006 N009 0.1Meg
+R10 0 N009 400K
+R7 P001 0 100K
+R8 N006 N002 150K
+C3 N002 0 40n
+C2 P001 N008 0.001µ
+XU1 membr N003 +5 -5 N010 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+C1 0 membr 2µ
+R3 N010 N003 10K
+R4 N010 membr 4.7K
+R2 N003 0 1Meg
+V1 +5 0 5
+V2 0 -5 5
+V3 in1 0 PWL file="leak-new gen signals\gen1.txt"
+XU2 N010 N005 +5 -5 N008 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+XU4 N007 N001 +5 -5 N004 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+D3 0 N001 D
+D4 P002 N007 D
+R13 N004 N007 0.1Meg
+R14 0 N007 100K
+R11 P002 0 100K
+R12 N004 N001 150K
+C5 N001 0 20n
+C4 P002 N006 0.001µ
+D5 N004 P003 D
+R15 Out P003 12K
+R16 0 Out 25K
+XU5 0 N012 +5 -5 N011 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R17 N011 N012 1Meg
+R18 N013 N012 1Meg
+D6 N006 N013 D
+R19 N011 membr 15K
+R5 membr in2 10K
+V5 in2 0 PWL file="leak-new gen signals\gen2.txt"
+R6 NC_01 NC_02 10K
+V6 in3 0 PWL file="leak-new gen signals\gen3.txt"
+R20 NC_03 NC_04 10K
+V7 in4 0 PWL file="leak-new gen signals\gen4.txt"
+R21 N005 -5 82K
+R22 +5 N005 62K
+.model D D
+.lib C:\Users\yurra\Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 2 0 1000u
+.lib UniversalOpamps2.sub
+.backanno
+.end
