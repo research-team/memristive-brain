@@ -50,11 +50,11 @@ if __name__ == '__main__':
     vlow = -5
     vhigh = 5
     vdes = 0.7
-    i, res = resistor_values(vlow, vhigh, vdes, line=192,minpresc=0.001)
+    i, res = resistor_values(vlow, vhigh, vdes)
     if res is not None:
         for x in res:
             print(
-                "within {:.3f} volt range from desired found {:.3f} volts with {:.3f} and {:.3f} resistor values".format(i, x[0], x[1][0],
+                "within {:.4f} volt range from desired found {:.3f} volts with {:.3f} and {:.3f} resistor values".format(i, x[0], x[1][0],
                                                                                                        x[1][1]))
     else:
         print("not possible within 1 volt")
