@@ -39,34 +39,34 @@ if __name__ == '__main__':
     print("DONE!!!!")
 
 
-    # keithly.write("SENS:FUNC \"CURR\"")
-    # time.sleep(0.01)
-    # keithly.write("SOUR:FUNC VOLT")
-    # time.sleep(0.01)
-    # steps = ["-0.2", "-0.1", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1"]
-    # steps += steps[-2::-1]
-    # data = numpy.empty((0, 3))
-    # delay = 5*60
-    # for idx, s in enumerate(steps):
-    #     print("STEP {} init".format(s))
-    #     keithly.write("SOUR:VOLT {}".format(s))
-    #     time.sleep(0.01)
-    #
-    #     keithly.write("TRIG:LOAD:LOOP:DUR {},0,\"defbuffer1\"".format(delay))
-    #     time.sleep(0.01)
-    #
-    #     keithly.write("INIT")
-    #     time.sleep(delay + 1)
-    #     size = int(keithly.query("TRACe:ACTual? \"defbuffer1\""))
-    #     print(size)
-    #     d = keithly.query_ascii_values("TRACe:DATA? 1,{}, \"defbuffer1\",SOUR,READ,REL".format(size),
-    #                                    container=numpy.array)
-    #     temp = numpy.reshape(d, (-1, 3))
-    #     data = numpy.append(data, temp, axis=0)
-    #     numpy.savetxt("res{}_{}.csv".format(idx,s), temp, delimiter=",")
-    #     print("DONE step {}!!!!".format(s))
-    # numpy.savetxt("all_res.csv", data, delimiter=",")
-    # print("DONE !!!!")
+    keithly.write("SENS:FUNC \"CURR\"")
+    time.sleep(0.01)
+    keithly.write("SOUR:FUNC VOLT")
+    time.sleep(0.01)
+    steps = ["-0.2", "-0.1", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1"]
+    steps += steps[-2::-1]
+    data = numpy.empty((0, 3))
+    delay = 5*60
+    for idx, s in enumerate(steps):
+        print("STEP {} init".format(s))
+        keithly.write("SOUR:VOLT {}".format(s))
+        time.sleep(0.01)
+
+        keithly.write("TRIG:LOAD:LOOP:DUR {},0,\"defbuffer1\"".format(delay))
+        time.sleep(0.01)
+
+        keithly.write("INIT")
+        time.sleep(delay + 1)
+        size = int(keithly.query("TRACe:ACTual? \"defbuffer1\""))
+        print(size)
+        d = keithly.query_ascii_values("TRACe:DATA? 1,{}, \"defbuffer1\",SOUR,READ,REL".format(size),
+                                       container=numpy.array)
+        temp = numpy.reshape(d, (-1, 3))
+        data = numpy.append(data, temp, axis=0)
+        numpy.savetxt("res{}_{}.csv".format(idx,s), temp, delimiter=",")
+        print("DONE step {}!!!!".format(s))
+    numpy.savetxt("all_res.csv", data, delimiter=",")
+    print("DONE !!!!")
 
 
     # print(data)
