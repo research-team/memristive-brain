@@ -2,40 +2,15 @@ import time
 
 import numpy
 import visa
-
-
-class smu:
-    def __init__(self, smu, delay=0.1):
-        self.__smu__ = smu
-        self.__delay = delay
-        self.__block_cnt = 1
-
-    def write(self, text):
-        self.__smu__.write(text)
-        time.sleep(self.__delay)
-
-    def create_block(self, text):
-        self.__smu__.write("TRIGger:BLOCk:{}".format(text.format(self.__block_cnt)))
-        self.__block_cnt += 1
-        time.sleep(self.__delay)
-
-    def close(self):
-        self.__smu__.close()
-
-    def query(self, query):
-        result = self.__smu__.query(query)
-        time.sleep(self.__delay)
-        return result
-
+from equipment import KeithlySmu, Lgr
 
 if __name__ == '__main__':
+    l = Lgr('keithly')
     rm = visa.ResourceManager()
-    print(rm.list_resources())
-    keithly = rm.open_resource(rm.list_resources()[0])
-    print(keithly)
-    print(keithly.query("*IDN?"))
-    K = smu(keithly)
+    K = KeithlySmu('keithly', rm.list_resources()[0], delay=0.3)
     K.write("*RST")
+    l.d("INIT COMPLETE")
+    data = numpy.empty((0, 3))
 
     # project settings
     experiment_time = 10
@@ -64,15 +39,16 @@ if __name__ == '__main__':
     # generate custom TriggerFlow
     # 0 a) setup timers
     K.write("TRIG:TIM1:DEL {:.3e}".format(experiment_time))
-    K.write("TRIG:TIM1:STAR:STIM NOT1")
+    K.write("TRIG:TIM1:STAR:STIM NOTify1")
     K.write("TRIG:TIM2:DEL {:.3e}".format(low_time))
-    K.write("TRIG:TIM2:STAR:STIM NOT2")
+    K.write("TRIG:TIM2:STAR:STIM NOTify2")
     K.write("TRIG:TIM3:DEL {:.3e}".format(high_time))
-    K.write("TRIG:TIM3:STAR:STIM NOT3")
+    K.write("TRIG:TIM3:STAR:STIM NOTify3")
     # 1)buf    clear
     K.create_block("BUFFer:CLEar {}, \"defbuffer1\"")
     # 2)notify    timer1    with whole experiment time
     K.create_block("NOT {}, 1")
+    K.write("TRIG:TIM1:STAR:STIM NOTify1")
     # 3)recall netural part (EL 0) from conf list
     K.create_block("CONFig:RECall {}, \"pulse\", 1")
     # 4)SOURCE_OUTPUT         OUTPUT: ON
@@ -82,9 +58,9 @@ if __name__ == '__main__':
     # 6)recall    low    part(EL    1) from conf list
     K.create_block("CONFig:RECall {}, \"pulse\", 2")
     # 7) MEASURE               BUFFER: defbuffer1
-    K.create_block("MEASure {}, \"defbuffer1\"")
+    K.create_block("MEASure {}")  # , \"defbuffer1\"")
     # 8) BRANCH_ON_EVENT    EVENT: EVENT_TIMER2     BRANCH_BLOCK: 10
-    K.create_block("BRANch:EVENt {}, TIMer2, 10")
+    K.create_block("BRANch:EVENt {}, TIM2, 10")
     # 9) BRANCH_ALWAYS    BRANCH_BLOCK: 7
     K.create_block("BRANch:ALWays {}, 7")
     # 10)recall     high    part(EL     2) from conf list
@@ -92,28 +68,29 @@ if __name__ == '__main__':
     # 11)notify     timer3     with high time
     K.create_block("NOT {}, 3")
     # 12) MEASURE               BUFFER: defbuffer1
-    K.create_block("MEASure {}, \"defbuffer1\", 1")
+    K.create_block("MEASure {}")  # , \"defbuffer1\"")
     # 13) BRANCH_ON_EVENT     EVENT: EVENT_TIMER3     BRANCH_BLOCK: 15
-    K.create_block("BRANch:EVENt {}, TIMer3, 15")
+    K.create_block("BRANch:EVENt {}, TIM3, 15")
     # 14) BRANCH_ALWAYS     BRANCH_BLOCK: 12
     K.create_block("BRANch:ALWays {}, 12")
     # 15) BRANCH_ON_EVENT     EVENT: EVENT_TIMER1     BRANCH_BLOCK: 17
-    K.create_block("BRANch:EVENt {}, TIMer1, 17")
+    K.create_block("BRANch:EVENt {}, TIM1, 17")
     # 16) BRANCH_ALWAYS     BRANCH_BLOCK: 5
     K.create_block("BRANch:ALWays {}, 5")
     # 17) SOURCE_OUTPUT     OUTPUT: OFF
     K.create_block("SOURce:STATe {}, OFF")
 
-    # print(K.query("TRIGger:BLOCk:LIST?"))
+    # l.d(K.query("TRIGger:BLOCk:LIST?"))
     # start experiment
-    K.write("INIT")
-    time.sleep(experiment_time + 1)
-    data = numpy.empty((0, 3))
-    size = int(keithly.query("TRACe:ACTual? \"defbuffer1\""))
-    print(size)
-    d = keithly.query_ascii_values("TRACe:DATA? 1,{}, \"defbuffer1\",SOUR,READ,REL".format(size),
-                                   container=numpy.array)
-    temp = numpy.reshape(d, (-1, 3))
-    data = numpy.append(data, temp, axis=0)
-    numpy.savetxt("test_pulse.csv", temp, delimiter=",")
+
+    # K.write("INIT")
+    # time.sleep(experiment_time + 1)
+    #
+    # size = int(keithly.query("TRACe:ACTual? \"defbuffer1\""))
+    # l.d(size)
+    # d = keithly.query_ascii_values("TRACe:DATA? 1,{}, \"defbuffer1\",SOUR,READ,REL".format(size),
+    #                                container=numpy.array)
+    # temp = numpy.reshape(d, (-1, 3))
+    # data = numpy.append(data, temp, axis=0)
+    # numpy.savetxt("test_pulse.csv", temp, delimiter=",")
     K.close()

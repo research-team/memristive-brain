@@ -4,6 +4,40 @@ import time
 from enum import Enum
 
 
+class Lgr:
+
+    def __init__(self, logname, filename=None, level=logging.DEBUG):
+        # create logger with 'spam_application'
+        self.__l = logging.getLogger(logname)
+        self.__l.setLevel(logging.DEBUG)
+        # create console handler with a higher log level
+        formatter = logging.Formatter('{asctime}::{levelname:^8s}- {message}', style="{")
+        ch = logging.StreamHandler()
+        ch.setLevel(level)
+        ch.setFormatter(formatter)
+        self.__l.addHandler(ch)
+        if filename is not None:
+            fh = logging.FileHandler(filename)
+            fh.setLevel(level)
+            fh.setFormatter(formatter)
+            self.__l.addHandler(fh)
+
+    def d(self, text):
+        self.__l.debug(text)
+
+    def i(self, text):
+        self.__l.info(text)
+
+    def w(self, text):
+        self.__l.warning(text)
+
+    def e(self, text):
+        self.__l.error(text)
+
+    def c(self, text):
+        self.__l.critical(text)
+
+
 class Oscilloscope:
     def __init__(self,
                  logger_name, dev_id, message_delay=0.1):
@@ -35,7 +69,7 @@ class Oscilloscope:
             'CH{}:VOLTS {:.2f}'.format(channel, vpd))))  # VOLTS per div # 25 points per vertical div
         time.sleep(self.__delay)
         self.__logger.debug("SET OSC CH{} ZERO LEVEL - {}".format(channel, self.__device.write(
-            "CH{}:POS {}".format(channel, zero_level))))  # in DIVS not in volts
+            "CH{}:POS {:.3f}".format(channel, zero_level))))  # in DIVS not in volts
         time.sleep(self.__delay)
         self.__logger.debug("CHANNEL {} SETUP COMPLETE".format(channel))
 
@@ -212,3 +246,30 @@ class Generator:
         self.stop_source(2)
         self.__device.close()
         self.__logger.debug("GENERATOR CLOSED")
+
+
+class KeithlySmu:
+    def __init__(self, logger_name, dev_id, delay=0.1):
+        self.__logger = logging.getLogger(logger_name)
+        rm = visa.ResourceManager()
+        self.__smu = rm.open_resource(dev_id)
+        self.__delay = delay
+        self.__block_cnt = 1
+
+    def write(self, text):
+        self.__smu.write(text)
+        time.sleep(self.__delay)
+
+    def create_block(self, text):
+        data = "TRIGger:BLOCk:{}".format(text.format(self.__block_cnt))
+        self.__smu.write(data)
+        self.__block_cnt += 1
+        time.sleep(self.__delay)
+
+    def close(self):
+        self.__smu.close()
+
+    def query(self, query):
+        result = self.__smu.query_ascii_values(query)
+        time.sleep(self.__delay)
+        return result
