@@ -35,7 +35,7 @@ if __name__ == '__main__':
                                    container=numpy.array)
     temp = numpy.reshape(d, (-1, 3))
     data = numpy.append(data, temp, axis=0)
-    numpy.savetxt("reset.csv", data, delimiter=",")
+    numpy.savetxt("reset_mem3.csv", data, delimiter=",")
     print("DONE!!!!")
 
 
