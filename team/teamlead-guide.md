@@ -1,12 +1,14 @@
-# Developers guide
+# Team lead guide
 
-## Use small increments
+## Who is team lead?
 
-Don't try to complete the component before testing. 
-Each function must be tested.
-Adding small increment test it before staring new function.
+https://en.wikipedia.org/wiki/Team_leader
 
-Same approach should be applied to works with schematic: test each soldered op-amp before soldering other components.
+Team lead is the leading researcher but also a team member that do the research as the rest of the team.
+
+
+## Remember your team members names 
+
 
 ## Meaningful names for variables functions, files inputs and outputs of schematic
 
