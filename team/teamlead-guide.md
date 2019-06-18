@@ -24,6 +24,9 @@ Firstly you have to ensure the knowledge level of a rookie is sufficient to star
 1. NEURON tutorial [MIT](http://web.mit.edu/neuron_v7.4/nrntuthtml/index.html) [NEURON site](https://www.neuron.yale.edu/neuron/docs#neuron-beginners)
 1. [NEST documentation](https://nest-simulator.readthedocs.io/en/latest/)
 
+#### Use developers guide 
+
+https://github.com/research-team/memristive-brain/blob/master/team/developers-guide.md
 
 ### Weekly
 #### Manage your team tasks distribution 
@@ -37,14 +40,15 @@ The update should be agreed among researchers of the team and conducted every it
 1. Review of not done tasks
 1. *Retrospection* Review of reasons why some tasks are not completed during the iteration 
 1. *Planing* of new iteration:
-   2. Get rid of Done list of the completed iteration 
-   2. Create new Done list for the new iteration
-   2. Put new tasks from the Backlog in the ToDo list
-   2. Estimate the total workload of the iteration, it should be 40*n_of_researchers.
+   1. Get rid of Done list of the completed iteration 
+   1. Create new Done list for the new iteration
+   1. Put new tasks from the Backlog in the ToDo list
+   1. Estimate the total workload of the iteration, it should be 40*n_of_researchers.
 	
 #### Organize weekly updates with collaborators 
 Organize Skype(other agreed messenger) call of the team members with collaborator.
 
 #### Monthly 
 
+...
 
