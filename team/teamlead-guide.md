@@ -18,7 +18,7 @@ This makes easier to address and communicate.
 Firstly you have to ensure the knowledge level of a rookie is sufficient to start participation in your team, for this we usually use online courses and entry exam.
 
 1. [Neuroscience fundamentals](mcb80x.org)
-1. [Python basics, Alex is this right?][https://docs.python.org/3/tutorial/index.html]
+1. [Python basics, Alex is this right?](https://docs.python.org/3/tutorial/index.html)
 1. [C++ basics, Alex please add link here]()
 1. [Electronics basics, Yura please add link here]()
 1. NEURON tutorial [MIT](http://web.mit.edu/neuron_v7.4/nrntuthtml/index.html) [NEURON site](https://www.neuron.yale.edu/neuron/docs#neuron-beginners)
