@@ -26,5 +26,5 @@ Firstly you have to ensure the knowledge level of a rookie is sufficient to star
 
 
 #### Manage your team tasks distribution 
-Usually with [tool](trello.com) 
+Usually with [tool](http://trello.com) the researcher load should be enough for the iteration not less than 100%. Researchers should not be bored with tasks for this you should balance boring tasks with interesting in same iteration.
 
