@@ -25,6 +25,22 @@ Firstly you have to ensure the knowledge level of a rookie is sufficient to star
 1. [NEST documentation](https://nest-simulator.readthedocs.io/en/latest/)
 
 
+### Weekly
 #### Manage your team tasks distribution 
-Usually with [tool](http://trello.com) the researcher load should be enough for the iteration not less than 100%. Researchers should not be bored with tasks for this you should balance boring tasks with interesting in same iteration.
+
+Usually with [tool](http://trello.com) the researcher load should be enough for the iteration not less than 100%. Researchers should not be bored with tasks for this you should balance boring tasks with interesting in same iteration. For the senior researchers we could use practice of free tasks selections but for the junior researchers we should use the assignment of the tasks during the iteration.
+
+#### Organize mandatory weekly updates 
+The update should be agreed among researchers of the team and conducted every iteration (usually week) with following steps:
+
+1. Review of done tasks 
+1. Review of not done tasks
+1. *Retrospection* Review of reasons why some tasks are not completed during the iteration 
+1. *Planing* of new iteration:
+  2. Get rid of Done list of the completed iteration 
+  2. Create new Done list for the new iteration
+  2. Put new tasks from the Backlog in the ToDo list
+  2. Estimate the total workload of the iteration, it should be 40*n_of_researchers.
+  
+
 
