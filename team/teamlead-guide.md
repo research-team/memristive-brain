@@ -20,7 +20,8 @@ Firstly you have to ensure the knowledge level of a rookie is sufficient to star
 1. [Neuroscience fundamentals](mcb80x.org)
 1. [Python basics, Alex is this right?](https://docs.python.org/3/tutorial/index.html)
 1. [C++ basics, Alex please add link here]()
-1. [Electronics basics, tough, but very good](https://yadi.sk/d/Z6R-dbCo7GKS7)
+1. [Electronics basics simple version](http://instrumentacion.qi.fcen.uba.ar/libro/Scherz.pdf)
+1. [Also some electronics basics, tough, but very good](https://yadi.sk/d/Z6R-dbCo7GKS7)
 1. NEURON tutorial: [MIT](http://web.mit.edu/neuron_v7.4/nrntuthtml/index.html), [NEURON](https://www.neuron.yale.edu/neuron/docs#neuron-beginners) sites.
 1. [NEST documentation](https://nest-simulator.readthedocs.io/en/latest/)
 
