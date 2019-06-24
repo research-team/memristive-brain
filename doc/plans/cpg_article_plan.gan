@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-04-01" view-index="0" gantt-divider-location="429" resource-divider-location="300" version="2.8.10" locale="en_GB">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-05-27" view-index="0" gantt-divider-location="429" resource-divider-location="300" version="2.8.10" locale="en_GB">
     <description/>
-    <view zooming-state="default:6" id="gantt-chart">
+    <view zooming-state="default:7" id="gantt-chart">
         <field id="tpd3" name="Name" width="175" order="0"/>
-        <field id="tpd4" name="Begin date" width="77" order="1"/>
-        <field id="tpd5" name="End date" width="78" order="2"/>
+        <field id="tpd4" name="Begin date" width="83" order="1"/>
+        <field id="tpd5" name="End date" width="82" order="2"/>
         <field id="tpd6" name="Duration" width="31" order="3"/>
-        <field id="tpd13" name="Resources" width="64" order="4"/>
+        <field id="tpd13" name="Resources" width="54" order="4"/>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="210" order="0"/>
@@ -84,7 +84,7 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="18" name="NEURON" color="#000000" meeting="false" start="2019-04-08" duration="18" complete="56" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+        <task id="18" name="NEURON" color="#000000" meeting="false" start="2019-04-08" duration="18" complete="56" thirdDate="2019-04-08" thirdDate-constraint="0" expand="false">
             <task id="0" name="EES" meeting="false" start="2019-04-08" duration="6" complete="100" expand="true">
                 <task id="1" name="30 Hz" color="#8cb6ce" meeting="false" start="2019-04-08" duration="2" complete="100" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
                     <depend id="2" type="2" difference="0" hardness="Strong"/>
@@ -112,7 +112,7 @@
             </task>
             <task id="5" name="STDP" meeting="false" start="2019-04-18" duration="10" complete="0" expand="true"/>
         </task>
-        <task id="15" name="GRAS" color="#000000" meeting="false" start="2019-04-08" duration="22" complete="20" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+        <task id="15" name="GRAS" color="#000000" meeting="false" start="2019-04-08" duration="22" complete="20" thirdDate="2019-04-08" thirdDate-constraint="0" expand="false">
             <depend id="37" type="2" difference="0" hardness="Strong"/>
             <task id="16" name="EES" color="#8cb6ce" meeting="false" start="2019-04-08" duration="6" complete="26" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
                 <depend id="19" type="2" difference="0" hardness="Strong"/>
@@ -143,7 +143,7 @@
             </task>
             <task id="23" name="STDP" meeting="false" start="2019-05-02" duration="5" complete="0" expand="true"/>
         </task>
-        <task id="37" name="NEST" color="#000000" meeting="false" start="2019-05-15" duration="18" complete="0" thirdDate="2019-05-15" thirdDate-constraint="1" expand="true">
+        <task id="37" name="NEST" color="#000000" meeting="false" start="2019-05-15" duration="18" complete="0" thirdDate="2019-05-15" thirdDate-constraint="1" expand="false">
             <depend id="6" type="2" difference="0" hardness="Strong"/>
             <depend id="115" type="2" difference="0" hardness="Strong"/>
             <task id="38" name="EES" meeting="false" start="2019-05-10" duration="10" complete="0" expand="true">
@@ -158,37 +158,86 @@
             <task id="119" name="STDP" color="#8cb6ce" meeting="false" start="2019-06-03" duration="5" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="115" name="Simulation complete" color="#8cb6ce" meeting="true" start="2019-06-10" duration="0" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true"/>
-        <task id="6" name="Valdiation" color="#000000" meeting="false" start="2019-06-10" duration="13" complete="30" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true">
-            <depend id="14" type="2" difference="0" hardness="Strong"/>
-            <task id="24" name="Dispersion" color="#8cb6ce" meeting="false" start="2019-06-10" duration="3" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
-                <depend id="26" type="2" difference="0" hardness="Strong"/>
-                <depend id="27" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="26" name="Latency" meeting="false" start="2019-06-14" duration="2" complete="0" expand="true"/>
-            <task id="27" name="Amplitude" color="#8cb6ce" meeting="false" start="2019-06-14" duration="2" complete="0" thirdDate="2019-06-14" thirdDate-constraint="0" expand="true">
-                <depend id="28" type="2" difference="0" hardness="Strong"/>
-                <depend id="141" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="141" name="N of peaks" color="#8cb6ce" meeting="false" start="2019-06-18" duration="3" complete="0" thirdDate="2019-06-10" thirdDate-constraint="0" expand="true"/>
-            <task id="28" name="Regression" color="#8cb6ce" meeting="false" start="2019-06-18" duration="3" complete="100" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
-                <depend id="124" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="124" name="PCA" color="#8cb6ce" meeting="false" start="2019-06-21" duration="5" complete="50" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true"/>
+        <task id="142" name="Simulation-validation loop" color="#8cb6ce" meeting="true" start="2019-06-24" duration="0" complete="0" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="14" name="Rewrite article" color="#000000" meeting="false" start="2019-06-28" duration="16" complete="100" thirdDate="2019-05-30" thirdDate-constraint="0" expand="false">
-            <depend id="82" type="2" difference="0" hardness="Strong"/>
-            <task id="12" name="Restructure article" color="#8cb6ce" meeting="false" start="2019-06-28" duration="3" complete="100" thirdDate="2019-06-28" thirdDate-constraint="0" expand="true">
+        <task id="14" name="Rewrite article" color="#000000" meeting="false" start="2019-07-18" duration="16" complete="100" thirdDate="2019-05-30" thirdDate-constraint="0" expand="false">
+            <task id="12" name="Restructure article" color="#8cb6ce" meeting="false" start="2019-07-18" duration="3" complete="100" thirdDate="2019-06-28" thirdDate-constraint="0" expand="true">
                 <depend id="11" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="11" name="Rewrite model sections" color="#8cb6ce" meeting="false" start="2019-07-03" duration="5" complete="100" thirdDate="2019-07-03" thirdDate-constraint="0" expand="true">
+            <task id="11" name="Rewrite model sections" color="#8cb6ce" meeting="false" start="2019-07-23" duration="5" complete="100" thirdDate="2019-07-03" thirdDate-constraint="0" expand="true">
                 <depend id="13" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="13" name="Rewrite results sectios" color="#8cb6ce" meeting="false" start="2019-07-10" duration="5" complete="100" thirdDate="2019-07-10" thirdDate-constraint="0" expand="true">
+            <task id="13" name="Rewrite results sectios" color="#8cb6ce" meeting="false" start="2019-07-30" duration="5" complete="100" thirdDate="2019-07-10" thirdDate-constraint="0" expand="true">
                 <depend id="116" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="116" name="Rearrange pictures" color="#8cb6ce" meeting="false" start="2019-07-17" duration="3" complete="100" thirdDate="2019-06-14" thirdDate-constraint="0" expand="true"/>
+            <task id="116" name="Rearrange pictures" color="#8cb6ce" meeting="false" start="2019-08-06" duration="3" complete="100" thirdDate="2019-06-14" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="82" name="Article done" color="#8cb6ce" meeting="true" start="2019-07-22" duration="0" complete="0" thirdDate="2019-06-04" thirdDate-constraint="0" expand="true"/>
+        <task id="6" name="Valdiation" color="#000000" meeting="false" start="2019-06-24" duration="17" complete="0" thirdDate="2019-05-28" thirdDate-constraint="0" expand="true">
+            <depend id="181" type="2" difference="0" hardness="Strong"/>
+            <depend id="215" type="2" difference="0" hardness="Strong"/>
+            <task id="176" name="Pattern recognition" meeting="false" start="2019-06-24" duration="10" complete="0" expand="true">
+                <task id="26" name="Latency" color="#8cb6ce" meeting="false" start="2019-06-24" duration="5" complete="0" thirdDate="2019-06-27" thirdDate-constraint="0" expand="true">
+                    <depend id="27" type="2" difference="0" hardness="Strong"/>
+                    <depend id="28" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="27" name="Amplitude" color="#8cb6ce" meeting="false" start="2019-07-01" duration="2" complete="0" thirdDate="2019-06-14" thirdDate-constraint="0" expand="true">
+                    <depend id="141" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="141" name="N of peaks" color="#8cb6ce" meeting="false" start="2019-07-03" duration="3" complete="0" thirdDate="2019-06-10" thirdDate-constraint="0" expand="true">
+                    <depend id="24" type="2" difference="0" hardness="Strong"/>
+                    <depend id="124" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+            <task id="178" name="Validation sim" meeting="false" start="2019-07-01" duration="12" complete="0" expand="true">
+                <task id="28" name="Regression" color="#8cb6ce" meeting="false" start="2019-07-01" duration="3" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
+                    <depend id="124" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="24" name="Dispersion" color="#8cb6ce" meeting="false" start="2019-07-08" duration="3" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true"/>
+                <task id="124" name="PCA" color="#8cb6ce" meeting="false" start="2019-07-08" duration="5" complete="0" thirdDate="2019-06-03" thirdDate-constraint="0" expand="true">
+                    <depend id="194" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="194" name="Cross correlation" color="#8cb6ce" meeting="false" start="2019-07-15" duration="2" complete="0" thirdDate="2019-06-24" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+        <task id="215" name="Bio model integration" meeting="false" start="2019-07-17" duration="18" complete="0" expand="true">
+            <task id="216" name="DAC/ADC" color="#8cb6ce" meeting="false" start="2019-07-17" duration="5" complete="0" thirdDate="2019-05-27" thirdDate-constraint="0" expand="true">
+                <depend id="220" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="220" name="bio experiment" color="#8cb6ce" meeting="false" start="2019-07-24" duration="10" complete="0" thirdDate="2019-07-24" thirdDate-constraint="0" expand="true">
+                <depend id="222" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="222" name="data processing" meeting="false" start="2019-08-07" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="181" name="Extend article" meeting="false" start="2019-07-17" duration="32" complete="0" expand="true">
+            <depend id="82" type="2" difference="0" hardness="Strong"/>
+            <task id="183" name="Speeds" color="#8cb6ce" meeting="false" start="2019-07-17" duration="3" complete="0" thirdDate="2019-07-15" thirdDate-constraint="0" expand="true">
+                <depend id="186" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="186" name="EES" color="#8cb6ce" meeting="false" start="2019-07-22" duration="2" complete="0" thirdDate="2019-07-17" thirdDate-constraint="0" expand="true">
+                <depend id="188" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="188" name="5-HT" color="#8cb6ce" meeting="false" start="2019-07-24" duration="3" complete="0" thirdDate="2019-07-17" thirdDate-constraint="0" expand="true">
+                <depend id="190" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="190" name="4-pedal/2-pedal" color="#8cb6ce" meeting="false" start="2019-07-29" duration="2" complete="0" thirdDate="2019-07-17" thirdDate-constraint="0" expand="true">
+                <depend id="192" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="192" name="Strychnine" color="#8cb6ce" meeting="false" start="2019-07-31" duration="1" complete="0" thirdDate="2019-07-17" thirdDate-constraint="0" expand="true">
+                <depend id="234" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="234" name="bio validation" meeting="false" start="2019-08-01" duration="10" complete="0" expand="true">
+                <depend id="238" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="238" name="supplementary" meeting="false" start="2019-08-15" duration="3" complete="0" expand="true">
+                <depend id="240" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="240" name="polishing" meeting="false" start="2019-08-20" duration="5" complete="0" expand="true">
+                <depend id="242" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="242" name="proofreading" meeting="false" start="2019-08-27" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="82" name="Article done" color="#8cb6ce" meeting="true" start="2019-08-30" duration="0" complete="0" thirdDate="2019-06-04" thirdDate-constraint="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="5" name="Alina Sulemanova" function="2" contacts="" phone=""/>
