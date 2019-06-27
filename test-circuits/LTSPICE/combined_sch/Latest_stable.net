@@ -1,37 +1,37 @@
 * C:\Users\yurra\Documents\memristive-brain\test-circuits\LTSPICE\combined_sch\Latest_stable.asc
-R1 N067 N066 9.1Meg
-XU1 N063 N051 +5 -5 N060 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R2 N060 N063 0.1Meg
-R3 0 N063 390K
+R1 N068 N067 18.2Meg
+XU1 N064 N052 +5 -5 N061 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R2 N061 N064 0.1Meg
+R3 0 N064 390K
 R4 P001 0 100K
-R5 N060 N051 120K
-C1 N051 0 47n
-C2 P001 N062 0.001µ
-XU2 membr N053 +5 -5 N064 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R5 N061 N052 150K
+C1 N052 0 47n
+C2 P001 N063 0.001µ
+XU2 membr N054 +5 -5 N065 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
 C3 0 membr 2µ
-R6 N064 N053 10K
-R7 N064 membr 4.7K
-R8 N053 0 1Meg
+R6 N065 N054 10K
+R7 N065 membr 4.7K
+R8 N054 0 1Meg
 V1 +5 0 5
 V2 0 -5 5
-XU3 N064 N059 +5 -5 N062 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-XU4 N061 N047 +5 -5 N057 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-D2 0 N047 D
-D3 P002 N061 D
-R9 N057 N061 0.1Meg
-R10 0 N061 100K
+XU3 N065 N060 +5 -5 N063 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+XU4 N062 N048 +5 -5 N058 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+D2 0 N048 1N4148
+D3 P002 N062 1N4148
+R9 N058 N062 0.1Meg
+R10 0 N062 100K
 R11 P002 0 100K
-R12 N057 N047 150K
-C4 N047 0 22n
-C5 P002 N060 0.001µ
-XU5 0 N070 +5 -5 N065 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R15 N065 N070 1Meg
-R16 N071 N070 1Meg
-D5 N060 N071 D
-R17 N065 membr 15K
+R12 N058 N048 150K
+C4 N048 0 22n
+C5 P002 N061 0.001µ
+XU5 0 N071 +5 -5 N066 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R15 N066 N071 1Meg
+R16 N072 N071 1Meg
+D5 N061 N072 D
+R17 N066 membr 15K
 R18 membr Tpre2 10K
-R21 N059 -5 82K
-R22 +5 N059 62K
+R21 N060 -5 82K
+R22 +5 N060 62K
 XU6 N037 N035 +10 -10 N032 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
 R23 N032 N035 300K
 R24 N037 0 10K
@@ -39,7 +39,7 @@ R25 N037 N036 100K
 XU7 N039 N034 +5 -5 N027 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
 C6 0 N039 0.1µ
 R26 N039 Tpre1 10K
-R27 N058 N045 10K
+R27 N059 N046 10K
 R28 N027 N034 10K
 R29 N037 N029 100K
 XU8 N038 N033 +5 -5 N036 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
@@ -54,37 +54,37 @@ C8 N033 0 100n
 R34 0 N035 10K
 D9 N032 P004 D
 R35 N037 -5 100K
-XU9 N056 N044 +5 -5 N054 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-D10 0 N044 D
-D11 P005 N056 D
-R36 N054 N056 1Meg
-R37 0 N056 700K
+XU9 N057 N045 +5 -5 N055 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+D10 0 N045 D
+D11 P005 N057 D
+R36 N055 N057 1Meg
+R37 0 N057 700K
 R38 P005 0 100K
-R39 N054 N044 22K
-C9 N044 0 100n
+R39 N055 N045 22K
+C9 N045 0 100n
 C10 P005 N029 0.001µ
-XU10 N055 N052 +10 -10 N041 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R40 N041 N052 300K
-R41 N055 0 10K
-R42 N055 N054 100K
-R43 N055 N027 100K
-R44 0 N052 10K
-D12 N041 P006 D
-R45 N055 -5 100K
+XU10 N056 N053 +10 -10 N042 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R40 N042 N053 300K
+R41 N056 0 10K
+R42 N056 N055 100K
+R43 N056 N027 100K
+R44 0 N053 10K
+D12 N042 P006 D
+R45 N056 -5 100K
 R46 Sine N031 30K
 R47 N031 P004 15K
-R48 N040 N031 15K
+R48 N041 N031 15K
 R49 N027 N039 1Meg
 R50 N034 0 1Meg
-XU11 N058 N048 +5 -5 N029 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-C11 0 N058 0.1µ
-R51 N029 N048 10K
-R52 N029 N058 1Meg
-R53 N048 0 1Meg
+XU11 N059 N049 +5 -5 N029 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+C11 0 N059 0.1µ
+R51 N029 N049 10K
+R52 N029 N059 1Meg
+R53 N049 0 1Meg
 XU12 0 N031 +10 -10 Sine level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R54 N040 N042 10K
-XU13 0 N042 +10 -10 N040 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R55 N042 P006 10K
+R54 N041 N043 10K
+XU13 0 N043 +10 -10 N041 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R55 N043 P006 10K
 C12 Sine N031 0.047µ
 XU14 N028 N024 +10 -10 N022 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
 R56 N022 N024 150K
@@ -106,15 +106,15 @@ R68 0 N021 15K
 XU16 0 N021 +10 -10 Hebbian level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
 C13 Hebbian N021 0.047µ
 R69 N030 Sine 1K
-V9 Tpre2 0 PULSE(0 2 50m 1n 1n 3m 10m)
+V9 Tpre2 0 PULSE(0 3 50m 1n 1n 3m 10m)
 V10 Tpre1 0 PULSE(0 3 10m 1n 1n 3m 10.1m)
 R70 N028 N029 100K
 V11 +10 0 10
 V12 0 -10 10
-D1 0 N051 D
-D6 P001 N063 D
-XU20 PWM_OUT N066 +5 -5 N067 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=5000Meg
-C14 N009 N006 2.2µ
+D1 0 N052 1N4148
+D6 P001 N064 1N4148
+XU20 PWM_OUT N067 +5 -5 N068 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=5000Meg
+C14 N009 N006 1µ
 R73 +5 N009 10K
 R74 +5 N007 10K
 Q2 N007 N009 0 0 2N2222
@@ -122,7 +122,7 @@ C15 N008 N007 0.1µ
 D14 0 N008 RF05VA1S
 XU21 N005 N006 +10 -10 N006 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
 XU22 N008 N003 +5 -5 N003 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-C16 N018 N014 2.2µ
+C16 N018 N014 1µ
 R75 -5 N018 10K
 R76 -5 N015 10K
 C17 N016 N015 0.1µ
@@ -149,26 +149,27 @@ D19 Hebbian N004 RF05VA1S
 R81 P007 N010 100K
 V7 P007 0 -0.15
 R19 membr out 10K
-R13 N066 0 R=V(vres)*1Meg
-XU28 N057 N045 +5 0 N045 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R13 N067 0 R=V(vres)*1Meg
+XU28 N058 N046 N040 0 N046 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
 V3 vres 0 PWL file=gen2.txt
-XU19 0 N043 +5 -5 log_pulse level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R14 N043 Tpre1 1Meg
-XU29 0 N069 +5 -5 log_level level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R91 N069 N068 1Meg
-XU30 0 N046 +5 -5 sum level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R92 N046 log_level 100K
-R93 N046 log_pulse 100K
-R94 sum N046 100K
-R95 inv_out N049 1000
-XU31 0 N049 +5 -5 inv_out level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-D4 N069 log_level 1N4148
-D20 N043 log_pulse 1N4148
-D21 sum N049 1N4148
-R96 out N050 100K
-XU32 0 N050 +5 -5 out level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
-R97 N050 inv_out 100K
-XU17 N067 N068 +5 -5 N068 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+XU19 0 N044 +5 -5 log_pulse level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R14 N044 Tpre1 1Meg
+XU29 0 N070 +5 -5 log_level level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R91 N070 N069 1Meg
+XU30 0 N047 +5 -5 sum level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R92 N047 log_level 100K
+R93 N047 log_pulse 100K
+R94 sum N047 100K
+R95 inv_out N050 1000
+XU31 0 N050 +5 -5 inv_out level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+D4 N070 log_level 1N4148
+D20 N044 log_pulse 1N4148
+D21 sum N050 1N4148
+R96 out N051 100K
+XU32 0 N051 +5 -5 out level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+R97 N051 inv_out 100K
+XU17 N068 N069 +5 -5 N069 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+V4 N040 0 3
 .model D D
 .lib C:\Users\yurra\Documents\LTspiceXVII\lib\cmp\standard.dio
 .model NPN NPN
