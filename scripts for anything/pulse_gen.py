@@ -15,9 +15,9 @@ if __name__ == '__main__':
 
         # l=[i * 0.01 +0.0075 for i in range(200)]
         # l=[i * 0.01 +0.005 for i in range(200)]
-        times = [i * 0.05 for i in range(1, 101)]
+        times = [i * 0.025 for i in range(1, 201)]
         # l = [i * 0.01 for i in range(200)]
-        volts = [i * 0.05 for i in range(100, 0, -1)]
+        volts = [i * 0.05 for i in range(221, 21, -1)]
 
         # print(l[1:])
 
