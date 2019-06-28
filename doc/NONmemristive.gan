@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-07-01" view-index="0" gantt-divider-location="333" resource-divider-location="300" version="2.8.5" locale="ru">
+    <description/>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Название" width="205" order="0"/>
+        <field id="tpd4" name="Дата начала" width="52" order="1"/>
+        <field id="tpd5" name="Дата окончания" width="70" order="2"/>
+        <option id="color.recent">
+            <![CDATA[#ff6666 #c5e5f5 #edcf7d #9999ff]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Имя" width="209" order="0"/>
+        <field id="1" name="Стандартная роль" width="85" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="15" name="LAYER 1" meeting="false" start="2019-07-01" duration="5" complete="0" expand="true">
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+            <task id="0" name="create generator CV1-CV2" color="#c5e5f5" meeting="false" start="2019-07-01" duration="5" complete="0" expand="true"/>
+            <task id="4" name="create delay 1-2" color="#c5e5f5" meeting="false" start="2019-07-01" duration="3" complete="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" name="soma integrator (OM 1)" color="#c5e5f5" meeting="false" start="2019-07-04" duration="2" complete="0" expand="true"/>
+        </task>
+        <task id="16" name="LAYER 2" meeting="false" start="2019-07-08" duration="3" complete="0" expand="true">
+            <depend id="24" type="2" difference="0" hardness="Strong"/>
+            <task id="18" name="soma  integrator (OM 2)" color="#c5e5f5" meeting="false" start="2019-07-08" duration="2" complete="0" expand="true"/>
+            <task id="21" name="create generator CV3" color="#c5e5f5" meeting="false" start="2019-07-08" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="24" name="Integration L1+L2" color="#c5e5f5" meeting="false" start="2019-07-11" duration="5" complete="0" expand="true"/>
+        <task id="31" name="LAYER 3" color="#000000" meeting="false" start="2019-07-18" duration="15" complete="0" expand="true">
+            <depend id="56" type="2" difference="0" hardness="Strong"/>
+            <task id="33" name="create generator CV4-CV5" color="#c5e5f5" meeting="false" start="2019-07-18" duration="8" complete="0" expand="true"/>
+            <task id="55" name="Vacation" color="#edcf7d" meeting="false" start="2019-07-18" duration="7" complete="0" expand="true">
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="35" name="add delay 3-5" color="#c5e5f5" meeting="false" start="2019-07-29" duration="7" complete="0" expand="true">
+                <depend id="42" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="42" name="soma integrator (OM 3)" color="#c5e5f5" meeting="false" start="2019-08-07" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="60" name="Integration +L3" color="#c5e5f5" meeting="false" start="2019-08-08" duration="5" complete="0" expand="true">
+            <depend id="56" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="56" name="LAYER 4-5" meeting="false" start="2019-08-15" duration="7" complete="0" expand="true">
+            <depend id="70" type="2" difference="0" hardness="Strong"/>
+            <task id="57" name="soma integrator (OM4-5)" color="#c5e5f5" meeting="false" start="2019-08-15" duration="4" complete="0" expand="true">
+                <depend id="65" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="65" name="create mn" color="#c5e5f5" meeting="false" start="2019-08-21" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="70" name="INTEGRATION" meeting="false" start="2019-08-26" duration="15" complete="0" expand="true">
+            <depend id="84" type="2" difference="0" hardness="Strong"/>
+            <task id="72" name="add L4-5" color="#c5e5f5" meeting="false" start="2019-08-26" duration="5" complete="0" expand="true">
+                <depend id="73" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="73" name="add MN" color="#c5e5f5" meeting="false" start="2019-09-02" duration="5" complete="0" expand="true">
+                <depend id="77" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="77" name="tune" color="#c5e5f5" meeting="false" start="2019-09-09" duration="5" complete="0" expand="true"/>
+        </task>
+        <task id="84" name="Prototype is ready" color="#ff6666" meeting="true" start="2019-09-16" duration="0" complete="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
