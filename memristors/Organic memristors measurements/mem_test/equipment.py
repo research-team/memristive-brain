@@ -1,11 +1,12 @@
 import logging
+
+import numpy
 import visa
 import time
 from enum import Enum
 
 
 class Lgr:
-
     def __init__(self, logname, filename=None, level=logging.DEBUG):
         # create logger with 'spam_application'
         self.__l = logging.getLogger(logname)
@@ -250,13 +251,43 @@ class Generator:
 
 class KeithlySmu:
     def __init__(self, logger_name, dev_id, delay=0.1):
-        self.__logger = logging.getLogger(logger_name)
+        self.__logger = Lgr(logger_name)
         rm = visa.ResourceManager()
         self.__smu = rm.open_resource(dev_id)
         self.__delay = delay
         self.__block_cnt = 1
 
+    def default_settings(self):
+        self.write("CURR:RANGE:AUTO 0")
+        self.write("CURR:RANGE 10E-6")
+        self.write("CURR:AVER 0")
+        self.write("CURR:AZER 0")
+        self.write("CURR:NPLC 0.01")
+        # SOURCE setup
+        self.write("SOUR:VOLT:DEL MIN")
+        self.write("SOUR:VOLT:DEL:AUTO 0")
+        self.write("SOUR:VOLT:RANG 2")
+        self.write("SOUR:VOLT:RANG:AUTO 0")
+        # Buffer setup
+        self.write("TRAC:POINTS 800000, \"defbuffer1\"")
+        self.write("COUNT 1")
+        self.__logger.d("Default settings applyed")
+
+
+    def resetToDefaultState(self):
+        self.write("SOUR:FUNC VOLT")
+        time.sleep(0.1)
+        self.write("SOUR:VOLT -0.2")
+        time.sleep(0.1)
+
+        resettime = 5 * 60
+        self.write("TRIG:LOAD:LOOP:DUR {},0,\"defbuffer2\"".format(resettime))
+        time.sleep(0.1)
+        self.write("INIT")
+        time.sleep(resettime + 1)
+
     def write(self, text):
+        self.__logger.d(text)
         self.__smu.write(text)
         time.sleep(self.__delay)
 
@@ -269,7 +300,16 @@ class KeithlySmu:
     def close(self):
         self.__smu.close()
 
-    def query(self, query):
-        result = self.__smu.query_ascii_values(query)
+    def flushDataToFile(self, filename):
+        size = int(self.query("TRACe:ACTual? \"defbuffer2\""))
+        data = numpy.empty((0, 3))
+        d = self.query("TRACe:DATA? 1,{}, \"defbuffer2\",SOUR,READ,REL".format(size))
+        temp = numpy.reshape(d, (-1, 3))
+        data = numpy.append(data, temp, axis=0)
+        numpy.savetxt(filename, data, delimiter=",")
+
+    def query(self, query, container=numpy.array):
+        result = self.__smu.query_ascii_values(query, container=container)
         time.sleep(self.__delay)
+        self.__logger.d(query + " got result \n" + result)
         return result

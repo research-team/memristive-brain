@@ -1,22 +1,19 @@
-import time
-
 import numpy
 import visa
-from equipment import KeithlySmu, Lgr
+
+from equipment import KeithlySmu
 
 if __name__ == '__main__':
-    l = Lgr('keithly')
     rm = visa.ResourceManager()
     K = KeithlySmu('keithly', rm.list_resources()[0], delay=0.3)
     K.write("*RST")
-    l.d("INIT COMPLETE")
     data = numpy.empty((0, 3))
 
     # project settings
     experiment_time = 10
     low_time = 1
     high_time = 1
-    netural_voltage = 0.15
+    neutral_voltage = 0.15
     low_voltage = 0.3
     high_voltage = 0.8
 
@@ -27,7 +24,7 @@ if __name__ == '__main__':
     K.write("SOUR:CONFiguration:LIST:CREate \"pulse\"")
     # setup netural part
     K.write("SOUR:FUNC VOLT")
-    K.write("SOUR:VOLT {:.3e}".format(netural_voltage))
+    K.write("SOUR:VOLT {:.3e}".format(neutral_voltage))
     K.write("SOUR:CONFiguration:LIST:STORe \"pulse\"")
     # setup low part
     K.write("SOUR:VOLT {:.3e}".format(low_voltage))
@@ -79,18 +76,4 @@ if __name__ == '__main__':
     K.create_block("BRANch:ALWays {}, 5")
     # 17) SOURCE_OUTPUT     OUTPUT: OFF
     K.create_block("SOURce:STATe {}, OFF")
-
-    # l.d(K.query("TRIGger:BLOCk:LIST?"))
-    # start experiment
-
-    # K.write("INIT")
-    # time.sleep(experiment_time + 1)
-    #
-    # size = int(keithly.query("TRACe:ACTual? \"defbuffer1\""))
-    # l.d(size)
-    # d = keithly.query_ascii_values("TRACe:DATA? 1,{}, \"defbuffer1\",SOUR,READ,REL".format(size),
-    #                                container=numpy.array)
-    # temp = numpy.reshape(d, (-1, 3))
-    # data = numpy.append(data, temp, axis=0)
-    # numpy.savetxt("test_pulse.csv", temp, delimiter=",")
     K.close()

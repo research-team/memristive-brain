@@ -1,10 +1,4 @@
-from datetime import datetime as dt
-from datetime import timedelta as td
 import time
-
-import visa
-import logging
-
 
 def gen_period(log, dev, source=1, period=1, period_unit="s", delay=0.15):
     log.debug("SET PERIOD on SOURCE {} - {}".format(source, dev.write(
@@ -50,25 +44,21 @@ def set_gen_square(log, dev, source=1, dutycycle=50, period=1, period_unit="s", 
 def set_osc_ch(log, dev, channel=1, vpd=1, zero_level=0):
     log.debug("SETTING OSCILLOSCOPE CHANNEL {}".format(channel))
     delay = 0.1
-    log.debug("SET OSC CH{} VOLTS PER DIV - {}".format(channel, dev.write(
-        'CH{}:VOLTS {:.2f}'.format(channel, vpd))))  # VOLTS per div # 25 points per vertical div
+    log.debug("SET OSC CH{} VOLTS PER DIV - {}".format(channel, dev.write('CH{}:VOLTS {:.2f}'.format(channel, vpd))))  # VOLTS per div # 25 points per vertical div
     time.sleep(delay)
-    log.debug("SET OSC CH{} ZERO LEVEL - {}".format(channel, dev.write(
-        "CH{}:POS {}".format(channel, zero_level))))  # in DIVS not in volts
+    log.debug("SET OSC CH{} ZERO LEVEL - {}".format(channel, dev.write("CH{}:POS {}".format(channel, zero_level))))  # in DIVS not in volts
     time.sleep(delay)
 
 
 def set_osc_hor(log, dev, t=10 ** -3):
-    log.debug("SET HORIZONTAL SCALE - {}".format(ch, dev.write(
-        'HOR:MAIN:SCALE {:.9f}'.format(t))))  # Sec per div # 250 points in horizontal div
+    log.debug("SET HORIZONTAL SCALE - {}".format(ch, dev.write('HOR:MAIN:SCALE {:.9f}'.format(t))))  # Sec per div # 250 points in horizontal div
     time.sleep(0.15)
 
 
 def set_trigger(log, dev, channel=1, level=1.0):
     log.debug("TRIGGER SETUP")
     delay = 0.1
-    log.debug("SET OSC TRIGGER SOURCE TO CH{} - {}".format(channel, dev.write(
-        'TRIG:MAI:PUL:SOU CH{}'.format(channel))))
+    log.debug("SET OSC TRIGGER SOURCE TO CH{} - {}".format(channel, dev.write('TRIG:MAI:PUL:SOU CH{}'.format(channel))))
     time.sleep(delay)
     log.debug("SET TRIG LEVEL - {}".format(dev.write('TRIG:MAI:LEV {:.2f}'.format(level))))
     time.sleep(delay)
