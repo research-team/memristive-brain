@@ -281,7 +281,7 @@ class KeithlySmu:
         time.sleep(0.1)
 
         resettime = 5 * 60
-        self.write("TRIG:LOAD:LOOP:DUR {},0,\"defbuffer2\"".format(resettime))
+        self.write("TRIG:LOAD:LOOP:DUR {},0,\"defbuffer1\"".format(resettime))
         time.sleep(0.1)
         self.write("INIT")
         time.sleep(resettime + 1)
@@ -301,9 +301,9 @@ class KeithlySmu:
         self.__smu.close()
 
     def flushDataToFile(self, filename):
-        size = int(self.query("TRACe:ACTual? \"defbuffer2\""))
+        size = int(self.query("TRACe:ACTual? \"defbuffer1\""))
         data = numpy.empty((0, 3))
-        d = self.query("TRACe:DATA? 1,{}, \"defbuffer2\",SOUR,READ,REL".format(size))
+        d = self.query("TRACe:DATA? 1,{}, \"defbuffer1\",SOUR,READ,REL".format(size))
         temp = numpy.reshape(d, (-1, 3))
         data = numpy.append(data, temp, axis=0)
         numpy.savetxt(filename, data, delimiter=",")

@@ -11,7 +11,7 @@ if __name__ == '__main__':
     K.flushDataToFile("reset_memristor_{}.csv".format(EXPERIMENT))
     start = 0
     stop = 1
-    points = 1000
+    points = 150000  # 150000 - one hour test 300000 - two hour
     delay = 0
     count = 1
     rangeType = 'FIXED'
