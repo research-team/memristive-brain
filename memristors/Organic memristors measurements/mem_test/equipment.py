@@ -260,7 +260,7 @@ class KeithlySmu:
     def default_settings(self):
         self.write("CURR:RANGE:AUTO 0")
         self.write("CURR:RANGE 10E-6")
-        self.write("CURR:AVER 0")
+        self.write("CURR:AVER 10")
         self.write("CURR:AZER 0")
         self.write("CURR:NPLC 0.01")
         # SOURCE setup
@@ -301,15 +301,19 @@ class KeithlySmu:
         self.__smu.close()
 
     def flushDataToFile(self, filename):
-        size = int(self.query("TRACe:ACTual? \"defbuffer1\""))
+        size = int(self.query("TRACe:ACTual? \"defbuffer1\"")[0])
         data = numpy.empty((0, 3))
-        d = self.query("TRACe:DATA? 1,{}, \"defbuffer1\",SOUR,READ,REL".format(size))
+        d = self.queryContainer("TRACe:DATA? 1,{}, \"defbuffer1\",SOUR,READ,REL".format(size))
         temp = numpy.reshape(d, (-1, 3))
         data = numpy.append(data, temp, axis=0)
         numpy.savetxt(filename, data, delimiter=",")
 
-    def query(self, query, container=numpy.array):
-        result = self.__smu.query_ascii_values(query, container=container)
+    def query(self, query):
+        result = self.__smu.query_ascii_values(query)
         time.sleep(self.__delay)
-        self.__logger.d(query + " got result \n" + result)
+        return result
+
+    def queryContainer(self, query):
+        result = self.__smu.query_ascii_values(query, container=numpy.array)
+        time.sleep(self.__delay)
         return result
