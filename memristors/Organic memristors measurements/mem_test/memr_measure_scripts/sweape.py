@@ -2,7 +2,7 @@ import visa
 from equipment import KeithlySmu
 
 if __name__ == '__main__':
-    EXPERIMENT = 3
+    EXPERIMENT = 10
     rm = visa.ResourceManager()
     K = KeithlySmu('keithly', rm.list_resources()[0], delay=0.3)
 
@@ -11,17 +11,18 @@ if __name__ == '__main__':
     K.flushDataToFile("reset_memristor_{}.csv".format(EXPERIMENT))
     start = 0
     stop = 1
-    points = 150000  # 150000 - one hour test 300000 - two hour
+    points = 300000  # 150000 - one hour test 300000 - two hour
     delay = 0
     count = 1
     rangeType = 'FIXED'
-    failAbort = 'OFF'
+    failAbort = 'ON'
     dual = 'ON'
-    bufferName = 'defbuffer1'
-    command = f"SOUR:SWE:VOLT:LIN {start}, {stop}, {points}, {delay}," \
-              f" {count}, {rangeType}, {failAbort}, {dual}, {bufferName}"
-    K.query(
+    bufferName = '\"defbuffer1\"'
+    command = f"SOUR:SWE:VOLT:LIN {start}, {stop}, {points}, {delay}, {count}, {rangeType}, {failAbort}, {dual}, {bufferName}"
+    K.write(
         command
     )
-    K.flushDataToFile('all_res_{}.csv'.format(EXPERIMENT))
-    K.close()
+    K.write('INIT')
+    # Use this commands manualy
+    # K.flushDataToFile('all_res_{}.csv'.format(EXPERIMENT))
+    # K.close()
