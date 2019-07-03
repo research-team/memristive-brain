@@ -262,7 +262,7 @@ class KeithlySmu:
         self.write("CURR:RANGE 10E-6")
         self.write("CURR:AVER 10")
         self.write("CURR:AZER 0")
-        self.write("CURR:NPLC 0.01")
+        self.write("CURR:NPLC 0.1")
         # SOURCE setup
         self.write("SOUR:VOLT:DEL MIN")
         self.write("SOUR:VOLT:DEL:AUTO 0")
