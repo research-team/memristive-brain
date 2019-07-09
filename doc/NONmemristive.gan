@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-07-01" view-index="0" gantt-divider-location="333" resource-divider-location="300" version="2.8.5" locale="ru">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2019-07-01" view-index="0" gantt-divider-location="333" resource-divider-location="300" version="2.8.5" locale="en_GB">
     <description/>
     <view zooming-state="default:7" id="gantt-chart">
-        <field id="tpd3" name="Название" width="205" order="0"/>
-        <field id="tpd4" name="Дата начала" width="52" order="1"/>
-        <field id="tpd5" name="Дата окончания" width="70" order="2"/>
+        <field id="tpd3" name="Name" width="205" order="0"/>
+        <field id="tpd4" name="Begin date" width="52" order="1"/>
+        <field id="tpd5" name="End date" width="70" order="2"/>
         <option id="color.recent">
             <![CDATA[#ff6666 #c5e5f5 #edcf7d #9999ff]]>
         </option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Имя" width="209" order="0"/>
-        <field id="1" name="Стандартная роль" width="85" order="1"/>
+        <field id="0" name="Name" width="209" order="0"/>
+        <field id="1" name="Default role" width="85" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -52,7 +52,7 @@
         <task id="24" name="Integration L1+L2" color="#c5e5f5" meeting="false" start="2019-07-11" duration="5" complete="0" expand="true"/>
         <task id="31" name="LAYER 3" color="#000000" meeting="false" start="2019-07-18" duration="15" complete="0" expand="true">
             <depend id="56" type="2" difference="0" hardness="Strong"/>
-            <task id="33" name="create generator CV4-CV5" color="#c5e5f5" meeting="false" start="2019-07-18" duration="8" complete="0" expand="true"/>
+            <task id="33" name="create generator CV4-CV5" color="#c5e5f5" meeting="false" start="2019-07-29" duration="8" complete="0" expand="true"/>
             <task id="55" name="Vacation" color="#edcf7d" meeting="false" start="2019-07-18" duration="7" complete="0" expand="true">
                 <depend id="35" type="2" difference="0" hardness="Strong"/>
             </task>
