@@ -14,7 +14,7 @@ for STAGE in range(1, 6):
             K.flushDataToFile("reset_memristor_{}.csv".format(EXPERIMENT))
         start = -1
         stop = 1
-        points = 37600  # 37600 - one hour test 75000 - two hour
+        points = 75000  # 37600 - one hour test 75000 - two hour
         delay = 0
         count = 1
         rangeType = 'FIXED'
@@ -25,7 +25,7 @@ for STAGE in range(1, 6):
         K.write(command)
         K.write('INIT')
 
-        time.sleep(3620)
+        time.sleep(7210)
         K.flushDataToFile('all_res_{}_{}.csv'.format(EXPERIMENT, STAGE))
         K.close()
 

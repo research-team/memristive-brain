@@ -280,7 +280,7 @@ class KeithlySmu:
         self.write("SOUR:VOLT -0.2")
         time.sleep(0.1)
 
-        resettime = 5 * 60
+        resettime = 30 * 60
         self.write("TRIG:LOAD:LOOP:DUR {},0,\"defbuffer1\"".format(resettime))
         time.sleep(0.1)
         self.write("INIT")
