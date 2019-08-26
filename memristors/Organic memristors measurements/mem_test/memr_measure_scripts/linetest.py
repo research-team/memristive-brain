@@ -4,7 +4,7 @@ from equipment import KeithlySmu
 
 for STAGE in range(1, 6):
     if __name__ == '__main__':
-        EXPERIMENT = "10"
+        EXPERIMENT = "04"
         rm = visa.ResourceManager()
         K = KeithlySmu('keithly', rm.list_resources()[0], delay=0.3)
 
@@ -12,9 +12,9 @@ for STAGE in range(1, 6):
         if STAGE == 1:
             K.resetToDefaultState()
             K.flushDataToFile("reset_memristor_{}.csv".format(EXPERIMENT))
-        start = -0.3
+        start = -1
         stop = 1
-        points = 37600  # 37600 - one hour test 75000 - two hour
+        points = 75000  # 37600 - one hour test 75000 - two hour
         delay = 0
         count = 1
         rangeType = 'FIXED'
@@ -25,7 +25,7 @@ for STAGE in range(1, 6):
         K.write(command)
         K.write('INIT')
 
-        time.sleep(3780)
+        time.sleep(7210)
         K.flushDataToFile('all_res_{}_{}.csv'.format(EXPERIMENT, STAGE))
         K.close()
 
