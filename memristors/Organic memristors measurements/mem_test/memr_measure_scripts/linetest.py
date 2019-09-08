@@ -2,19 +2,22 @@ import visa
 import time
 from equipment import KeithlySmu
 
-for STAGE in range(1, 6):
+for PART in range(1, 3):
     if __name__ == '__main__':
-        EXPERIMENT = "04"
+        EXPERIMENT, STAGE = "04", 1
         rm = visa.ResourceManager()
         K = KeithlySmu('keithly', rm.list_resources()[0], delay=0.3)
 
         K.default_settings()
-        if STAGE == 1:
+        if PART == 1:
             K.resetToDefaultState()
-            K.flushDataToFile("reset_memristor_{}.csv".format(EXPERIMENT))
-        start = -1
-        stop = 1
-        points = 75000  # 37600 - one hour test 75000 - two hour
+            K.flushDataToFile("reset_line_{}.csv".format(EXPERIMENT))
+            start = 0
+            stop = 1
+        else:
+            start = 0
+            stop = -1
+        points = 12500  # 37600 - one hour test 75000 - two hour
         delay = 0
         count = 1
         rangeType = 'FIXED'
@@ -25,8 +28,8 @@ for STAGE in range(1, 6):
         K.write(command)
         K.write('INIT')
 
-        time.sleep(7210)
-        K.flushDataToFile('all_res_{}_{}.csv'.format(EXPERIMENT, STAGE))
+        time.sleep(1205)
+        K.flushDataToFile('line_res{}_{}__{}.csv'.format(EXPERIMENT, PART, STAGE))
         K.close()
 
 
