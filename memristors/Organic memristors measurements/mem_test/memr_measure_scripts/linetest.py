@@ -4,14 +4,14 @@ from equipment import KeithlySmu
 
 for PART in range(1, 3):
     if __name__ == '__main__':
-        EXPERIMENT, STAGE = "03", 1
+        EXPERIMENT, STAGE = "05", 2
         rm = visa.ResourceManager()
         K = KeithlySmu('keithly', rm.list_resources()[0], delay=0.3)
 
         K.default_settings()
         if PART == 1:
-            K.resetToDefaultState()
-            K.flushDataToFile("reset_line_{}.csv".format(EXPERIMENT))
+            # K.resetToDefaultState()
+            # K.flushDataToFile("reset_line_{}.csv".format(EXPERIMENT))
             start = 0
             stop = 1
         else:
