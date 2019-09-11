@@ -8,7 +8,7 @@ from equipment import KeithlySmu
 for STAGE in range(1, 3):
     for PART in range(1, 4):
         if __name__ == '__main__':
-            EXPERIMENT = "07"
+            EXPERIMENT = "03"
             rm = visa.ResourceManager()
             K = KeithlySmu('keithly', rm.list_resources()[0], delay=0.3)
             K.default_settings()

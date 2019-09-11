@@ -2,17 +2,17 @@ import visa
 import time
 from equipment import KeithlySmu
 
-for STAGE in range(1, 3):
+for STAGE in range(1, 2):
     for PART in range(1, 3):
         if __name__ == '__main__':
-            EXPERIMENT = "07"
+            EXPERIMENT = "02"
             rm = visa.ResourceManager()
             K = KeithlySmu('keithly', rm.list_resources()[0], delay=0.3)
 
             K.default_settings()
             if PART == 1:
-                # K.resetToDefaultState()
-                # K.flushDataToFile("reset_line_{}.csv".format(EXPERIMENT))
+                K.resetToDefaultState()
+                K.flushDataToFile("reset_line_{}.csv".format(EXPERIMENT))
                 start = 0
                 stop = 1
             else:
