@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
     date=dt.now().strftime("%d#%m#%Y")
     datetime=dt.now().strftime("%d#%m#%Y#%H#%M#%S")
-    memr_number=1
+    memr_number=3
     step_time=90
     data = numpy.empty((0, 3))
 
