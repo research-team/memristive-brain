@@ -9,7 +9,7 @@ if __name__ == '__main__':
 
     date=dt.now().strftime("%d#%m#%Y")
     datetime=dt.now().strftime("%d#%m#%Y#%H#%M#%S")
-    memr_number=1
+    memr_number=8
     step_time=90
     data = numpy.empty((0, 3))
 
@@ -22,6 +22,6 @@ if __name__ == '__main__':
 
     if not os.path.exists("memr_{}_at_{}".format(memr_number,date)):
         os.mkdir("memr_{}_at_{}".format(memr_number,date))
-    numpy.savetxt("memr_{}_at_{}/{}_steptime_{}.csv".format(memr_number,date,datetime,step_time), temp, delimiter=",")
+    numpy.savetxt("memr_{}_at_{}/memr-{}_{}_steptime_{}.csv".format(memr_number,date,memr_number,datetime,step_time), temp, delimiter=",")
 
     K.close()
