@@ -34,11 +34,13 @@ if __name__ == "__main__":
         {'ff': open('/Users/klowar/Desktop/data/chan1.txt',"w"), 'name': 'CHAN1'},
         {'ff': open('/Users/klowar/Desktop/data/chan2.txt',"w"), 'name': 'CHAN2'}
     ]
-    while(True):
+    iteration = 0
+    while (iteration < 61):
         for x in range(len(settings)):
             chanel_name = settings[x]['name']
             set_chanel(chanel_name)
             l = inst.query(":WAV:DATA? " + chanel_name)
-            print(len(l.split(',')))
+            print(str(iteration) + ': ' + str(len(l.split(','))))
+            iteration += 1
             settings[x]['ff'].write(l)
     inst.close()

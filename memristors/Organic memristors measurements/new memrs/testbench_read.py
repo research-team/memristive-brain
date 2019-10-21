@@ -9,8 +9,8 @@ if __name__ == '__main__':
 
     date=dt.now().strftime("%d#%m#%Y")
     datetime=dt.now().strftime("%d#%m#%Y#%H#%M#%S")
-    memr_number=8
-    step_time=90
+    memr_number=9
+    step_time=900
     data = numpy.empty((0, 3))
 
     size = int(K.query("TRACe:ACTual? \"defbuffer1\"")[0])
