@@ -14,6 +14,9 @@ def set_up(inst):
     print(inst.query(":CHANnel1:RANG?"))
     print(inst.query(":TIMebase:MAIN:SCALe?"))
     write(":CHANnel1:SCALe 1", inst)
+    write(":CHANnel2:SCALe 1", inst)
+    write(":CHANnel3:SCALe 1", inst)
+    write(":CHANnel4:SCALe 1", inst)
     write(":TIMebase:MAIN:SCALe 0.01", inst)
 
 def set_chanel(chanel_name):
@@ -24,7 +27,7 @@ if __name__ == "__main__":
     inst = rm.get_instrument(rm.list_resources()[0])
 
     inst.query_delay = 0.5
-    # set_up(inst)
+    set_up(inst)
     write(":WAV:MODE MAX", inst)
     write(":WAV:FORM ASCII", inst)
     write(":ACQ:MEMDEPTH LONG", inst)
