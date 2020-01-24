@@ -1,2 +1,0 @@
-set fixed range before everything
-probably 20 ms(1 nplc) for current + 20 ms (1 nplc) for sourced voltage measurement + 1ms for switching

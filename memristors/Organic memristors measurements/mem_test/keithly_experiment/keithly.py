@@ -3,10 +3,12 @@ import time
 import numpy
 import visa
 
+from equipment import KeithlySmu
+
 if __name__ == '__main__':
     rm = visa.ResourceManager()
     print(rm.list_resources())
-    keithly = rm.open_resource(rm.list_resources()[0])
+    keithly = KeithlySmu(rm.list_resources()[0])
     print(keithly)
     print(keithly.query("*IDN?"))
     keithly.write("*RST")
@@ -59,8 +61,7 @@ if __name__ == '__main__':
         time.sleep(delay + 1)
         size = int(keithly.query("TRACe:ACTual? \"defbuffer1\""))
         print(size)
-        d = keithly.query_ascii_values("TRACe:DATA? 1,{}, \"defbuffer1\",SOUR,READ,REL".format(size),
-                                       container=numpy.array)
+        d = keithly.query("TRACe:DATA? 1,{}, \"defbuffer1\",SOUR,READ,REL".format(size))
         temp = numpy.reshape(d, (-1, 3))
         data = numpy.append(data, temp, axis=0)
         numpy.savetxt("res{}_{}.csv".format(idx,s), temp, delimiter=",")

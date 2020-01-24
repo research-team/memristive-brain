@@ -46,4 +46,6 @@ test-boards/Measurement device/ADI-Phase-2.lbr
 test-boards/Measurement device/micro-stm_v3.lbr
 memristors/Organic memristors measurements/mem_test/.idea/
 
-*/.ipynb_checkpoints/*
+*/.ipynb_checkpoints/*.*
+memristors/Organic memristors measurements/mem_test/plotter/mem_test/.ipynb_checkpoints/
+memristors/Organic memristors measurements/mem_test/plotter/old/.ipynb_checkpoints/12#04#2019#18#15#14_mem3_0-0-Copy1.8-checkpoint.ipynb
