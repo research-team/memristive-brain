@@ -1,4 +1,0 @@
-#### About Math model of Dopamine modulation
-
-We need to build a NEUCOGAR/Nest implementation similar to the article [New Framework for Cortico-Striatal Plasticity](https://doi.org/10.1371/journal.pbio.1002099). Our implementation must be based on more biorealistic data like in this article [ERK regulation of AMPA](http://www.pnas.org/content/110/38/15437.abstract).
-My general thought is that those biorealistic articles observe only partial pathways and show only restricted dependencies. The whole area of signal transduction is a dark forest at the moment and we can't rely on such results 100%. We need to use such articles as verification models. For building math formulas of Dopamine modulation is probably better use phenomenological data, e.g. the data that shows how current amperage changes due to Dopamine.
