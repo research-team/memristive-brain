@@ -1,4 +1,4 @@
-# Robot Dream: Memristive brain project
+# Robot Dream: Memristive brain project ENDSTOP!!!!!
 
 ## Problem
 
